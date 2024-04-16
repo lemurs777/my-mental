@@ -1,0 +1,401 @@
+.wrapper {}
+
+.page {}
+
+.team {
+	padding: 20px 0 60px;
+	background-color: #F7FAF7;
+	position: relative;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		max-width: 740px;
+		height: 100%;
+		max-height: 390px;
+		content: '';
+		background: url('../img/decorations/expert-bg.svg') left top/contain no-repeat;
+
+	}
+
+	// .team__inner
+	&__inner {
+		position: relative;
+	}
+
+	// .team__head
+
+	&__head {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2rem;
+		background: #FFFFFF;
+		border: 1px solid #E4EBE4;
+		border-radius: 15px;
+		gap: 10px;
+		margin-bottom: 30px;
+	}
+
+	// .team__breadcrumbs
+
+	&__breadcrumbs {}
+
+	// .team__title
+
+	&__title {}
+
+	// .team__head-text
+
+	&__head-text {
+		font-size: 14px;
+		line-height: 120%;
+
+		span {
+			color: $brownColor;
+		}
+	}
+
+
+
+	// .team__grid
+
+	&__grid {
+		display: grid;
+		grid-template-columns: 290px 1fr;
+		gap: 1rem;
+	}
+
+	// .team__aside
+
+	&__aside {}
+
+	// .team__main
+
+	&__main {}
+}
+
+.container {}
+
+.breadcrumbs {}
+
+.title {}
+
+.team-aside {
+
+	// .team-aside__block
+
+	&__block {}
+
+	// .team-aside__search
+	&__search {
+		margin-bottom: 1rem;
+	}
+}
+
+.team-search {
+	display: flex;
+	align-items: center;
+	padding: 15px 12px;
+	gap: 5px;
+	height: 48px;
+	background: #F7FAF7;
+	border: 2px solid #E4EBE4;
+	border-radius: 10px;
+
+	// .team-search__btn
+
+	&__btn {
+		width: 1rem;
+		height: 1rem;
+		flex: 0 0 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		fill: $accentColor;
+	}
+
+	input {
+		font-size: 14px;
+
+		&::placeholder {
+			color: #5E6D55;
+		}
+	}
+}
+
+.spollers {
+
+	// .spollers__item
+
+	&__item {}
+
+	// .spollers__title
+
+	&__title {}
+
+	// .spollers__body
+
+	&__body {}
+}
+
+.team-dropdown {
+	gap: 1rem;
+	// .team-dropdown__item
+
+	&__item {
+
+		background: #FFFFFF;
+		border: 2px solid #E4EBE4;
+		border-radius: 10px;
+
+	}
+
+	// .team-dropdown__title
+
+	&__title {
+		padding: 14px 1.5rem 14px 16px;
+		font-weight: 400;
+		font-size: 1rem;
+
+		&::before {
+			display: none;
+		}
+
+		&::after {}
+
+		&::after {
+			content: url('data:image/svg+xml;charset=UTF-8,<svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.63379 3.93725L5.98779 0.25L0.00254297 0.25L2.36479 3.93575C2.43223 4.04304 2.52576 4.13149 2.63665 4.19285C2.74753 4.2542 2.87215 4.28646 2.99888 4.28661C3.12561 4.28676 3.2503 4.2548 3.36133 4.19371C3.47236 4.13261 3.5661 4.04438 3.63379 3.93725Z" fill="black"/></svg>') !important;
+			line-height: 0;
+			width: 6px !important;
+			height: 6px !important;
+			transform: translate(0, -50%) rotate(0) !important;
+			background-color: transparent !important;
+			right: 1rem !important;
+			display: inline-block;
+		}
+	}
+
+	// .team-dropdown__body
+
+	&__body {
+		padding: 0 1rem 1rem;
+	}
+
+	// .team-dropdown__wrapper
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		.select {
+			&._select-open {
+				.select {
+					&__title {
+						border-bottom-left-radius: 0;
+						border-bottom-right-radius: 0;
+					}
+				}
+			}
+
+			&__value {
+
+				&::after {
+					flex: 0 0 12px;
+					content: url('data:image/svg+xml;charset=UTF-8,<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 2.02884L4.76 6.78234C5.08861 7.10941 5.53337 7.29303 5.997 7.29303C6.46063 7.29303 6.90539 7.10941 7.234 6.78234L12 2.02334L10.9395 0.964844L6.174 5.72334C6.12712 5.77021 6.06354 5.79654 5.99725 5.79654C5.93096 5.79654 5.86738 5.77021 5.8205 5.72334L1.0605 0.970344L0 2.02884Z" fill="%235E6D55"/></svg>');
+					line-height: 0;
+					display: inline-block;
+					align-items: center;
+					align-self: auto;
+				}
+			}
+
+			&__title {
+				min-height: 18px;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 1.285;
+				background: #FFFFFF;
+				border: 2px solid #E4EBE4;
+				border-radius: 10px;
+
+			}
+
+			&__content {
+				color: #5E6D55;
+				font-weight: 400;
+
+			}
+
+			&__options {
+				border: 2px solid #E4EBE4;
+				border-top: none;
+				top: calc(100% - 2px);
+				border-radius: 0 0 10px 10px;
+			}
+		}
+	}
+
+	// .team-dropdown__btns
+
+	&__btns {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+}
+
+.radio-input {}
+
+
+
+.team-main {
+
+	// .team-main__line
+
+	&__line {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		margin-bottom: 20px;
+	}
+
+	// .team-main__filters
+
+	&__filters {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	// .team-main__filters-btn
+
+	&__filters-btn {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.285;
+		color: $accentColor;
+		padding: 0.5rem 12px;
+	}
+
+	// .team-main__cards
+
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 15px;
+	}
+
+	// .team-main__footer
+
+	&__footer {}
+
+	// .team-main__more-cards
+
+	&__more-cards {}
+}
+
+
+
+
+.expert-card {
+	/* Карточка специалиста */
+
+	/* Auto layout */
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 15px;
+	gap: 15px;
+
+	background: #FFFFFF;
+	border: 1px solid #E4EBE4;
+	border-radius: 15px;
+
+	// .expert-card__img
+
+	&__img {}
+
+	// .expert-card__body
+
+	&__body {}
+
+	// .expert-card__info
+
+	&__info {}
+
+	// .expert-card__title
+
+	&__title {}
+
+	// .expert-card__service-list
+
+	&__service-list {}
+
+	// .expert-card__terms
+
+	&__terms {}
+
+	// .expert-card__write
+
+	&__write {}
+
+	// .expert-card__rating
+
+	&__rating {}
+
+	// .expert-card__reting-stars
+
+	&__reting-stars {}
+
+	// .expert-card__rating-reviews
+
+	&__rating-reviews {}
+
+	// .expert-card__wor
+
+	&__wor {}
+
+	// .expert-card__text
+
+	&__text {}
+
+	// .expert-card__price
+
+	&__price {}
+
+	// .expert-card__price-time
+
+	&__price-time {}
+
+	// .expert-card__footer
+
+	&__footer {}
+
+	// .expert-card__btn
+
+	&__btn {}
+
+	// .expert-card__btn--secondary
+
+	&__btn--secondary {}
+}
+
+.team-banner {
+
+	// .team-banner__text
+
+	&__text {}
+
+	// .team-banner__link
+
+	&__link {}
+}
+
+.btn {}
+
+.btn--light {}

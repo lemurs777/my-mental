@@ -1,0 +1,45 @@
+.pagination {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+
+	li {
+
+
+		.prev,
+		.next {
+			color: #888;
+		}
+
+		.prev {
+			margin-right: 10px;
+		}
+
+		.next {
+			margin-left: 10px;
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 1.5rem;
+			flex: 0 0 1.5rem;
+			height: 1.5rem;
+			border-radius: 4px;
+			transition: .2s ease-in-out;
+
+			@media(any-hover:hover) {
+				&:hover {
+					background-color: $accentColor;
+					color: $lightColor;
+				}
+			}
+
+			&.active {
+				background-color: $accentColor;
+				color: $lightColor;
+			}
+		}
+	}
+}

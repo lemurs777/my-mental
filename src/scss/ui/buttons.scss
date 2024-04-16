@@ -1,0 +1,102 @@
+.btn {
+	font-weight: 700;
+	color: $lightColor;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 18px 25px;
+	background: $accentColor;
+	border-radius: 12px;
+	border: 1px solid $accentColor;
+
+	&--light {
+		background-color: $lightColor;
+		color: $accentColor;
+	}
+}
+
+.social-btn {
+	font-size: 14px;
+	width: fit-content;
+	color: #29A9EB;
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 12px;
+	gap: 5px;
+
+	background: #FFFFFF;
+	border: 1px solid #E4EBE4;
+	border-radius: 12px;
+
+	// .social-btn__icon
+
+	&__icon {}
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 54px;
+	height: 54px;
+	border: 1px solid $accentColor;
+	border-radius: 5px;
+
+}
+
+.swiper-button-next {
+	rotate: 180deg;
+}
+
+.swiper-pagination {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+
+	.swiper-pagination-bullet {
+		width: 6px;
+		height: 6px;
+		opacity: 0.2;
+		background-color: $accentColor;
+		border-radius: 50px;
+		cursor: pointer;
+
+		@media(any-hover:hover) {
+			&:hover {
+				opacity: 1;
+
+			}
+		}
+
+		&.swiper-pagination-bullet-active {
+			opacity: 1;
+		}
+	}
+}
+
+.team-dropdown-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 20px;
+	gap: 5px;
+	min-height: 48px;
+
+	border: 2px solid rgba(94, 109, 85, 0.3);
+	border-radius: 10px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.285;
+	color: #5E6D55;
+
+	&--accent {
+		color: $lightColor;
+		background-color: $brownColor;
+		border-color: $brownColor;
+	}
+}

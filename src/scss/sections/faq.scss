@@ -1,0 +1,21 @@
+.faq {
+	background-color: #F7FAF7;
+
+	// .faq__accordion
+	&__accordion {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+		align-items: start;
+
+		.spollers {
+			&__item {}
+
+			&__title {
+				display: flex;
+				align-items: center;
+				min-height: 92px;
+			}
+		}
+	}
+}

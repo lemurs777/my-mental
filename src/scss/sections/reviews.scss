@@ -1,0 +1,155 @@
+.section {
+
+	// .section__head
+
+	&__head {}
+
+	// .section__title
+
+	&__title {}
+}
+
+.reviews {
+	background-color: #F7FAF7;
+
+	// .reviews__slider
+
+	&__slider {
+		position: relative;
+
+		// &::before,
+		// &::after {
+		// 	backdrop-filter: blur(2px);
+		// 	position: absolute;
+		// 	top: 0;
+		// 	height: 100%;
+		// 	width: 100vw;
+		// 	content: '';
+		// }
+
+		&::before {
+			right: 100%;
+		}
+
+		&::after {
+			left: 100%;
+		}
+
+		.swiper {
+
+			overflow: visible !important;
+		}
+
+		.swiper-slide-next,
+		.swiper-slide-active {
+			.review-card {
+
+				min-height: 262px;
+			}
+		}
+
+		.swiper-slide-next,
+		.swiper-slide-next+.swiper-slide,
+		.swiper-slide-active {
+			.review-card {
+				opacity: 1;
+				filter: none;
+			}
+		}
+	}
+
+	// .reviews__slider-navigate
+
+	&__slider-navigate {
+		padding-top: 2rem;
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		justify-content: center;
+	}
+}
+
+.container {}
+
+.reviews-slider {}
+
+.swiper {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.review-card {
+	transition: .2s ease-in-out;
+	opacity: .2;
+	filter: blur(2px);
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	gap: 20px;
+	background: #FFFFFF;
+	border: 1px solid #E4EBE4;
+	border-radius: 15px;
+
+	// .review-card__head
+
+	&__head {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+	}
+
+	// .review-card__avatar
+
+	&__avatar {
+		width: 46px;
+		aspect-ratio: 1/1;
+		border-radius: 50%;
+		overflow: hidden;
+		flex: 0 0 46px;
+	}
+
+	// .review-card__info
+
+	&__info {}
+
+	// .review-card__title
+
+	&__title {
+		font-weight: 700;
+		line-height: 105%;
+		margin-bottom: 0.5rem;
+	}
+
+	// .review-card__time
+
+	&__time {
+		font-size: 14px;
+		line-height: 105%;
+
+		color: #5E6D55;
+
+	}
+
+	// .review-card__rating
+
+	&__rating {
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+		gap: 2px;
+	}
+
+	// .review-card__body
+
+	&__body {
+		line-height: 120%;
+
+	}
+}
+
+.swiper-button-prev {}
+
+.swiper-pagination {}
+
+.swiper-button-next {}
