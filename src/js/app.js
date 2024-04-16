@@ -10,7 +10,46 @@
 Якщо ми хочемо додати модуль
 слід його розкоментувати
 */
+// import noUiSlider from 'nouislider'
 
+let sliderAge = document.getElementById('team-range__age')
+let sliderPrice = document.getElementById('team-range__price')
+if (sliderAge) {
+
+	noUiSlider.create(sliderAge, {
+		start: [20, 40],
+		connect: true,
+		step: 1,
+		range: {
+			'min': 23,
+			'max': 57
+		},
+	})
+	const input0 = document.getElementById('team-range__age-input-1')
+	const input1 = document.getElementById('team-range__age-input-2')
+	const inputs = [input0, input1]
+	sliderAge.noUiSlider.on('update', function (values, handle) {
+		inputs[handle].value = Math.round(values[handle])
+	})
+}
+if (sliderPrice) {
+
+	noUiSlider.create(sliderPrice, {
+		start: [650, 1800],
+		connect: true,
+		step: 1,
+		range: {
+			'min': 600,
+			'max': 5000
+		},
+	})
+	const inputPrice0 = document.getElementById('team-range__price-input-1')
+	const inputPrice1 = document.getElementById('team-range__price-input-2')
+	const priceInputs = [inputPrice0, inputPrice1]
+	sliderPrice.noUiSlider.on('update', function (values, handle) {
+		priceInputs[handle].value = Math.round(values[handle])
+	})
+}
 // Увімкнути/вимкнути FLS (Full Logging System) (в роботі)
 window['FLS'] = true
 
