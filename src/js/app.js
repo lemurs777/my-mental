@@ -12,6 +12,7 @@
 */
 // import noUiSlider from 'nouislider'
 
+
 let sliderAge = document.getElementById('team-range__age')
 let sliderPrice = document.getElementById('team-range__price')
 if (sliderAge) {
@@ -51,7 +52,7 @@ if (sliderPrice) {
 	})
 }
 // Увімкнути/вимкнути FLS (Full Logging System) (в роботі)
-window['FLS'] = true
+// window['FLS'] = true
 
 // Підключення основного файлу стилів
 import "../scss/style.scss"
@@ -100,7 +101,7 @@ flsFunctions.spollers()
 Документація: https://template.fls.guru/template-docs/modul-pokazat-eshhjo.html
 Сніппет (HTML): showmore
 */
-// flsFunctions.showMore();
+flsFunctions.showMore()
 
 /*
 Модуль "Ефект хвиль"
@@ -156,7 +157,7 @@ flsForms.formFieldsInit({
 import './libs/select.js'
 
 /* Модуль роботи з календарем */
-// import './files/forms/datepicker.js'
+import './files/forms/datepicker.js'
 
 /* (У роботі) Модуль роботи з масками.*/
 /*

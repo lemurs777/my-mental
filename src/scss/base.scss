@@ -1,6 +1,8 @@
 // Загальний файл елементів форм
 // Для підключення/відключення стилів конкретного елемента форми дивись base/forms/forms.scss
 @import "base/forms/select";
+@import "base/forms/checkbox";
+@import "base/forms/datepicker";
 
 // Стилі попапів
 // @import "base/popup";
@@ -15,7 +17,7 @@
 // @import "base/maps";
 
 // Стилі блоку "показати ще"
-// @import "base/showmore";
+@import "base/showmore";
 
 // Стилі для липкого блоку
 // @import "base/sticky";

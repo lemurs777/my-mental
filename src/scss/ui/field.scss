@@ -1,0 +1,35 @@
+.field {
+
+	&__label {
+		font-size: 14px;
+		line-height: 1.25;
+		margin-bottom: .5rem;
+		display: block;
+
+	}
+
+	&__wrapper {
+		position: relative;
+	}
+
+	input {
+		display: flex;
+		align-items: center;
+		padding: 15px 16px;
+		gap: 10px;
+		height: 48px;
+		border: 2px solid #E2EBE3;
+		border-radius: 10px;
+		font-size: 14px;
+
+		&[type='tel'] {
+			padding-left: 60px;
+			font-weight: 700;
+		}
+
+		&::placeholder {
+			color: #5E6D55;
+		}
+
+	}
+}

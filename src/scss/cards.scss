@@ -1,0 +1,148 @@
+.education-item {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+	background: $lightColor;
+	border: 1px solid #E2EBE3;
+	border-radius: 10px;
+
+	// .education-item__icon
+
+	&__icon {
+		flex: 0 0 50px;
+		width: 50%;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #E2EBE3;
+		aspect-ratio: 1/1;
+	}
+
+	// .education-item__content
+
+	&__content {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	// .education-item__title
+
+	&__title {
+		line-height: 130%;
+	}
+
+	// .education-item__dir
+
+	&__dir {
+		font-size: 14px;
+		line-height: 120%;
+		color: #5A6E53;
+
+	}
+
+	// .education-item__years
+
+	&__years {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 120%;
+
+	}
+
+	// .education-item__btns
+
+	&__btns {}
+
+	// .education-item__btn
+
+	&__btn {}
+}
+
+.master-card {
+	@extend .frame;
+	padding: 1.5rem;
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+
+	&__avatar {
+		width: 100px;
+		flex: 0 0 100px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	&__head {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+
+		img {
+			width: 22px;
+			height: 22px;
+			object-position: center;
+			object-fit: contain;
+		}
+	}
+
+	&__prof {
+		font-size: 14px;
+		line-height: 120%;
+		color: #5E6D55;
+	}
+
+
+}
+
+.session-item {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr) 25px;
+	gap: 1rem;
+	padding: 16px;
+	font-size: 14px;
+	border: 1px solid #E2EBE3;
+	border-radius: 15px;
+
+	// .session-item__date
+
+	&__date {
+		font-weight: 700;
+	}
+
+	// .session-item__time
+
+	&__time {}
+
+	// .session-item__price
+
+	&__price {}
+
+	// .session-item__remove
+
+	&__remove {
+		svg {
+			transition: .2s ease-in-out;
+			width: 14px;
+			height: 14px;
+			fill: rgba($accentColor, .2);
+		}
+
+		@media(any-hover:hover) {
+			&:hover {
+				svg {
+					fill: $accentColor;
+				}
+			}
+		}
+	}
+}

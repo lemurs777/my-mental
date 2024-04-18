@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{ "title":"Інформація про фахівця" })
+
+<body>
+	<div class="wrapper main-record-master">
+		@@include('html/_header.htm',{})
+		<main class="page inner-page">
+			<div class="container">
+				<div class="record-master">
+					<div class="container">
+						<div class="record-master__inner">
+							<div class="record-master__back">
+								<a href='../' class="link-back">Повернутися назад</a>
+							</div>
+							<div class="grid">
+								<div class="record-form frame">
+									<div class="title-h4 record-form__title">Запис до фахівця</div>
+									<div class="record-form__items">
+										<div class="field">
+											<label class="field__label">
+												Вкажіть будь ласка ваше ім’я:
+											</label>
+											<input type="text" placeholder='Наприклад, Оксана'>
+										</div>
+										<div class="field">
+											<label class="field__label">Телефон:</label>
+											<div class="field__wrapper">
+												<input type="tel" name="phone">
+											</div>
+										</div>
+										<div class="field">
+											<label class="field__label">Пошта:</label>
+											<div class="field__wrapper">
+												<input type="email" placeholder='example@gmail.com'>
+											</div>
+										</div>
+									</div>
+									<div class="record-form__chat">
+										<div class="record-form__chat-emoji">👋</div>
+										<div class="record-form__chat-content">
+											<p>Ви можете зв’язатися
+												зі спеціалістом через чат</p>
+										</div>
+										<div class="record-form__chat-btns">
+											<a href="#" class="btn-md btn-md--secondary-border record-form__chat-btn">Перейти до чату</a>
+										</div>
+									</div>
+								</div>
+								<div class="record-master__main">
+									<div class="master-card">
+										<div class="master-card__avatar"><img src="img/avatars/expert.jpg" alt="expert"></div>
+										<div class="master-card__info">
+											<div class="master-card__head">
+												<h4 class="title-h4 master-card__title">Гліб Федоров</h4>
+												<img src="img/icons/check-shield.svg" alt="shield">
+											</div>
+											<div class="master-card__prof">Психолог, психотерапевт, психіатр</div>
+										</div>
+									</div>
+									<div class="session-info">
+										<h3 class="title-h4">Інформація про сесію</h3>
+										<ul class="session-info__list">
+											<li>
+												<div class="session-item">
+													<div class="session-item__date">12.03.2024</div>
+													<div class="session-item__time">17:00</div>
+													<div class="session-item__price">1 000 ₴</div>
+													<button type='button' class='session-item__remove'>
+														<svg>
+															<use xlink:href="@img/icons/icons.svg#remove"></use>
+														</svg>
+													</button>
+												</div>
+											</li>
+											<li>
+												<div class="session-item">
+													<div class="session-item__date">13.03.2024</div>
+													<div class="session-item__time">17:00</div>
+													<div class="session-item__price">1 000 ₴</div>
+													<button type='button' class='session-item__remove'>
+														<svg>
+															<use xlink:href="@img/icons/icons.svg#remove"></use>
+														</svg>
+													</button>
+												</div>
+											</li>
+										</ul>
+										<div class="session-info__sum">
+											Загальна вартість:
+											<span>2 000 ₴</span>
+										</div>
+										<button class="btn btn--accent session-info__btn" type='button'>
+											Оплатити
+										</button>
+										<div class="checkbox">
+											<input id="c_1" class="checkbox__input" type="checkbox">
+											<label for="c_1" class="checkbox__label"><span class="checkbox__text">Скасуйте або перенесіть
+													сеанс за 24 години до початку</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

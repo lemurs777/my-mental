@@ -548,6 +548,28 @@
 	&__link {}
 }
 
+.banner {
+	background: url('../img/decorations/feedback-bg.svg') top/cover no-repeat, $accentColor;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 24px;
+	gap: 1rem;
+	border-radius: 12px;
+	// .team-banner__text
+
+	&__title {
+		font-weight: 700;
+		font-size: 22px;
+		color: $lightColor;
+
+	}
+
+	// .team-banner__link
+
+	&__link {}
+}
+
 .btn {}
 
 .btn--light {}

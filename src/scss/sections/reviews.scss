@@ -17,15 +17,7 @@
 	&__slider {
 		position: relative;
 
-		// &::before,
-		// &::after {
-		// 	backdrop-filter: blur(2px);
-		// 	position: absolute;
-		// 	top: 0;
-		// 	height: 100%;
-		// 	width: 100vw;
-		// 	content: '';
-		// }
+
 
 		&::before {
 			right: 100%;
@@ -56,6 +48,11 @@
 				filter: none;
 			}
 		}
+
+		.review-card {
+			opacity: .2;
+			filter: blur(2px);
+		}
 	}
 
 	// .reviews__slider-navigate
@@ -69,20 +66,10 @@
 	}
 }
 
-.container {}
 
-.reviews-slider {}
-
-.swiper {}
-
-.swiper-wrapper {}
-
-.swiper-slide {}
 
 .review-card {
 	transition: .2s ease-in-out;
-	opacity: .2;
-	filter: blur(2px);
 	display: flex;
 	flex-direction: column;
 	padding: 20px;

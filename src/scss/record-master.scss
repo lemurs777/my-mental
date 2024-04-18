@@ -1,0 +1,95 @@
+.record-master {
+	&__back {
+		margin-bottom: 20px;
+	}
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+}
+
+.record-form {
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	width: 578px;
+	flex: 0 0 578px;
+
+	&__items {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	&__chat {
+		background: #F7FAF7;
+		border: 1px solid #E2EBE3;
+		border-radius: 15px;
+		padding: 1rem;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	&__chat-emoji {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 1.267;
+		flex: 0 0 30px;
+	}
+
+	&__chat-content {
+		flex: 1;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 130%;
+		max-width: 236px;
+	}
+
+	&__chat-btns {
+		margin-left: auto;
+	}
+
+	&__chat-btn {
+		white-space: nowrap;
+	}
+}
+
+.session-info {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	@extend .frame;
+	padding: 1.5rem;
+	// .session-info__list
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	// .session-info__sum
+
+	&__sum {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		line-height: 120%;
+
+		span {
+			@extend .title-h4;
+
+		}
+	}
+
+	// .session-info__btn
+
+	&__btn {
+		width: 100%;
+	}
+}

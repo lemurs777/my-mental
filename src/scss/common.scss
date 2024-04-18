@@ -4,6 +4,84 @@
 	font-weight: 700;
 }
 
+.main-expert {
+	background: url('../img/bg/about-expert-bg.svg')top left/cover no-repeat;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 15px;
+	align-items: start;
+}
+
+.inner-page {
+	padding: 20px 0 60px;
+}
+
+.frame {
+	padding: 2rem;
+	background: $lightColor;
+	border: 1px solid $lightGreyColor;
+	border-radius: 15px;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		min-width: 0;
+	}
+
+	&__head {}
+}
+
+.frame-md {
+	padding: 1.5rem;
+	background: $lightColor;
+	border: 1px solid $lightGreyColor;
+	border-radius: 15px;
+
+}
+
+.main-page {
+	position: relative;
+	padding: 20px 0 60px;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		max-width: 740px;
+		height: 100%;
+		max-height: 390px;
+		content: '';
+		background: url('../img/decorations/expert-bg.svg') left top/contain no-repeat;
+
+	}
+}
+
+.inner {
+	position: relative;
+}
+
+.main-head {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: $gap10;
+
+	&__title {
+		line-height: 110%;
+	}
+
+	&__text {
+		font-size: 18px;
+		line-height: 110%;
+	}
+}
+
 .section {
 	padding: 128px 0;
 
@@ -33,6 +111,12 @@
 		background-color: #FFE9DC;
 
 	}
+
+	&--light {
+		background-color: $lightColor;
+		border-color: $borderColor;
+
+	}
 }
 
 .filter-label {
@@ -54,5 +138,58 @@
 		flex: 0 0 12px;
 		font-size: 12px;
 		color: $greyColor;
+	}
+}
+
+.radio-btns {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 3px;
+	border: 2px solid #E2EBE3;
+	border-radius: 10px;
+
+}
+
+.radio-btn {
+	position: relative;
+	flex: 1;
+
+
+	input {
+		position: absolute;
+		opacity: 0;
+		width: 0;
+		height: 0;
+		left: 0;
+		top: 0;
+
+		&:checked {
+			&+span {
+				color: $lightColor;
+				background-color: $accentColor;
+				font-weight: 700;
+			}
+		}
+	}
+
+	span {
+		text-align: center;
+		border-radius: 10px;
+		padding: 10px 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		transition: .2s ease-in-out;
+	}
+
+	@media(any-hover:hover) {
+		&:hover {
+			span {
+				background-color: $accentColor;
+				color: $lightColor;
+			}
+		}
 	}
 }
