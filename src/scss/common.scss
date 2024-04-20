@@ -8,6 +8,10 @@
 	background: url('../img/bg/about-expert-bg.svg')top left/cover no-repeat;
 }
 
+.main-area {
+	background: url('../img/bg/area-bg.svg')top left/cover no-repeat;
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -15,12 +19,16 @@
 	align-items: start;
 }
 
+.border {
+	border: 2px solid $borderColor;
+}
+
 .inner-page {
 	padding: 20px 0 60px;
 }
 
 .frame {
-	padding: 2rem;
+	padding: 1.5rem;
 	background: $lightColor;
 	border: 1px solid $lightGreyColor;
 	border-radius: 15px;

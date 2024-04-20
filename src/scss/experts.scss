@@ -136,7 +136,7 @@
 		font-size: 14px;
 
 		&::placeholder {
-			color: #5E6D55;
+			color: $text;
 		}
 	}
 }
@@ -240,7 +240,7 @@
 			}
 
 			&__content {
-				color: #5E6D55;
+				color: $text;
 				font-weight: 400;
 
 			}
@@ -334,7 +334,7 @@
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 100%;
-		color: #5E6D55;
+		color: $text;
 
 	}
 }
@@ -401,7 +401,7 @@
 	&__service-list {
 
 
-		color: #5E6D55;
+		color: $text;
 
 	}
 
@@ -451,7 +451,7 @@
 	// .expert-card__rating-reviews
 
 	&__rating-reviews {
-		color: #5E6D55;
+		color: $text;
 	}
 
 	// .expert-card__works
@@ -461,7 +461,7 @@
 	// .expert-card__text
 
 	&__text {
-		color: #5E6D55;
+		color: $text;
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
 		-webkit-line-clamp: 3;
@@ -612,7 +612,7 @@
 		flex: 1;
 
 		span {
-			color: #5E6D55;
+			color: $text;
 		}
 
 		input {

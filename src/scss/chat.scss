@@ -1,0 +1,152 @@
+.chat {
+	background: $lightColor;
+	@extend .border;
+	border-width: 1px;
+	border-radius: $radius15;
+	overflow: hidden;
+	max-height: 741px;
+	height: 80vh;
+	display: grid;
+	grid-template-columns: 352px 1fr;
+}
+
+.chat-aside {
+	border-right: 1px solid $borderColor;
+
+	&__head {
+		height: 62px;
+		border-bottom: 1px solid $borderColor;
+
+	}
+
+	&__list {
+		padding: 1.5rem 1rem;
+	}
+}
+
+.chat-item {
+	display: flex;
+	align-items: center;
+	padding: 16px;
+	gap: 16px;
+	height: 80px;
+	border-radius: $radius15;
+	cursor: pointer;
+	font-size: 14px;
+	// .chat-item__icon
+
+	&__icon {
+		aspect-ratio: 1/1;
+		overflow: hidden;
+		position: relative;
+		width: 48px;
+		flex: 0 0 48px;
+
+		img {
+			border-radius: 50%;
+			max-height: 100%;
+		}
+
+		span {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			border-radius: 50%;
+			border: 3px solid $accentColor;
+			width: 1rem;
+			height: 1rem;
+		}
+	}
+
+	// .chat-item__body
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		width: 100%;
+	}
+
+	// .chat-item__head
+
+	&__head {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.5rem;
+	}
+
+	// .chat-item__title
+
+	&__title {
+		overflow: hidden;
+		font-weight: 700;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 1;
+	}
+
+	// .chat-item__date
+
+	&__date {
+		font-size: 12px;
+		color: #5A6E53;
+		margin-left: auto;
+	}
+
+	// .chat-item__bottom
+
+	&__bottom {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+
+	}
+
+	// .chat-item__text
+
+	&__text {
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 1;
+	}
+
+	// .chat-item__badge
+
+	&__badge {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		font-size: 12px;
+		color: $lightColor;
+		margin-left: auto;
+		background: $brownColor;
+		flex: 0 0 18px;
+		width: 18px;
+		height: 18px;
+	}
+
+	// .chat-item__info
+
+	&__info {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		color: $brownColor;
+		white-space: nowrap;
+
+		&::before {
+			content: url('data:image/svg+xml;charset=UTF-8,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.6667 0H3.33333C1.49333 0 0 1.49333 0 3.33333V12.6667C0 14.5067 1.49333 16 3.33333 16H12.6667C14.5067 16 16 14.5067 16 12.6667V3.33333C16 1.49333 14.5067 0 12.6667 0ZM8 3.33333C8.55333 3.33333 9 3.78 9 4.33333C9 4.88667 8.55333 5.33333 8 5.33333C7.44667 5.33333 7 4.88667 7 4.33333C7 3.78 7.44667 3.33333 8 3.33333ZM9.33333 12.6667C9.33333 13.0333 9.03333 13.3333 8.66667 13.3333C8.3 13.3333 8 13.0333 8 12.6667V8.66667C8 8.3 7.7 8 7.33333 8C6.96667 8 6.66667 7.7 6.66667 7.33333C6.66667 6.96667 6.96667 6.66667 7.33333 6.66667C8.43333 6.66667 9.33333 7.56667 9.33333 8.66667V12.6667Z" fill="%23CA6C46" /></svg> ');
+			line-height: 0;
+			display: inline-block;
+		}
+	}
+
+	&--active {
+		background-color: $accentColor;
+		color: $lightColor;
+	}
+
+}

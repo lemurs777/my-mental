@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{ "title":"Інформація про фахівця" })
+
+<body>
+	<div class="wrapper main-area">
+		@@include('html/_header-login.htm',{})
+		<main class="page">
+			<div class="area-page" data-one-select>
+				<div class="area-container">
+					<div class="area-page__grid">
+						<div class="area-page__aside">
+							<div class="area-sidebar">
+								<div class="area-sidebar__nav">
+									<ul class="area-sidebar__list">
+										<li>
+											<a href="/area.html">
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#user"></use>
+												</svg>
+												Мій профіль</a>
+										</li>
+										<li>
+											<a href="/area-schedule.html" class='active'>
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#calendar"></use>
+												</svg>
+												Графік роботи</a>
+										</li>
+										<li>
+											<a href="/area-payment.html">
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#pays"></use>
+												</svg>
+												Платежі та сесії</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#chat"></use>
+												</svg>
+												Чат</a>
+										</li>
+									</ul>
+									<div class="area-sidebar__nav-bottom">
+										<a href="#" class="btn-sm btn-sm--grey-border area-sidebar__btn-google">
+											<img src="img/icons/google.svg" alt="google">
+											Connect Google Calendar</a>
+									</div>
+								</div>
+								<div class="area-sidebar__bottom">
+									<a href="#" class="area-sidebar__exit">
+										<svg>
+											<use xlink:href="@img/icons/icons.svg#exit"></use>
+										</svg>
+										Вийти</a>
+								</div>
+							</div>
+						</div>
+						<div class="area-page__main">
+							<h1 class="title-h4 area-page__title">Привіт, Віталій!</h1>
+							<div class="area-page__inner">
+								<div class="area">
+									<div class="area__inner">
+										<div class="area-block">
+											<div class="area-block__top">
+												<div class="area-block__head">
+													<h3 class="area-block__title">Персональна інформація</h3>
+													<button class="area-block__edit" type='button'>
+														<svg>
+															<use xlink:href="@img/icons/icons.svg#pencil"></use>
+														</svg>
+													</button>
+												</div>
+												<div class="area-block__name">Віталій Соколов</div>
+												<div class="area-block__info-list">
+													<div class="area-block__info-item">
+														<svg>
+															<use xlink:href="@img/icons/icons.svg#gender-man"></use>
+														</svg>
+														Чоловік
+													</div>
+
+													<div class="area-block__info-item">
+														<svg>
+															<use xlink:href="@img/icons/icons.svg#calendar-2"></use>
+														</svg>
+														11.08.1986
+													</div>
+
+													<div class="area-block__info-item">
+														<svg>
+															<use xlink:href="@img/icons/icons.svg#mail"></use>
+														</svg>
+														sokolovvalen@gmail.com
+													</div>
+
+													<div class="area-block__info-item">
+														<svg>
+															<use xlink:href="@img/icons/icons.svg#phone"></use>
+														</svg>
+														+380 95 675 24 56
+													</div>
+												</div>
+											</div>
+											<div class="area-block__section">
+												@@include('html/_switch.htm',{
+												"label":"Зробити мій профіль недоступним для нових клієнтів"
+												})
+											</div>
+											<div class="area-block__bottom">
+												<a href="#" class="area-block__link-btn">
+													<svg>
+														<use xlink:href="@img/icons/icons.svg#lock"></use>
+													</svg>
+													Скинути пароль
+												</a>
+												<a href="#" class="area-block__link-btn">
+													<svg>
+														<use xlink:href="@img/icons/icons.svg#trash"></use>
+													</svg>
+													Скинути пароль
+												</a>
+											</div>
+										</div>
+										<div class="area-block">
+											<div class="area-block__top">
+												<div class="area-block__head">
+													<h3 class="area-block__title">Публічна інформація</h3>
+													<button class="area-block__edit" type='button'>
+														<svg>
+															<use xlink:href="@img/icons/icons.svg#pencil"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<div class="area-block__section">
+												<div class="area-block__media">
+													<div class="area-media">
+														<div class="area-media__avatar avatar avatar--sm">
+															<img src="img/avatars/avatar-6.jpg" alt="avatar">
+														</div>
+														<div class="area-media__info">
+															<div class="area-media__title">Фото профілю</div>
+															<div class="area-media__link">IMG_8a043_c6f41234_14fdfa123...JPG</div>
+															<label class="area-media__add">
+																<input type="file">
+																<span>Завантажити нове фото</span>
+															</label>
+														</div>
+													</div>
+													<div class="area-media">
+														<div class="area-media__video">
+															<div class="expert-video expert-video--pause">
+																<img src="img/video.jpg" alt="video">
+																<button class="expert-video__play"><svg width="18" height="20" viewBox="0 0 18 20"
+																		fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path fill-rule="evenodd" clip-rule="evenodd"
+																			d="M16.9651 8.22131L3.46117 0.425217C3.14892 0.245123 2.79479 0.150341 2.43432 0.150391C2.07386 0.15044 1.71975 0.245317 1.40755 0.425497C1.09535 0.605677 0.83605 0.864818 0.655673 1.1769C0.475296 1.48899 0.380194 1.84304 0.379917 2.2035V17.7972C0.377835 18.1582 0.471816 18.5132 0.652217 18.8258C0.832618 19.1384 1.09294 19.3974 1.40648 19.5762C1.71822 19.7583 2.07278 19.8543 2.43382 19.8543C2.79487 19.8543 3.14943 19.7583 3.46117 19.5762L16.9651 11.7793C17.2772 11.5989 17.5363 11.3395 17.7165 11.0273C17.8967 10.715 17.9915 10.3609 17.9915 10.0004C17.9915 9.63987 17.8967 9.28572 17.7165 8.97347C17.5363 8.66122 17.2772 8.40187 16.9651 8.22147V8.22131Z"
+																			fill="currentColor" />
+																	</svg>
+
+																</button>
+																<div class="expert-video__timer">
+																	<span><svg width="7" height="8" viewBox="0 0 7 8" fill="none"
+																			xmlns="http://www.w3.org/2000/svg">
+																			<path fill-rule="evenodd" clip-rule="evenodd"
+																				d="M6.57938 3.27688L1.46765 0.111583C1.34945 0.0384622 1.2154 -1.9991e-05 1.07895 7.7909e-09C0.942503 2.00066e-05 0.80846 0.0385413 0.690281 0.111696C0.572102 0.184851 0.473946 0.290065 0.405666 0.416776C0.337387 0.543486 0.301387 0.687233 0.301282 0.833585V7.16482C0.300494 7.31136 0.33607 7.45549 0.404358 7.58241C0.472646 7.70934 0.571189 7.81449 0.689874 7.88708C0.807879 7.96103 0.942092 8 1.07876 8C1.21543 8 1.34965 7.96103 1.46765 7.88708L6.57938 4.72146C6.69753 4.64821 6.79563 4.54292 6.86383 4.41614C6.93203 4.28936 6.96794 4.14557 6.96794 3.9992C6.96794 3.85284 6.93203 3.70904 6.86383 3.58227C6.79563 3.45549 6.69753 3.35019 6.57938 3.27695V3.27688Z"
+																				fill="currentColor" />
+																		</svg>
+																	</span>
+																	01:33
+																</div>
+															</div>
+														</div>
+														<div class="area-media__info">
+															<div class="area-media__title">Відеовізитка</div>
+															<div class="area-media__link">IMG_8a043_c6f41234_14fdfa123...MP4</div>
+															<label class="area-media__add">
+																<input type="file">
+																<span>Завантажити нове відео</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="area-block__section">
+												<div class="area-block__items">
+													<div class="area-block__item">
+														<div class='area-block__item-title'>Ваша кваліфікація</div>
+														<div class='area-block__item-text'>Психолог</div>
+													</div>
+												</div>
+											</div>
+											<div class="area-block__section">
+												<div class="area-block__items">
+													<div class="area-block__item">
+														<div class='area-block__item-title'>Кількість годин практики</div>
+														<div class='area-block__item-text'>130</div>
+													</div>
+													<div class="area-block__item">
+														<div class='area-block__item-title'>Кількість років досвіду</div>
+														<div class='area-block__item-text'>2</div>
+													</div>
+												</div>
+											</div>
+											<div class="area-block__section">
+												<div class="area-block__items">
+													<div class="area-block__item">
+														<div class='area-block__item-title'>Про мене</div>
+														<div class='area-block__item-text'>
+															<p>Вітаю! Я — професійний психолог з багаторічним досвідом роботи. Моя місія — допомагати
+																людям знаходити гармонію в собі та у відносинах з навколишнім світом. Я вірю, що кожна
+																людина володіє внутрішнім потенціалом для щастя та самореалізації, а моя задача —
+																допомогти вам цей потенціал розкрити.</p>
+															<br>
+															<p>
+																У своїй роботі я використовую індивідуальний підхід, поєднуючи класичні та інноваційні
+																методики психотерапії. Мої спеціалізації включають роботу з тривожними розладами,
+																депресією, проблемами у відносинах, самооцінкою та особистісним зростанням. Я також
+																проводжу сімейні консультації та допомагаю у вирішенні конфліктів.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="area-block__section">
+												<div class="area-block__items">
+													<div class="area-block__item">
+														<div class='area-block__item-title'>Мова консультацій</div>
+														<div class='area-block__item-text'>Українська</div>
+													</div>
+												</div>
+											</div>
+											<div class="area-block__section">
+												<div class="area-block__items">
+													<div class="area-block__item">
+														<div class='area-block__item-title'>Формат консультацій</div>
+														<div class='area-block__item-text'>Тільки онлайн</div>
+													</div>
+												</div>
+											</div>
+											<div class="area-block__section">
+												<div class="area-block__items">
+													<div class="area-block__item">
+														<div class='area-block__item-title'>Вартість за сеанс</div>
+														<div class='area-block__item-labels'>
+															<div class="item-label">
+																<div class="item-label__title">Дорослі</div>
+																<div class="item-label__content">2 000 ₴ / 50хв.</div>
+															</div>
+															<div class="item-label">
+																<div class="item-label__title">Дорослі</div>
+																<div class="item-label__content">2 000 ₴ / 50хв.</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="area-block__section">
+												@@include('html/sections/_expert-education.htm')
+											</div>
+											<div class="area-block__section">
+
+												@@include('html/sections/_expert-dir.htm',{
+												"title":"Методи, в яких я працюю"
+												})
+											</div>
+											<div class="area-block__section">
+												@@include('html/sections/_expert-want.htm',{
+												"title":"З якими запитами я працюю"
+												})
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

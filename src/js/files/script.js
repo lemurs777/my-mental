@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			var phoneLabel = document.querySelector('.phone-label')
 			var isValidNumber = numberValidation(phone)
 			console.clear()
-			console.log(isValidNumber)
 
 			if (isValidNumber.valid) {
 				phoneLabel.style.cssText = "color: blue; font-size: 30px;"
@@ -63,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 })
 
-var intlTelInput = {
+let intlTelInput = {
 
 	preferredCountries: ["us", "gb"],
 
@@ -15141,7 +15140,7 @@ var intlTelInput = {
 
 }
 
-var countryCodes = {}
+let countryCodes = {}
 
 for (var i = 0; i < intlTelInput.countries.length; i++) {
 	const element = intlTelInput.countries[i]
@@ -15668,4 +15667,45 @@ function _getSplitPhoneNumber(inputVal, dialCode) {
 	}
 
 	return splitPhoneNumber
+}
+
+const passwordInputs = document.querySelectorAll('.field--password')
+passwordInputs.forEach(item => {
+	const btn = item.querySelector('.field__icon')
+	btn.addEventListener('click', e => {
+		btn.classList.toggle('show-password')
+		item.setAttribute('type', 'text')
+	})
+})
+
+
+
+//  Textarea
+
+const customsTextarea = document.querySelectorAll('.field--textarea')
+customsTextarea.forEach(textarea => {
+	const textareaField = textarea.querySelector('textarea')
+	const currentCounter = textarea.querySelector('.field__counter-current')
+	let maxlength = textarea.querySelector('.field__counter-total').innerText
+	textareaField.addEventListener('input', event => {
+		event.target.value = event.target.value.substr(0, maxlength)
+		const length = event.target.value.length
+		currentCounter.textContent = length
+	})
+})
+// More info table
+
+const moreInfo = document.querySelectorAll('.more-info')
+if (moreInfo) {
+	moreInfo.forEach(info => {
+		const btn = info.querySelector('.more-info__btn')
+		const content = info.querySelector('.more-info__dropdown')
+
+		btn.addEventListener('click', e => {
+			moreInfo.forEach(info => {
+				info.classList.remove('show-info')
+			})
+			info.classList.toggle('show-info')
+		})
+	})
 }

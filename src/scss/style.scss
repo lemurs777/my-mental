@@ -29,13 +29,25 @@ $brownColor: #CA6C46;
 $accentColor: #19453F;
 $greyColor: #888888;
 $borderColor: #E2EBE3;
-
+$text: #5E6D55;
 
 
 // Gap
 
 $gap10: 10px;
 $gap5: 5px;
+
+
+// Border-radius
+$radius5: 5px;
+$radius10: 10px;
+$radius15: 15px;
+
+
+
+
+
+
 // Палітра кольорів
 // @import "base/colors-palette";
 
@@ -183,9 +195,14 @@ body {
 // Підключення стилів окремих блоків
 @import "sections";
 @import "cards";
+@import "components/add-media";
+@import "components/avatar";
+@import "components/more-info";
 
 // Підключення стилів окремих сторінок
 @import "home";
 @import "experts";
 @import "expert";
+@import "area";
+@import "chat";
 @import "record-master";

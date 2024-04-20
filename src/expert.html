@@ -180,24 +180,10 @@
 									</div>
 								</div>
 							</div>
-							<div class="frame expert-dir">
-								<div class="frame__inner">
-									<div class="frame__head">
-										<h3 class="title-h5">Мої напрями роботи</h3>
-									</div>
-									<div class="frame__body">
-										<ul class="expert-dir__list">
-											<li>Посттравматичний стресовий розлад</li>
-											<li>Інтегративний підхід</li>
-											<li>Тілесна терапія</li>
-											<li>Психосоматика</li>
-											<li>Дитячо-батьківські відносини</li>
-											<li>Коучинг</li>
-											<li>Пережите насильство</li>
-											<li>Когнітивно-поведінкова терапія</li>
-										</ul>
-									</div>
-								</div>
+							<div class="frame">
+								@@include('html/sections/_expert-dir.htm',{
+								"title":"Мої напрями роботи"
+								})
 							</div>
 							<div class="banner">
 								<div class="banner__title">
@@ -205,72 +191,13 @@
 								</div>
 								<a href="#" class="btn btn--light banner__link">Записатися до спеціаліста</a>
 							</div>
-							<div class="frame expert-want">
-								<div class="frame__inner">
-									<div class="frame__head">
-										<h3 class="title-h5">Я підійду, якщо ти хочеш:</h3>
-									</div>
-									<div class="frame__body">
-										<div class="expert-want__labels">
-											<div class="label label--light">Побороти комплекси</div>
-											<div class="label label--light">Подолати травматичний досвід</div>
-											<div class="label label--light">Адаптуватися</div>
-											<div class="label label--light">Краще розуміти емоції</div>
-											<div class="label label--light">Підвищити самооцінку</div>
-											<div class="label label--light">Особистісне зростання</div>
-											<div class="label label--light">Здорові стосунки</div>
-											<div class="label label--light">Пережити горе</div>
-											<div class="label label--light">Пережити втрату</div>
-											<div class="label label--light">Подолати вікову кризу</div>
-											<div class="label label--light">Фізичне насильство</div>
-											<div class="label label--light">Сексуалізоване насильство</div>
-											<div class="label label--light">Пройти сепарацію</div>
-										</div>
-									</div>
-									<div class="frame__bottom">
-										<a href='#' class="btn btn--secondary expert-want__btn">Показати більше</a>
-									</div>
-								</div>
+							<div class="frame">
+								@@include('html/sections/_expert-want.htm',{
+								"title":"Я підійду, якщо ти хочеш:"
+								})
 							</div>
-							<div class="frame expert-education">
-								<div class="frame__inner">
-									<div class="frame__head">
-										<h3 class="title-h5">Моя освіта</h3>
-									</div>
-									<div class="frame__body">
-										<div class="expert-education__list">
-											<div class="education-item">
-												<div class="education-item__icon">
-													<img src="img/icons/education.svg" alt="education">
-												</div>
-												<div class="education-item__content">
-													<h4 class="education-item__title title-h6">Львівський національний університет імені І. Франка
-													</h4>
-													<div class="education-item__dir">Психологія</div>
-													<div class="education-item__years">2019 - 2021</div>
-												</div>
-												<div class="education-item__btns">
-													<button class="btn btn--secondary education-item__btn">Документ</button>
-												</div>
-											</div>
-											<div class="education-item">
-												<div class="education-item__icon">
-													<img src="img/icons/education.svg" alt="education">
-												</div>
-												<div class="education-item__content">
-													<h4 class="education-item__title title-h6">Український інститут когнітивно поведнікової
-														терапії
-													</h4>
-													<div class="education-item__dir">Схема терапія</div>
-													<div class="education-item__years">2022 - 2023</div>
-												</div>
-												<div class="education-item__btns">
-													<button class="btn btn--secondary education-item__btn">Документ</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+							<div class="frame">
+								@@include('html/sections/_expert-education.htm')
 							</div>
 							<div class="frame expert-reviews">
 								<div class="frame__inner">

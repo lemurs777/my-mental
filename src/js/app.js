@@ -94,7 +94,7 @@ flsFunctions.spollers()
 Документація: https://template.fls.guru/template-docs/modul-taby.html
 Сніппет (HTML): tabs
 */
-// flsFunctions.tabs();
+flsFunctions.tabs()
 
 /*
 Модуль "Показати ще"
@@ -184,7 +184,7 @@ import './files/forms/datepicker.js'
 Документація плагіна: https://atomiks.github.io/tippyjs/
 Сніппет (HTML): tip (додає атрибут з підказкою для html тега)
 */
-// import "./files/tippy.js";
+import "./files/tippy.js"
 
 // ========================================================================================================================================================================================================================================================
 // Робота зі слайдером (Swiper) ========================================================================================================================================================================================================================================================
@@ -207,7 +207,7 @@ import "./files/sliders.js"
 Документація плагіна: https://github.com/Grsmto/simplebar/tree/master/packages/simplebar
 Сніппет(HTML): 
 */
-// import './files/scroll/simplebar.js';
+import './files/scroll/simplebar.js'
 
 // Ліниве (відкладене) завантаження картинок
 // Документація по роботі у шаблоні: https://template.fls.guru/template-docs/modul-lenivaya-podgruzka-lazy-loading.html

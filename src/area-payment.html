@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{ "title":"Платежі та сесії" })
+
+<body>
+	<div class="wrapper main-area">
+		@@include('html/_header-login.htm',{})
+		<main class="page">
+			<div class="area-page" data-one-select>
+				<div class="area-container">
+					<div class="area-page__grid">
+						<div class="area-page__aside">
+							<div class="area-sidebar">
+								<div class="area-sidebar__nav">
+									<ul class="area-sidebar__list">
+										<li>
+											<a href="area.html">
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#user"></use>
+												</svg>
+												Мій профіль</a>
+										</li>
+										<li>
+											<a href="/area-schedule.html">
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#calendar"></use>
+												</svg>
+												Графік роботи</a>
+										</li>
+										<li>
+											<a href="/area-payment.html" class='active'>
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#pays"></use>
+												</svg>
+												Платежі та сесії</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#chat"></use>
+												</svg>
+												Чат</a>
+										</li>
+									</ul>
+									<div class="area-sidebar__nav-bottom">
+										<a href="#" class="btn-sm btn-sm--grey-border area-sidebar__btn-google">
+											<img src="img/icons/google.svg" alt="google">
+											Connect Google Calendar</a>
+									</div>
+								</div>
+								<div class="area-sidebar__bottom">
+									<a href="#" class="area-sidebar__exit">
+										<svg>
+											<use xlink:href="@img/icons/icons.svg#exit"></use>
+										</svg>
+										Вийти</a>
+								</div>
+							</div>
+						</div>
+						<div class="area-page__main">
+							<h1 class="title-h4 area-page__title">Платежі та сесії</h1>
+							<div class="area-page__tabs">
+								<div data-tabs class="table-tabs">
+									<nav data-tabs-titles class="table-tabs__navigation">
+										<button type="button" class="table-tabs__title _tab-active">Мої бронювання</button>
+										<button type="button" class="table-tabs__title">Історія сесій</button>
+									</nav>
+									<div data-tabs-body class="table-tabs__content">
+										<div class="table-tabs__body">
+											<div class="frame">
+												@@include('html/sections/_area-table.htm')
+											</div>
+										</div>
+										<div class="table-tabs__body">
+											@@include('html/sections/_area-table.htm')
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

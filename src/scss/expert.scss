@@ -86,6 +86,7 @@
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 	border-radius: 15px;
 	overflow: hidden;
+	aspect-ratio: 2/1;
 	// .expert-video__play
 
 	&__play {
@@ -248,56 +249,11 @@
 	}
 }
 
-.expert-dir {
-	&__list {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 0.5rem 1rem;
-
-		li {
-			position: relative;
-			padding-left: 20px;
-			font-weight: 400;
-			font-size: 16px;
-			line-height: 120%;
-
-			&::before {
-				position: absolute;
-
-				left: 0;
-				top: 50%;
-				translate: 0 -50%;
-				content: url('data:image/svg+xml;charset=UTF-8,<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 5.5L4.43213 8.5L9.5 1.5" stroke="%2319453F" stroke-width="2" /></svg>');
-
-			}
-		}
-	}
-}
-
-.expert-want {
-	padding: 1.5rem;
-
-	&__labels {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.5rem;
-	}
-
-	&__btn {
-		width: fit-content;
-	}
-}
-
-.expert-education {
-	padding: 1.5rem;
 
 
-	&__list {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-	}
-}
+
+
+
 
 .expert-reviews {
 	padding: 1.5rem;

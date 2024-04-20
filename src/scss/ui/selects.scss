@@ -44,3 +44,34 @@
 		}
 	}
 }
+
+.select-placeholder {
+	color: $text;
+}
+
+.select_custom {
+	.select {
+		&__title {
+			height: 48px;
+			border: 2px solid $borderColor;
+			border-radius: $radius10;
+			padding: 15px;
+			gap: 10px;
+
+			@extend .border;
+
+
+		}
+
+		&__value {
+
+
+			&::after {
+				content: url('data:image/svg+xml;charset=UTF-8,<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.622314 1.95682L5.13546 6.4638C5.44702 6.7739 5.86872 6.948 6.30831 6.948C6.7479 6.948 7.16959 6.7739 7.48116 6.4638L12 1.9516L10.9945 0.947998L6.47613 5.45972C6.43168 5.50416 6.3714 5.52912 6.30854 5.52912C6.24569 5.52912 6.18541 5.50416 6.14096 5.45972L1.62782 0.953213L0.622314 1.95682Z" fill="%23000000"/></svg> ');
+				line-height: 0;
+				display: inline-block;
+			}
+
+		}
+	}
+}
