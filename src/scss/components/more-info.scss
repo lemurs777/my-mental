@@ -63,7 +63,7 @@
 	&__title {
 		font-weight: 700;
 		font-size: 14px;
-		color: #00463F;
+		color: $greenColor;
 
 	}
 
@@ -102,7 +102,7 @@
 
 		a {
 			text-decoration-line: underline;
-			color: #00463F;
+			color: $greenColor;
 
 			@media(any-hover:hover) {
 				&:hover {

@@ -2,7 +2,6 @@
 import { isMobile } from "./functions.js"
 // Підключення списку активних модулів
 import { flsModules } from "./modules.js"
-"use strict"
 document.addEventListener("DOMContentLoaded", function () {
 	// International Telephone Input Initialize 
 	intlTelInputInit(document.querySelectorAll('input[type=tel]'))
@@ -15706,6 +15705,51 @@ if (moreInfo) {
 				info.classList.remove('show-info')
 			})
 			info.classList.toggle('show-info')
+		})
+		document.addEventListener('click', (e) => {
+			const withinBoundaries = e.composedPath().includes(info)
+
+			if (!withinBoundaries) {
+				info.classList.remove('show-info')
+			}
+		})
+	})
+}
+const radioButtons = document.querySelectorAll('.test-quiz__radio-btns')
+
+if (radioButtons) {
+	radioButtons.forEach(btns => {
+		const btnsInput = btns.querySelectorAll('.test-quiz__radio-btn')
+		btnsInput.forEach(btn => {
+			const input = btn.querySelector('input')
+			btn.addEventListener('change', e => {
+				btnsInput.forEach(btn => {
+					btn.classList.remove('radio-btn-checked')
+
+				})
+				if (input.checked) {
+					btn.classList.add('radio-btn-checked')
+				} else {
+					btn.classList.remove('radio-btn-checked')
+
+				}
+			})
+		})
+	})
+}
+const mobileFilter = document.querySelector('.mobile-filter')
+if (mobileFilter) {
+	const filterMobileCloses = mobileFilter.querySelectorAll('.mobile-filter__close')
+	const filterMobileBody = mobileFilter.querySelector('.mobile-filter__body')
+	const filterMobileBtn = mobileFilter.querySelector('.mobile-filter__btn')
+	filterMobileBtn.addEventListener('click', e => {
+		filterMobileBody.classList.add('active')
+		document.documentElement.classList.add('lock')
+	})
+	filterMobileCloses.forEach(filterMobileClose => {
+		filterMobileClose.addEventListener('click', e => {
+			document.documentElement.classList.remove('lock')
+			filterMobileBody.classList.remove('active')
 		})
 	})
 }

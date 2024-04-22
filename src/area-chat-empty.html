@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{ "title":"Інформація про фахівця" })
+
+<body>
+	<div class="wrapper main-area">
+		@@include('html/_header-login.htm',{})
+		<main class="page">
+			<div class="area-page" data-one-select>
+				<div class="area-container">
+					<div class="area-page__grid">
+						<div class="area-page__aside">
+							<div class="area-sidebar">
+								<div class="area-sidebar__nav">
+									<ul class="area-sidebar__list">
+										<li>
+											<a href="/area.html">
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#user"></use>
+												</svg>
+												Мій профіль</a>
+										</li>
+										<li>
+											<a href="/area-schedule.html">
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#calendar"></use>
+												</svg>
+												Графік роботи</a>
+										</li>
+										<li>
+											<a href="/area-payment.html">
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#pays"></use>
+												</svg>
+												Платежі та сесії</a>
+										</li>
+										<li>
+											<a href="/area-chat.html" class='active'>
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#chat"></use>
+												</svg>
+												Чат</a>
+										</li>
+									</ul>
+									<div class="area-sidebar__nav-bottom">
+										<a href="#" class="btn-sm btn-sm--grey-border area-sidebar__btn-google">
+											<img src="img/icons/google.svg" alt="google">
+											Connect Google Calendar</a>
+									</div>
+								</div>
+								<div class="area-sidebar__bottom">
+									<a href="#" class="area-sidebar__exit">
+										<svg>
+											<use xlink:href="@img/icons/icons.svg#exit"></use>
+										</svg>
+										Вийти</a>
+								</div>
+							</div>
+						</div>
+						<div class="area-page__main">
+							<div class="area-page__chat">
+								<div class="area-page__chat-line">
+									<p>Наступний сеанс 24 березня 17:45</p>
+									<a href="#" class="btn-sm">Перейти до зустрічі</a>
+								</div>
+								<div class="chat">
+									<div class="chat-aside">
+										<div class="chat-aside__head"></div>
+										<div class="chat-aside__list-wrapper">
+											<div class="chat-aside__list" data-simplebar>
+												<div class="chat-item">
+													<div class="chat-item__icon">
+														<img src="img/avatars/avatar-7.jpg" alt="avatar">
+														<span style='background-color: #77D572;'></span>
+													</div>
+													<div class="chat-item__body">
+														<div class="chat-item__head">
+															<div class="chat-item__title">Любов</div>
+															<div class="chat-item__date">23.03.2024</div>
+														</div>
+														<div class="chat-item__bottom">
+															<div class="chat-item__text">
+																<p>Привіт, все добре, тільки повернулась з відпустки</p>
+															</div>
+															<div class="chat-item__badge">2</div>
+														</div>
+													</div>
+												</div>
+												<div class="chat-item">
+													<div class="chat-item__icon">
+														<img src="img/avatars/avatar-8.jpg" alt="avatar">
+													</div>
+													<div class="chat-item__body">
+														<div class="chat-item__head">
+															<div class="chat-item__title">Anastasia Prykhodko</div>
+															<div class="chat-item__date">23.03.2024</div>
+														</div>
+														<div class="chat-item__bottom">
+															<div class="chat-item__text">
+																<p>Тогда давайте снова зайдем на ви</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="chat-item">
+													<div class="chat-item__icon">
+														<img src="img/avatars/avatar-9.jpg" alt="avatar">
+													</div>
+													<div class="chat-item__body">
+														<div class="chat-item__head">
+															<div class="chat-item__title">Анастасия</div>
+															<div class="chat-item__date">23.03.2024</div>
+														</div>
+														<div class="chat-item__bottom">
+															<div class="chat-item__text">
+																<div class="chat-item__info">Новый запрос на перенос</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="chat-item">
+													<div class="chat-item__icon">
+														<img src="img/avatars/avatar-10.jpg" alt="avatar">
+													</div>
+													<div class="chat-item__body">
+														<div class="chat-item__head">
+															<div class="chat-item__title">Таня</div>
+															<div class="chat-item__date">23.03.2024</div>
+														</div>
+														<div class="chat-item__bottom">
+															<div class="chat-item__text">
+																<p>https://meet.google.com/abc-defg-hij</p>
+															</div>
+															<div class="chat-item__badge">1</div>
+														</div>
+													</div>
+												</div>
+												<div class="chat-item">
+													<div class="chat-item__icon">
+														<img src="img/avatars/avatar-11.jpg" alt="avatar">
+													</div>
+													<div class="chat-item__body">
+														<div class="chat-item__head">
+															<div class="chat-item__title">Андріан</div>
+															<div class="chat-item__date">23.03.2024</div>
+														</div>
+														<div class="chat-item__bottom">
+															<div class="chat-item__text">
+																<p>Привіт, Андріан, тоді до зустрічи у середу</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="chat-item">
+													<div class="chat-item__icon">
+														<img src="img/avatars/avatar-12.jpg" alt="avatar">
+													</div>
+													<div class="chat-item__body">
+														<div class="chat-item__head">
+															<div class="chat-item__title">Nataliia Petrenko</div>
+															<div class="chat-item__date">23.03.2024</div>
+														</div>
+														<div class="chat-item__bottom">
+															<div class="chat-item__text">
+																<p>Доброго дня, так, підключаюсь</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="chat-item">
+													<div class="chat-item__icon">
+														<img src="img/avatars/avatar-13.jpg" alt="avatar">
+													</div>
+													<div class="chat-item__body">
+														<div class="chat-item__head">
+															<div class="chat-item__title">Наталія</div>
+															<div class="chat-item__date">23.03.2024</div>
+														</div>
+														<div class="chat-item__bottom">
+															<div class="chat-item__text">
+																<p>Катерина?!</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="chat-item">
+													<div class="chat-item__icon">
+														<img src="img/avatars/avatar-14.jpg" alt="avatar">
+													</div>
+													<div class="chat-item__body">
+														<div class="chat-item__head">
+															<div class="chat-item__title">Давид</div>
+															<div class="chat-item__date">23.03.2024</div>
+														</div>
+														<div class="chat-item__bottom">
+															<div class="chat-item__text">
+																<p>Катерина?!</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="chat-main">
+										<div class="chat-main__head">
+											<div class="chat-main__title">Любов</div>
+										</div>
+										<div class="chat-main__wrapper" data-simplebar>
+											<div class="chat-main__body">
+											</div>
+										</div>
+										<div class="chat-main__bottom">
+											<div class="field">
+												<textarea placeholder='Написати повідомлення...'></textarea>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

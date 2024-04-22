@@ -35,6 +35,10 @@
 		grid-template-columns: repeat(2, 1fr);
 		gap: 1rem;
 		margin-bottom: 1.5rem;
+
+		@media (max-width: em(1023.98)) {
+			grid-template-columns: auto;
+		}
 	}
 
 	// .education-info__block

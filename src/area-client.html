@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{ "title":"Мій профіль" })
+
+<body>
+	<div class="wrapper main-area">
+		@@include('html/_header-client.htm',{})
+		<main class="page">
+			<div class="area-page" data-one-select>
+				<div class="area-container">
+					<div class="area-page__grid">
+						<div class="area-page__aside">
+							<div class="area-sidebar">
+								<div class="area-sidebar__nav">
+									<ul class="area-sidebar__list">
+										<li>
+											<a href="/area-client.html" class='active'>
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#user"></use>
+												</svg>
+												Мій профіль</a>
+										</li>
+										<li>
+											<a href="/area-client-chat.html">
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#chat"></use>
+												</svg>
+												Чат
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#search"></use>
+												</svg>
+												Наші спеціалісти</a>
+										</li>
+										<li>
+											<a href="/area-client-payment.html">
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#pays"></use>
+												</svg>
+												Платежі та сесії</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#heart"></use>
+												</svg>
+												Мої рекомендації</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg>
+													<use xlink:href="@img/icons/icons.svg#mail"></use>
+												</svg>
+												Зв’язатися з нами</a>
+										</li>
+									</ul>
+								</div>
+								<div class="area-sidebar__bottom">
+									<a href="#" class="area-sidebar__exit">
+										<svg>
+											<use xlink:href="@img/icons/icons.svg#exit"></use>
+										</svg>
+										Вийти</a>
+								</div>
+							</div>
+						</div>
+						<div class="area-page__main">
+							<h1 class="title-h4 area-page__title">Привіт, Сергій!</h1>
+							<div class="area-page__inner">
+								<div class="area">
+									<div class="area__inner">
+										<div class="area-block">
+											<div class="area-block__section">
+												<div class="area-block__top">
+													<div class="area-block__head">
+														<h3 class="area-block__title">Мій профіль</h3>
+														<button class="area-block__edit" type='button'>
+															<svg>
+																<use xlink:href="@img/icons/icons.svg#pencil"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="area-block__name">Сергій</div>
+													<div class="area-block__info-list">
+														<div class="area-block__info-item">
+															<svg>
+																<use xlink:href="@img/icons/icons.svg#mail"></use>
+															</svg>
+															sergei@gmail.com
+														</div>
+
+														<div class="area-block__info-item">
+															<svg>
+																<use xlink:href="@img/icons/icons.svg#phone"></use>
+															</svg>
+															+380 95 568 43 32
+														</div>
+													</div>
+												</div>
+
+											</div>
+											<div class="area-block__bottom">
+												<a href="#" class="area-block__link-btn">
+													<svg>
+														<use xlink:href="@img/icons/icons.svg#lock"></use>
+													</svg>
+													Скинути пароль
+												</a>
+												<a href="#" class="area-block__link-btn">
+													<svg>
+														<use xlink:href="@img/icons/icons.svg#trash"></use>
+													</svg>
+													Скинути пароль
+												</a>
+											</div>
+										</div>
+										<div class="area-info__grid">
+											<div class="area-block">
+												<div class="area-slider">
+													<div class="area-slider__swiper swiper">
+														<!-- Частина слайдера, що рухається -->
+														<div class="swiper-wrapper">
+															<!-- Слайд -->
+															<div class="swiper-slide">
+																<div class="area-slide">
+																	<div class="area-slide__head">
+																		<div class="area-slide__title">
+																			Заплановані сесії <span>(3)</span>
+																		</div>
+																		@@include('html/components/_edit-btn.htm')
+																	</div>
+																	<div class="area-slide__body">
+																		<dl>
+																			<dt>Четвер, 21 березня 2024 р. - 14:00
+																				(GMT+2)</dt>
+																			<dd>Консультація з Віталій Соколов</dd>
+																			<dt>Тип</dt>
+																			<dd>Офлайн: м. Київ, вул. Героїв Севастополя  1</dd>
+																			<dt>Вартість</dt>
+																			<dd>1 300 ₴</dd>
+																		</dl>
+																	</div>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="area-slide">
+																	<div class="area-slide__head">
+																		<div class="area-slide__title">
+																			Заплановані сесії <span>(3)</span>
+																		</div>
+																		@@include('html/components/_edit-btn.htm')
+																	</div>
+																	<div class="area-slide__body">
+																		<dl>
+																			<dt>Четвер, 21 березня 2024 р. - 14:00
+																				(GMT+2)</dt>
+																			<dd>Консультація з Віталій Соколов</dd>
+																			<dt>Тип</dt>
+																			<dd>Офлайн: м. Київ, вул. Героїв Севастополя  1</dd>
+																			<dt>Вартість</dt>
+																			<dd>1 300 ₴</dd>
+																		</dl>
+																	</div>
+																</div>
+															</div>
+															<div class="swiper-slide">
+																<div class="area-slide">
+																	<div class="area-slide__head">
+																		<div class="area-slide__title">
+																			Заплановані сесії <span>(3)</span>
+																		</div>
+																		@@include('html/components/_edit-btn.htm')
+																	</div>
+																	<div class="area-slide__body">
+																		<dl>
+																			<dt>Четвер, 21 березня 2024 р. - 14:00
+																				(GMT+2)</dt>
+																			<dd>Консультація з Віталій Соколов</dd>
+																			<dt>Тип</dt>
+																			<dd>Офлайн: м. Київ, вул. Героїв Севастополя  1</dd>
+																			<dt>Вартість</dt>
+																			<dd>1 300 ₴</dd>
+																		</dl>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="area-slider__nav">
+														<div class="area-pagination"></div>
+														<div class="area-slider__controls slider-navs">
+															<button type="button" class="slide-btn-prev area-button-prev"></button>
+															<button type="button" class="slide-btn-next area-button-next"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="area-block">
+												<div class="my-expert">
+													<div class="my-expert__inner">
+														<div class="my-expert__title">Мій психолог</div>
+														<div class="my-expert__body">
+															<div class="avatar avatar--sm my-expert__avatar"><img src="img/experts/expert-1.jpg"
+																	alt="avatar"></div>
+															<div class="my-expert__content">
+																<div class="my-expert__top">
+																	<div class="my-expert__name">Віталій Соколов</div>
+																	<div class="my-expert__type">Психолог, психотерапевт, психіатр</div>
+																</div>
+																<div class="my-expert__items">
+																	<div class="my-expert__item">
+																		<img src="img/icons/check-shield.svg" alt="shield">
+																		<span>перевірений</span>
+																	</div>
+																	<div class="my-expert__item">
+																		200+
+																		<span>годин практики</span>
+																	</div>
+																	<div class="my-expert__item">
+																		2
+																		<span>років досвіду</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<a href="#" class="btn-md btn-md--secondary-border">Записатися до спеціаліста</a>
+														<a href="#" class="link">Змінити психолога</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

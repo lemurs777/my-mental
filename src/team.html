@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/_head.htm',{ "title":"Home" })
+@@include('html/_head.htm',{ "title":"Наші фахівці" })
 
 <body>
 	<div class="wrapper">
@@ -8,6 +8,9 @@
 		<main class="page">
 			<div class="team">
 				<div class="container">
+					<div class="team__back">
+						<a href='../' class="link-back">Повернутися назад</a>
+					</div>
 					<div class="team__inner">
 						<div class="team__head">
 							<ul class="team__breadcrumbs breadcrumbs">
@@ -17,8 +20,8 @@
 							<h1 class='title team__title'>Наші фахівці</h1>
 							<div class="team__head-text">По вашому запиту знайдено психологів: <span>103</span></div>
 						</div>
-						<div class="team__grid">
-							<span></span>
+						<div class="team__grid team__grid--desktop">
+							<span class='empty-block'></span>
 							<div class="team-main__line">
 								<div class="team-main__filters">
 									<div class="filter-label">
@@ -308,13 +311,14 @@
 									</div>
 								</div>
 							</aside>
+							@@include('html/components/_mobile-filter.htm')
 							<div class="team__main">
 								<div class="team-main">
 									<div class="team-main__block">
 										<div class="team-main__cards">
 											<div class="expert-card">
-												<div class="expert-card__img"><img src="img/experts/expert-1.jpg" alt="expert"></div>
-												<div class="expert-card__body">
+												<div class="expert-card__block">
+													<div class="expert-card__img"><img src="img/experts/expert-1.jpg" alt="expert"></div>
 													<div class="expert-card__info">
 														<div class="expert-card__title">Павло Дубровний</div>
 														<ul class="expert-card__service-list">
@@ -333,9 +337,13 @@
 																годин практики
 															</li>
 														</ul>
-														<div class="expert-card__write">
-															Запис <a href='#'>з 16 березня, 07:00</a>
-														</div>
+													</div>
+												</div>
+												<div class="expert-card__section">
+													<div class="expert-card__write">
+														Запис <a href='#'>з 16 березня, 07:00</a>
+													</div>
+													<div class="expert-card__block">
 														<div class="expert-card__rating">
 															<div class="expert-card__rating-stars">
 																<img src="img/icons/star.svg" alt="star">
@@ -344,19 +352,23 @@
 																<img src="img/icons/star.svg" alt="star">
 																<img src="img/icons/star.svg" alt="star">
 															</div>
-															<span class="expert-card__rating-reviews">2 відгука</span>
+															<div class="expert-card__rating-reviews">
+																<span class="expert-card__rating-reviews--desktop">2 відгука</span>
+																<span class="expert-card__rating-reviews--mobile">(2)</span>
+															</div>
 														</div>
 														<div class="expert-card__works">15 клієнтів · 22 сеанса</div>
 													</div>
 													<div class="expert-card__text">
 														<p>
-															Запрошую на зустріч всіх хто заплутався та в кого опускаються руки. Допоможу Вам вирішити
+															Запрошую на зустріч всіх хто заплутався та в кого опускаються руки. Допоможу Вам
+															вирішити
 															труднощі в особистісній сфері та відносинах з іншими. Емпатично, конструктивно та без
 															засудження.
 														</p>
 													</div>
-													<div class="expert-card__price">1 000₴ <span class="expert-card__price-time">60 хв</span>
-													</div>
+												</div>
+												<div class="expert-card__price">1 000₴ <span class="expert-card__price-time">60 хв</span>
 												</div>
 												<div class="expert-card__footer">
 													<a href="#" class="expert-card__btn">Записатися</a>
@@ -364,8 +376,10 @@
 												</div>
 											</div>
 											<div class="expert-card">
-												<div class="expert-card__img"><img src="img/experts/expert-2.jpg" alt="expert"></div>
-												<div class="expert-card__body">
+												<div class="expert-card__block">
+
+
+													<div class="expert-card__img"><img src="img/experts/expert-2.jpg" alt="expert"></div>
 													<div class="expert-card__info">
 														<div class="expert-card__title">Ольга Скиба</div>
 														<ul class="expert-card__service-list">
@@ -384,9 +398,13 @@
 																годин практики
 															</li>
 														</ul>
-														<div class="expert-card__write">
-															Запис <a href='#'>з 16 березня, 07:00</a>
-														</div>
+													</div>
+												</div>
+												<div class="expert-card__section">
+													<div class="expert-card__write">
+														Запис <a href='#'>з 16 березня, 07:00</a>
+													</div>
+													<div class="expert-card__block">
 														<div class="expert-card__rating">
 															<div class="expert-card__rating-stars">
 																<img src="img/icons/star.svg" alt="star">
@@ -395,7 +413,10 @@
 																<img src="img/icons/star.svg" alt="star">
 																<img src="img/icons/star.svg" alt="star">
 															</div>
-															<span class="expert-card__rating-reviews">2 відгука</span>
+															<div class="expert-card__rating-reviews">
+																<span class="expert-card__rating-reviews--desktop">2 відгука</span>
+																<span class="expert-card__rating-reviews--mobile">(2)</span>
+															</div>
 														</div>
 														<div class="expert-card__works">15 клієнтів · 22 сеанса</div>
 													</div>
@@ -406,17 +427,18 @@
 															собі.
 														</p>
 													</div>
-													<div class="expert-card__price">3 000₴ <span class="expert-card__price-time">60 хв</span>
-													</div>
 												</div>
+												<div class="expert-card__price">3 000₴ <span class="expert-card__price-time">60 хв</span>
+												</div>
+
 												<div class="expert-card__footer">
 													<a href="#" class="expert-card__btn">Записатися</a>
 													<a href="#" class="expert-card__btn expert-card__btn--secondary">Детальніше</a>
 												</div>
 											</div>
 											<div class="expert-card">
-												<div class="expert-card__img"><img src="img/experts/expert-3.jpg" alt="expert"></div>
-												<div class="expert-card__body">
+												<div class="expert-card__block">
+													<div class="expert-card__img"><img src="img/experts/expert-3.jpg" alt="expert"></div>
 													<div class="expert-card__info">
 														<div class="expert-card__title">Анна Садова</div>
 														<ul class="expert-card__service-list">
@@ -434,9 +456,13 @@
 																годин практики
 															</li>
 														</ul>
-														<div class="expert-card__write">
-															Запис <a href='#'>з 16 березня, 07:00</a>
-														</div>
+													</div>
+												</div>
+												<div class="expert-card__section">
+													<div class="expert-card__write">
+														Запис <a href='#'>з 16 березня, 07:00</a>
+													</div>
+													<div class="expert-card__block">
 														<div class="expert-card__rating">
 															<div class="expert-card__rating-stars">
 																<img src="img/icons/star.svg" alt="star">
@@ -445,27 +471,34 @@
 																<img src="img/icons/star.svg" alt="star">
 																<img src="img/icons/star.svg" alt="star">
 															</div>
-															<span class="expert-card__rating-reviews">2 відгука</span>
+															<div class="expert-card__rating-reviews">
+																<span class="expert-card__rating-reviews--desktop">2 відгука</span>
+																<span class="expert-card__rating-reviews--mobile">(2)</span>
+															</div>
 														</div>
 														<div class="expert-card__works">15 клієнтів · 22 сеанса</div>
 													</div>
 													<div class="expert-card__text">
 														<p>
-															Знання та людяність – ключ до вирішення будь-яких задач та негараздів. Психолог – це лише
+															Знання та людяність – ключ до вирішення будь-яких задач та негараздів. Психолог – це
+															лише
 															провідник енергії та знання для тих, хто цього потребує.
 														</p>
 													</div>
-													<div class="expert-card__price">8 000₴ <span class="expert-card__price-time">60 хв</span>
-													</div>
 												</div>
+												<div class="expert-card__price">8 000₴ <span class="expert-card__price-time">60 хв</span>
+												</div>
+
 												<div class="expert-card__footer">
 													<a href="#" class="expert-card__btn">Записатися</a>
 													<a href="#" class="expert-card__btn expert-card__btn--secondary">Детальніше</a>
 												</div>
 											</div>
 											<div class="expert-card">
-												<div class="expert-card__img"><img src="img/experts/expert-4.jpg" alt="expert"></div>
-												<div class="expert-card__body">
+												<div class="expert-card__block">
+													<div class="expert-card__img">
+														<img src="img/experts/expert-4.jpg" alt="expert">
+													</div>
 													<div class="expert-card__info">
 														<div class="expert-card__title">Наталія Кутова</div>
 														<ul class="expert-card__service-list">
@@ -483,9 +516,13 @@
 																годин практики
 															</li>
 														</ul>
-														<div class="expert-card__write">
-															Запис <a href='#'>з 16 березня, 07:00</a>
-														</div>
+													</div>
+												</div>
+												<div class="expert-card__section">
+													<div class="expert-card__write">
+														Запис <a href='#'>з 16 березня, 07:00</a>
+													</div>
+													<div class="expert-card__block">
 														<div class="expert-card__rating">
 															<div class="expert-card__rating-stars">
 																<img src="img/icons/star.svg" alt="star">
@@ -494,9 +531,14 @@
 																<img src="img/icons/star.svg" alt="star">
 																<img src="img/icons/star.svg" alt="star">
 															</div>
-															<span class="expert-card__rating-reviews">2 відгука</span>
+															<div class="expert-card__rating-reviews">
+																<span class="expert-card__rating-reviews--desktop">2 відгука</span>
+																<span class="expert-card__rating-reviews--mobile">(2)</span>
+															</div>
 														</div>
-														<div class="expert-card__works">15 клієнтів · 22 сеанса</div>
+														<div class="expert-card__works">
+															15 клієнтів · 22 сеанса
+														</div>
 													</div>
 													<div class="expert-card__text">
 														<p>
@@ -506,8 +548,8 @@
 															хоче йти…
 														</p>
 													</div>
-													<div class="expert-card__price">1 100₴ <span class="expert-card__price-time">60 хв</span>
-													</div>
+												</div>
+												<div class="expert-card__price">1 100₴ <span class="expert-card__price-time">60 хв</span>
 												</div>
 												<div class="expert-card__footer">
 													<a href="#" class="expert-card__btn">Записатися</a>
@@ -515,8 +557,10 @@
 												</div>
 											</div>
 											<div class="expert-card">
-												<div class="expert-card__img"><img src="img/experts/expert-5.jpg" alt="expert"></div>
-												<div class="expert-card__body">
+												<div class="expert-card__block">
+
+
+													<div class="expert-card__img"><img src="img/experts/expert-5.jpg" alt="expert"></div>
 													<div class="expert-card__info">
 														<div class="expert-card__title">Світлана Губанова</div>
 														<ul class="expert-card__service-list">
@@ -534,9 +578,15 @@
 																годин практики
 															</li>
 														</ul>
-														<div class="expert-card__write">
-															Запис <a href='#'>з 16 березня, 07:00</a>
-														</div>
+													</div>
+												</div>
+												<div class="expert-card__section">
+
+
+													<div class="expert-card__write">
+														Запис <a href='#'>з 16 березня, 07:00</a>
+													</div>
+													<div class="expert-card__block">
 														<div class="expert-card__rating">
 															<div class="expert-card__rating-stars">
 																<img src="img/icons/star.svg" alt="star">
@@ -545,9 +595,13 @@
 																<img src="img/icons/star.svg" alt="star">
 																<img src="img/icons/star.svg" alt="star">
 															</div>
-															<span class="expert-card__rating-reviews">2 відгука</span>
+															<div class="expert-card__rating-reviews">
+																<span class="expert-card__rating-reviews--desktop">2 відгука</span>
+																<span class="expert-card__rating-reviews--mobile">(2)</span>
+															</div>
 														</div>
 														<div class="expert-card__works">15 клієнтів · 22 сеанса</div>
+
 													</div>
 													<div class="expert-card__text">
 														<p>
@@ -556,8 +610,8 @@
 															собі.
 														</p>
 													</div>
-													<div class="expert-card__price"> 1 500₴ <span class="expert-card__price-time">60 хв</span>
-													</div>
+												</div>
+												<div class="expert-card__price"> 1 500₴ <span class="expert-card__price-time">60 хв</span>
 												</div>
 												<div class="expert-card__footer">
 													<a href="#" class="expert-card__btn">Записатися</a>
@@ -565,8 +619,11 @@
 												</div>
 											</div>
 											<div class="expert-card">
-												<div class="expert-card__img"><img src="img/experts/expert-6.jpg" alt="expert"></div>
-												<div class="expert-card__body">
+												<div class="expert-card__block">
+
+
+													<div class="expert-card__img"><img src="img/experts/expert-6.jpg" alt="expert"></div>
+
 													<div class="expert-card__info">
 														<div class="expert-card__title">Гліб Федоров</div>
 														<ul class="expert-card__service-list">
@@ -584,9 +641,13 @@
 																годин практики
 															</li>
 														</ul>
-														<div class="expert-card__write">
-															Запис <a href='#'>з 16 березня, 07:00</a>
-														</div>
+													</div>
+												</div>
+												<div class="expert-card__section">
+													<div class="expert-card__write">
+														Запис <a href='#'>з 16 березня, 07:00</a>
+													</div>
+													<div class="expert-card__block">
 														<div class="expert-card__rating">
 															<div class="expert-card__rating-stars">
 																<img src="img/icons/star.svg" alt="star">
@@ -595,7 +656,10 @@
 																<img src="img/icons/star.svg" alt="star">
 																<img src="img/icons/star.svg" alt="star">
 															</div>
-															<span class="expert-card__rating-reviews">2 відгука</span>
+															<div class="expert-card__rating-reviews">
+																<span class="expert-card__rating-reviews--desktop">2 відгука</span>
+																<span class="expert-card__rating-reviews--mobile">(2)</span>
+															</div>
 														</div>
 														<div class="expert-card__works">15 клієнтів · 22 сеанса</div>
 													</div>
@@ -605,8 +669,8 @@
 															індивідуальний підхід є запорукою ефективної терапії.
 														</p>
 													</div>
-													<div class="expert-card__price"> 1 100₴ <span class="expert-card__price-time">60 хв</span>
-													</div>
+												</div>
+												<div class="expert-card__price"> 1 100₴ <span class="expert-card__price-time">60 хв</span>
 												</div>
 												<div class="expert-card__footer">
 													<a href="#" class="expert-card__btn">Записатися</a>
@@ -622,8 +686,8 @@
 										</div>
 										<div class="team-main__cards">
 											<div class="expert-card">
-												<div class="expert-card__img"><img src="img/experts/expert-7.jpg" alt="expert"></div>
-												<div class="expert-card__body">
+												<div class="expert-card__block">
+													<div class="expert-card__img"><img src="img/experts/expert-7.jpg" alt="expert"></div>
 													<div class="expert-card__info">
 														<div class="expert-card__title">Оксана Годз</div>
 														<ul class="expert-card__service-list">
@@ -641,9 +705,15 @@
 																годин практики
 															</li>
 														</ul>
-														<div class="expert-card__write">
-															Запис <a href='#'>з 16 березня, 07:00</a>
-														</div>
+													</div>
+												</div>
+												<div class="expert-card__section">
+													<div class="expert-card__write">
+														Запис <a href='#'>з 16 березня, 07:00</a>
+													</div>
+													<div class="expert-card__block">
+
+
 														<div class="expert-card__rating">
 															<div class="expert-card__rating-stars">
 																<img src="img/icons/star.svg" alt="star">
@@ -652,19 +722,24 @@
 																<img src="img/icons/star.svg" alt="star">
 																<img src="img/icons/star.svg" alt="star">
 															</div>
-															<span class="expert-card__rating-reviews">42 відгука</span>
+															<div class="expert-card__rating-reviews">
+																<span class="expert-card__rating-reviews--desktop">42 відгука</span>
+																<span class="expert-card__rating-reviews--mobile">(42)</span>
+															</div>
 														</div>
 														<div class="expert-card__works">15 клієнтів · 22 сеанса</div>
 													</div>
+
 													<div class="expert-card__text">
 														<p>
 															Знання у сфері сучасної психології, наукової психосоматики та індивідуальний підхід до
-															кожної людини дають нам з вами унікальну можливість отримувати бажані результати у терапії
+															кожної людини дають нам з вами унікальну можливість отримувати бажані результати у
+															терапії
 															набагато швидше ніж це відбувається звичайно.
 														</p>
 													</div>
-													<div class="expert-card__price">2 200₴ <span class="expert-card__price-time">60 хв</span>
-													</div>
+												</div>
+												<div class="expert-card__price">2 200₴ <span class="expert-card__price-time">60 хв</span>
 												</div>
 												<div class="expert-card__footer">
 													<a href="#" class="expert-card__btn">Записатися</a>
@@ -672,8 +747,8 @@
 												</div>
 											</div>
 											<div class="expert-card">
-												<div class="expert-card__img"><img src="img/experts/expert-8.jpg" alt="expert"></div>
-												<div class="expert-card__body">
+												<div class="expert-card__block">
+													<div class="expert-card__img"><img src="img/experts/expert-8.jpg" alt="expert"></div>
 													<div class="expert-card__info">
 														<div class="expert-card__title">Оксана Євменчук</div>
 														<ul class="expert-card__service-list">
@@ -691,9 +766,13 @@
 																годин практики
 															</li>
 														</ul>
-														<div class="expert-card__write">
-															Запис <a href='#'>з 16 березня, 07:00</a>
-														</div>
+													</div>
+												</div>
+												<div class="expert-card__section">
+													<div class="expert-card__write">
+														Запис <a href='#'>з 16 березня, 07:00</a>
+													</div>
+													<div class="expert-card__block">
 														<div class="expert-card__rating">
 															<div class="expert-card__rating-stars">
 																<img src="img/icons/star.svg" alt="star">
@@ -702,7 +781,10 @@
 																<img src="img/icons/star.svg" alt="star">
 																<img src="img/icons/star.svg" alt="star">
 															</div>
-															<span class="expert-card__rating-reviews">42 відгука</span>
+															<div class="expert-card__rating-reviews">
+																<span class="expert-card__rating-reviews--desktop">42 відгука</span>
+																<span class="expert-card__rating-reviews--mobile">(42)</span>
+															</div>
 														</div>
 														<div class="expert-card__works">15 клієнтів · 22 сеанса</div>
 													</div>
@@ -713,17 +795,18 @@
 															щасливе життя.
 														</p>
 													</div>
-													<div class="expert-card__price">1 100₴ <span class="expert-card__price-time">60 хв</span>
-													</div>
 												</div>
+												<div class="expert-card__price">1 100₴ <span class="expert-card__price-time">60 хв</span>
+												</div>
+
 												<div class="expert-card__footer">
 													<a href="#" class="expert-card__btn">Записатися</a>
 													<a href="#" class="expert-card__btn expert-card__btn--secondary">Детальніше</a>
 												</div>
 											</div>
 											<div class="expert-card">
-												<div class="expert-card__img"><img src="img/experts/expert-9.jpg" alt="expert"></div>
-												<div class="expert-card__body">
+												<div class="expert-card__block">
+													<div class="expert-card__img"><img src="img/experts/expert-9.jpg" alt="expert"></div>
 													<div class="expert-card__info">
 														<div class="expert-card__title">Вікторія Тимошик</div>
 														<ul class="expert-card__service-list">
@@ -742,9 +825,15 @@
 																годин практики
 															</li>
 														</ul>
-														<div class="expert-card__write">
-															Запис <a href='#'>з 16 березня, 07:00</a>
-														</div>
+													</div>
+												</div>
+												<div class="expert-card__section">
+
+
+													<div class="expert-card__write">
+														Запис <a href='#'>з 16 березня, 07:00</a>
+													</div>
+													<div class="expert-card__block">
 														<div class="expert-card__rating">
 															<div class="expert-card__rating-stars">
 																<img src="img/icons/star.svg" alt="star">
@@ -753,7 +842,10 @@
 																<img src="img/icons/star.svg" alt="star">
 																<img src="img/icons/star.svg" alt="star">
 															</div>
-															<span class="expert-card__rating-reviews">42 відгука</span>
+															<div class="expert-card__rating-reviews">
+																<span class="expert-card__rating-reviews--desktop">42 відгука</span>
+																<span class="expert-card__rating-reviews--mobile">(42)</span>
+															</div>
 														</div>
 														<div class="expert-card__works">15 клієнтів · 22 сеанса</div>
 													</div>
@@ -763,8 +855,8 @@
 															індивідуальний підхід є запорукою ефективної терапії.
 														</p>
 													</div>
-													<div class="expert-card__price">1 500₴ <span class="expert-card__price-time">60 хв</span>
-													</div>
+												</div>
+												<div class="expert-card__price">1 500₴ <span class="expert-card__price-time">60 хв</span>
 												</div>
 												<div class="expert-card__footer">
 													<a href="#" class="expert-card__btn">Записатися</a>
@@ -772,8 +864,8 @@
 												</div>
 											</div>
 											<div class="expert-card">
-												<div class="expert-card__img"><img src="img/experts/expert-10.jpg" alt="expert"></div>
-												<div class="expert-card__body">
+												<div class="expert-card__block">
+													<div class="expert-card__img"><img src="img/experts/expert-10.jpg" alt="expert"></div>
 													<div class="expert-card__info">
 														<div class="expert-card__title">Ніна Сидорова</div>
 														<ul class="expert-card__service-list">
@@ -791,9 +883,17 @@
 																годин практики
 															</li>
 														</ul>
-														<div class="expert-card__write">
-															Запис <a href='#'>з 16 березня, 07:00</a>
-														</div>
+													</div>
+												</div>
+												<div class="expert-card__section">
+
+
+													<div class="expert-card__write">
+														Запис <a href='#'>з 16 березня, 07:00</a>
+													</div>
+													<div class="expert-card__block">
+
+
 														<div class="expert-card__rating">
 															<div class="expert-card__rating-stars">
 																<img src="img/icons/star.svg" alt="star">
@@ -802,27 +902,34 @@
 																<img src="img/icons/star.svg" alt="star">
 																<img src="img/icons/star.svg" alt="star">
 															</div>
-															<span class="expert-card__rating-reviews">10 відгуків</span>
+															<div class="expert-card__rating-reviews">
+																<span class='expert-card__rating-reviews--desktop'>
+																	10 відгуків</span>
+																<span class='expert-card__rating-reviews--mobile'>(10)</span>
+															</div>
 														</div>
 														<div class="expert-card__works">15 клієнтів · 22 сеанса</div>
 													</div>
 													<div class="expert-card__text">
 														<p>
-															Проблеми людини знаходяться тільки в її голові! Навколишній світ не злий і не добрий, йому
+															Проблеми людини знаходяться тільки в її голові! Навколишній світ не злий і не добрий,
+															йому
 															все одно є ти чи ні! Живи сьогодні, бо вчора вже нема, а завтра може не бути!
 														</p>
 													</div>
-													<div class="expert-card__price">900₴ <span class="expert-card__price-time">60 хв</span>
-													</div>
 												</div>
+												<div class="expert-card__price">900₴ <span class="expert-card__price-time">60 хв</span>
+												</div>
+
 												<div class="expert-card__footer">
 													<a href="#" class="expert-card__btn">Записатися</a>
 													<a href="#" class="expert-card__btn expert-card__btn--secondary">Детальніше</a>
 												</div>
 											</div>
 											<div class="expert-card">
-												<div class="expert-card__img"><img src="img/experts/expert-11.jpg" alt="expert"></div>
-												<div class="expert-card__body">
+												<div class="expert-card__block">
+													<div class="expert-card__img"><img src="img/experts/expert-11.jpg" alt="expert"></div>
+
 													<div class="expert-card__info">
 														<div class="expert-card__title">Вікторія Водолазська</div>
 														<ul class="expert-card__service-list">
@@ -841,9 +948,17 @@
 																годин практики
 															</li>
 														</ul>
-														<div class="expert-card__write">
-															Запис <a href='#'>з 16 березня, 07:00</a>
-														</div>
+													</div>
+												</div>
+												<div class="expert-card__section">
+
+
+													<div class="expert-card__write">
+														Запис <a href='#'>з 16 березня, 07:00</a>
+													</div>
+													<div class="expert-card__block">
+
+
 														<div class="expert-card__rating">
 															<div class="expert-card__rating-stars">
 																<img src="img/icons/star.svg" alt="star">
@@ -852,7 +967,10 @@
 																<img src="img/icons/star.svg" alt="star">
 																<img src="img/icons/star.svg" alt="star">
 															</div>
-															<span class="expert-card__rating-reviews">42 відгука</span>
+															<div class="expert-card__rating-reviews">
+																<span class="expert-card__rating-reviews--desktop">42 відгука</span>
+																<span class="expert-card__rating-reviews--mobile">(42)</span>
+															</div>
 														</div>
 														<div class="expert-card__works">15 клієнтів · 22 сеанса</div>
 													</div>
@@ -862,17 +980,19 @@
 															знайти те, що саме вам не дає насолодитись життям у повній мірі.
 														</p>
 													</div>
-													<div class="expert-card__price">800₴ <span class="expert-card__price-time">60 хв</span>
-													</div>
 												</div>
+												<div class="expert-card__price">800₴ <span class="expert-card__price-time">60 хв</span>
+												</div>
+
 												<div class="expert-card__footer">
 													<a href="#" class="expert-card__btn">Записатися</a>
 													<a href="#" class="expert-card__btn expert-card__btn--secondary">Детальніше</a>
 												</div>
 											</div>
 											<div class="expert-card">
-												<div class="expert-card__img"><img src="img/experts/expert-12.jpg" alt="expert"></div>
-												<div class="expert-card__body">
+												<div class="expert-card__block">
+													<div class="expert-card__img"><img src="img/experts/expert-12.jpg" alt="expert"></div>
+
 													<div class="expert-card__info">
 														<div class="expert-card__title">Олександр Савчин</div>
 														<ul class="expert-card__service-list">
@@ -890,9 +1010,13 @@
 																годин практики
 															</li>
 														</ul>
-														<div class="expert-card__write">
-															Запис <a href='#'>з 16 березня, 07:00</a>
-														</div>
+													</div>
+												</div>
+												<div class="expert-card__section">
+													<div class="expert-card__write">
+														Запис <a href='#'>з 16 березня, 07:00</a>
+													</div>
+													<div class="expert-card__block">
 														<div class="expert-card__rating">
 															<div class="expert-card__rating-stars">
 																<img src="img/icons/star.svg" alt="star">
@@ -901,20 +1025,25 @@
 																<img src="img/icons/star.svg" alt="star">
 																<img src="img/icons/star.svg" alt="star">
 															</div>
-															<span class="expert-card__rating-reviews">4 відгука</span>
+															<div class="expert-card__rating-reviews">
+																<span class="expert-card__rating-reviews--desktop">4 відгука</span>
+																<span class="expert-card__rating-reviews--mobile">(4)</span>
+															</div>
 														</div>
 														<div class="expert-card__works">15 клієнтів · 22 сеанса</div>
 													</div>
 													<div class="expert-card__text">
 														<p>
 															Насправді, так важливо відчути всі ці зміни на собі,
-															перш ніж йти до інших. Психотерапія допомогла мені розширити кут зору, підсвітила шлях до
+															перш ніж йти до інших. Психотерапія допомогла мені розширити кут зору, підсвітила шлях
+															до
 															прийняття себе
 														</p>
 													</div>
-													<div class="expert-card__price">1 400₴ <span class="expert-card__price-time">60 хв</span>
-													</div>
 												</div>
+												<div class="expert-card__price">1 400₴ <span class="expert-card__price-time">60 хв</span>
+												</div>
+
 												<div class="expert-card__footer">
 													<a href="#" class="expert-card__btn">Записатися</a>
 													<a href="#" class="expert-card__btn expert-card__btn--secondary">Детальніше</a>

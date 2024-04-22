@@ -2,23 +2,73 @@
 	border-bottom: 1px solid $lightGreyColor;
 	background-color: $lightColor;
 
+	&__logo {
+		position: relative;
+		z-index: 15;
+
+		@media (max-width: em(767.98)) {
+			display: none;
+		}
+
+		&--mobile {
+			@media (min-width: em(768)) {
+				display: none;
+			}
+
+			@media (max-width: em(767.98)) {
+				display: block;
+			}
+		}
+	}
+
 	&__inner {
 		padding: 25px 0 24px;
 		display: flex;
 		align-items: center;
 		gap: 65px;
 		justify-content: space-between;
+
+		@media (max-width: em(1024)) {
+			gap: 20px;
+		}
+
+		@media (max-width: em(767.98)) {
+			padding: 16px 0 15px;
+		}
 	}
 
 	&__menu {
-		margin-left: auto;
+		@media (min-width:em(768)) {
+			margin-left: auto;
+		}
 
+		@media (max-width: em(767.98)) {
+			order: 1;
+		}
 	}
 
 	.menu {
+		&__body {
+			@media (max-width: em(767.98)) {
+				position: fixed;
+				right: -150%;
+				top: 0;
+				transition: .3s linear;
+				width: 100%;
+				height: 100vh;
+				background-color: #F7FAF7;
+				z-index: 5;
+				padding: 100px 15px 15px;
+			}
+		}
+
 		&__list {
 			display: flex;
 			align-items: center;
+
+			@media (max-width: em(767.98)) {
+				flex-direction: column;
+			}
 
 			li {
 				ul {
@@ -49,6 +99,10 @@
 					text-decoration: underline;
 				}
 			}
+
+			@media (max-width: em(767.98)) {
+				font-size: 20px;
+			}
 		}
 	}
 
@@ -56,6 +110,16 @@
 		display: flex;
 		align-items: center;
 		gap: 10px;
+
+		@media (max-width: em(767.98)) {
+			margin-left: auto;
+		}
+	}
+
+	&__choose-expert {
+		@media (max-width: em(991.98)) {
+			display: none;
+		}
 	}
 
 	&__user {
@@ -67,22 +131,42 @@
 		font-weight: 700;
 		position: relative;
 		color: $accentColor;
+		border-radius: 12px;
+		transition: .2s ease-in-out;
 
 		&::before {
-			position: absolute;
-			left: 0;
+			font-size: 1rem;
 		}
 
 		@media(any-hover:hover) {
 			&:hover {
-				color: $accentColor;
-				text-decoration: underline;
+
+				background-color: #E7EDEC;
 			}
 		}
+
+		@media (max-width: em(991.98)) {
+			background-color: #E7EDEC;
+
+		}
+
+		@media (max-width: em(767.98)) {
+			padding: 13px 18px;
+		}
+
 	}
 
 	.btn {
 		font-size: 14px;
+		padding: 17px 18px;
+	}
+
+	&--login {
+		.header {
+			&__menu {
+				margin-left: 0;
+			}
+		}
 	}
 }
 
@@ -95,9 +179,9 @@
 	@media (max-width: $mobile) {
 		display: block;
 		position: relative;
-		width: rem(30);
-		height: rem(18);
-		z-index: 5;
+		width: rem(28);
+		height: rem(16);
+		z-index: 15;
 
 		@media (any-hover: none) {
 			cursor: default;
@@ -112,7 +196,7 @@
 			position: absolute;
 			width: 100%;
 			height: rem(2);
-			background-color: #000;
+			background-color: $accentColor;
 		}
 
 		&::before {
@@ -143,6 +227,16 @@
 			&::after {
 				bottom: calc(50% - rem(1));
 				transform: rotate(45deg);
+			}
+		}
+	}
+}
+
+.menu-open {
+	.header {
+		.menu {
+			&__body {
+				right: 0;
 			}
 		}
 	}

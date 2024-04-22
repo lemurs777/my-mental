@@ -162,7 +162,7 @@
 		width: 30px;
 		height: 30px;
 		position: relative;
-		border: 2px solid #00463F;
+		border: 2px solid $greenColor;
 		border-radius: 10px;
 
 		&::before {
@@ -277,7 +277,7 @@
 
 .qs-datepicker .qs-square.qs-current {
 	font-weight: 700;
-	background-color: #E4EBE4;
+	background-color: $lightGreyColor;
 }
 
 .qs-datepicker .qs-square.qs-current span {
@@ -328,7 +328,7 @@
 }
 
 .qs-datepicker .qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover {
-	background: #E4EBE4;
+	background: $lightGreyColor;
 }
 
 .qs-datepicker .qs-event {

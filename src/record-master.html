@@ -6,98 +6,103 @@
 	<div class="wrapper main-record-master">
 		@@include('html/_header.htm',{})
 		<main class="page inner-page">
-			<div class="container">
-				<div class="record-master">
-					<div class="container">
-						<div class="record-master__inner">
-							<div class="record-master__back">
-								<a href='../' class="link-back">Повернутися назад</a>
-							</div>
-							<div class="grid">
-								<div class="record-form frame">
-									<div class="title-h4 record-form__title">Запис до фахівця</div>
-									<div class="record-form__items">
-										<div class="field">
-											<label class="field__label">
-												Вкажіть будь ласка ваше ім’я:
-											</label>
-											<input type="text" placeholder='Наприклад, Оксана'>
-										</div>
-										<div class="field">
-											<label class="field__label">Телефон:</label>
-											<div class="field__wrapper">
-												<input type="tel" name="phone">
-											</div>
-										</div>
-										<div class="field">
-											<label class="field__label">Пошта:</label>
-											<div class="field__wrapper">
-												<input type="email" placeholder='example@gmail.com'>
-											</div>
+			<div class="record-master">
+				<div class="container">
+					<div class="record-master__inner">
+						<div class="record-master__back">
+							<a href='../' class="link-back">Повернутися назад</a>
+						</div>
+						<div class="grid">
+							<div class="record-form">
+								<div class="title-h4 record-form__title">Запис до фахівця</div>
+								<div class="record-form__items">
+									<div class="field">
+										<label class="field__label">
+											Вкажіть будь ласка ваше ім’я:
+										</label>
+										<input type="text" placeholder='Наприклад, Оксана'>
+									</div>
+									<div class="field">
+										<label class="field__label">Телефон:</label>
+										<div class="field__wrapper">
+											<input type="tel" name="phone">
 										</div>
 									</div>
-									<div class="record-form__chat">
-										<div class="record-form__chat-emoji">👋</div>
-										<div class="record-form__chat-content">
-											<p>Ви можете зв’язатися
-												зі спеціалістом через чат</p>
-										</div>
-										<div class="record-form__chat-btns">
-											<a href="#" class="btn-md btn-md--secondary-border record-form__chat-btn">Перейти до чату</a>
+									<div class="field">
+										<label class="field__label">Пошта:</label>
+										<div class="field__wrapper">
+											<input type="email" placeholder='example@gmail.com'>
 										</div>
 									</div>
 								</div>
-								<div class="record-master__main">
-									<div class="master-card">
-										<div class="master-card__avatar"><img src="img/avatars/expert.jpg" alt="expert"></div>
-										<div class="master-card__info">
-											<div class="master-card__head">
-												<h4 class="title-h4 master-card__title">Гліб Федоров</h4>
-												<img src="img/icons/check-shield.svg" alt="shield">
-											</div>
-											<div class="master-card__prof">Психолог, психотерапевт, психіатр</div>
-										</div>
+								<div class="record-form__chat">
+									<div class="record-form__chat-emoji">👋</div>
+									<div class="record-form__chat-content">
+										<p>Ви можете зв’язатися
+											зі спеціалістом через чат</p>
 									</div>
-									<div class="session-info">
-										<h3 class="title-h4">Інформація про сесію</h3>
-										<ul class="session-info__list">
-											<li>
-												<div class="session-item">
-													<div class="session-item__date">12.03.2024</div>
-													<div class="session-item__time">17:00</div>
-													<div class="session-item__price">1 000 ₴</div>
-													<button type='button' class='session-item__remove'>
-														<svg>
-															<use xlink:href="@img/icons/icons.svg#remove"></use>
-														</svg>
-													</button>
-												</div>
-											</li>
-											<li>
-												<div class="session-item">
-													<div class="session-item__date">13.03.2024</div>
-													<div class="session-item__time">17:00</div>
-													<div class="session-item__price">1 000 ₴</div>
-													<button type='button' class='session-item__remove'>
-														<svg>
-															<use xlink:href="@img/icons/icons.svg#remove"></use>
-														</svg>
-													</button>
-												</div>
-											</li>
-										</ul>
-										<div class="session-info__sum">
-											Загальна вартість:
-											<span>2 000 ₴</span>
+									<div class="record-form__chat-btns">
+										<a href="#" class="btn-md btn-md--secondary-border record-form__chat-btn">Перейти до чату</a>
+									</div>
+								</div>
+							</div>
+							<div class="record-master__main">
+								<div class="master-card" data-da='.grid,767.98,first'>
+									<div class="master-card__avatar"><img src="img/avatars/expert.jpg" alt="expert"></div>
+									<div class="master-card__info">
+										<div class="master-card__head">
+											<h4 class="title-h4 master-card__title">Гліб Федоров</h4>
+											<img src="img/icons/check-shield.svg" alt="shield">
 										</div>
-										<button class="btn btn--accent session-info__btn" type='button'>
-											Оплатити
-										</button>
-										<div class="checkbox">
-											<input id="c_1" class="checkbox__input" type="checkbox">
-											<label for="c_1" class="checkbox__label"><span class="checkbox__text">Скасуйте або перенесіть
-													сеанс за 24 години до початку</span></label>
-										</div>
+										<div class="master-card__prof">Психолог, психотерапевт, психіатр</div>
+									</div>
+								</div>
+								<div class="session-info">
+									<h3 class="title-h4">Інформація про сесію</h3>
+									<ul class="session-info__list">
+										<li>
+											<div class="session-item">
+												<div class="session-item__date">12.03.2024</div>
+												<div class="session-item__time">17:00</div>
+												<div class="session-item__price">1 000 ₴</div>
+												<button type='button' class='session-item__remove'>
+													<svg>
+														<use xlink:href="@img/icons/icons.svg#remove"></use>
+													</svg>
+												</button>
+											</div>
+										</li>
+										<li>
+											<div class="session-item">
+												<div class="session-item__date">13.03.2024</div>
+												<div class="session-item__time">17:00</div>
+												<div class="session-item__price">1 000 ₴</div>
+												<button type='button' class='session-item__remove'>
+													<svg>
+														<use xlink:href="@img/icons/icons.svg#remove"></use>
+													</svg>
+												</button>
+											</div>
+										</li>
+									</ul>
+									<div class="session-info__sum">
+										Загальна вартість:
+										<span>2 000 ₴</span>
+									</div>
+									<button class="btn btn--accent session-info__btn" type='button'>
+
+										<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M16.3333 17.3337H4.66667C2.36917 17.3337 0.5 15.4645 0.5 13.167V4.83366C0.5 2.53616 2.36917 0.666992 4.66667 0.666992H16.3333C18.6308 0.666992 20.5 2.53616 20.5 4.83366V13.167C20.5 15.4645 18.6308 17.3337 16.3333 17.3337ZM4.66667 2.33366C3.28833 2.33366 2.16667 3.45533 2.16667 4.83366V13.167C2.16667 14.5453 3.28833 15.667 4.66667 15.667H16.3333C17.7117 15.667 18.8333 14.5453 18.8333 13.167V4.83366C18.8333 3.45533 17.7117 2.33366 16.3333 2.33366H4.66667ZM15.5 9.83366H12.1667C11.2475 9.83366 10.5 9.08616 10.5 8.16699V6.50033C10.5 5.58116 11.2475 4.83366 12.1667 4.83366H15.5C16.4192 4.83366 17.1667 5.58116 17.1667 6.50033V8.16699C17.1667 9.08616 16.4192 9.83366 15.5 9.83366ZM12.1667 6.50033V8.16699H15.5008V6.50033H12.1667ZM8.83333 9.00033C8.83333 8.54033 8.46 8.16699 8 8.16699H4.66667C4.20667 8.16699 3.83333 8.54033 3.83333 9.00033C3.83333 9.46033 4.20667 9.83366 4.66667 9.83366H8C8.46 9.83366 8.83333 9.46033 8.83333 9.00033ZM17.1667 12.3337C17.1667 11.8737 16.7933 11.5003 16.3333 11.5003H4.66667C4.20667 11.5003 3.83333 11.8737 3.83333 12.3337C3.83333 12.7937 4.20667 13.167 4.66667 13.167H16.3333C16.7933 13.167 17.1667 12.7937 17.1667 12.3337Z"
+												fill="currentColor" />
+										</svg>
+
+										Оплатити
+									</button>
+									<div class="checkbox">
+										<input id="c_1" class="checkbox__input" type="checkbox">
+										<label for="c_1" class="checkbox__label"><span class="checkbox__text">Скасуйте або перенесіть
+												сеанс за 24 години до початку</span></label>
 									</div>
 								</div>
 							</div>
@@ -107,6 +112,7 @@
 			</div>
 		</main>
 		@@include('html/_footer.htm',{})
+
 	</div>
 	@@include('html/_js.htm',{})
 </body>

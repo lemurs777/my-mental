@@ -33,10 +33,11 @@ function initSliders() {
 		new Swiper('.reviews-slider', { // Вказуємо склас потрібного слайдера
 			// Підключаємо модулі слайдера
 			// для конкретного випадку
-			modules: [Navigation, Pagination],
-			slidesPerView: 3,
+			modules: [Navigation, Pagination, Scrollbar],
+			slidesPerView: 1.2,
 			spaceBetween: 16,
 			speed: 800,
+
 			//touchRatio: 0,
 			//simulateTouch: false,
 			//loop: true,
@@ -61,6 +62,104 @@ function initSliders() {
 
 
 			// Скроллбар
+
+			scrollbar: {
+				el: '.reviews-scrollbar',
+				draggable: true,
+			},
+
+
+			// Кнопки "вліво/вправо"
+			navigation: {
+				prevEl: '.review-button-prev',
+				nextEl: '.review-button-next',
+			},
+
+			// Брейкпоінти
+			breakpoints: {
+				768: {
+					slidesPerView: 2,
+				},
+				1024: {
+					slidesPerView: 3,
+				}
+			},
+
+			// Події
+			on: {
+
+			}
+		})
+	}
+	if (document.querySelector('.expert-reviews-slider')) { // Вказуємо склас потрібного слайдера
+		// Створюємо слайдер
+		new Swiper('.expert-reviews-slider', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Navigation, Scrollbar],
+			slidesPerView: 1.2,
+			spaceBetween: 8,
+			speed: 800,
+			// Скроллбар
+
+			scrollbar: {
+				el: '.expert-reviews-scrollbar',
+				draggable: true,
+			},
+			// Кнопки "вліво/вправо"
+
+
+			// Брейкпоінти
+			breakpoints: {
+				576: {
+					slidesPerView: 1.7,
+				},
+				768: {
+					slidesPerView: 'auto',
+					navigation: {
+						prevEl: '.expert-review-prev',
+						nextEl: '.expert-review-next',
+					}
+				}
+			}
+		})
+	}
+
+
+
+	if (document.querySelector('.area-slider__swiper')) { // Вказуємо склас потрібного слайдера
+		// Створюємо слайдер
+		new Swiper('.area-slider__swiper', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Navigation, Pagination],
+			slidesPerView: 1,
+			spaceBetween: 16,
+			speed: 800,
+			//touchRatio: 0,
+			//simulateTouch: false,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Ефекти
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			// Пагінація
+
+			pagination: {
+				el: '.area-pagination',
+				clickable: true,
+			},
+
+
+			// Скроллбар
 			/*
 			scrollbar: {
 				el: '.swiper-scrollbar',
@@ -70,8 +169,8 @@ function initSliders() {
 
 			// Кнопки "вліво/вправо"
 			navigation: {
-				prevEl: '.review-button-prev',
-				nextEl: '.review-button-next',
+				prevEl: '.area-button-prev',
+				nextEl: '.area-button-next',
 			},
 			/*
 			// Брейкпоінти
@@ -101,50 +200,7 @@ function initSliders() {
 			}
 		})
 	}
-	if (document.querySelector('.expert-reviews-slider')) { // Вказуємо склас потрібного слайдера
-		// Створюємо слайдер
-		new Swiper('.expert-reviews-slider', { // Вказуємо склас потрібного слайдера
-			// Підключаємо модулі слайдера
-			// для конкретного випадку
-			modules: [Navigation, Scrollbar],
-			slidesPerView: 'auto',
-			spaceBetween: 8,
-			speed: 800,
-			// Скроллбар
 
-			scrollbar: {
-				el: '.expert-reviews-scrollbar',
-				draggable: true,
-			},
-			// Кнопки "вліво/вправо"
-			navigation: {
-				prevEl: '.expert-review-prev',
-				nextEl: '.expert-review-next',
-			},
-			/*
-			// Брейкпоінти
-			breakpoints: {
-				640: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
-				},
-				768: {
-					slidesPerView: 2,
-					spaceBetween: 20,
-				},
-				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
-				},
-			},
-			*/
-		})
-	}
 }
 // Скролл на базі слайдера (за класом swiper scroll для оболонки слайдера)
 function initSlidersScroll() {

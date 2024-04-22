@@ -88,12 +88,16 @@
 	.swiper-slide {}
 
 	.review-card {
-		width: 377px;
 		height: 100%;
+
+		@media (min-width:em(768)) {
+			width: 377px;
+
+		}
 	}
 }
 
-.expert-reviews-scrollbar {
+.swiper-scrollbar {
 	// height: 3px;
 
 	background: #F6FAF7;

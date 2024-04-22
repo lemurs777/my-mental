@@ -3,8 +3,25 @@
 	align-items: center;
 	gap: 5px;
 
-	li {
+	@media (max-width: em(575.98)) {
+		width: 100%;
+		justify-content: center;
+	}
 
+	li {
+		&:first-child {
+
+			@media (max-width: em(575.98)) {
+				margin-right: auto;
+			}
+		}
+
+		&:last-child {
+
+			@media (max-width: em(575.98)) {
+				margin-left: auto;
+			}
+		}
 
 		.prev,
 		.next {
@@ -13,10 +30,14 @@
 
 		.prev {
 			margin-right: 10px;
+
 		}
 
 		.next {
 			margin-left: 10px;
+
+
+
 		}
 
 		a {

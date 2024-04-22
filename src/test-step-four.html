@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{ "title":"Тест" })
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page main-page">
+			<div class="inner">
+				<div class="container">
+					<div class="test">
+						<div class="return-back"></div>
+						<div class="frame">
+							<div class="test__head">
+								<div class="main-head">
+									<a href="test-step-three.html" class="link-back" data-da='.return-back,767.98,first'>Повернутися
+										назад</a>
+									<h1 class='title main-head__title'>Пройди тест за 5 хвилин</h1>
+									<div class="main-head__text">та підбери ідеального спеціаліста для себе</div>
+								</div>
+							</div>
+							<div class="test-quiz">
+								<ol class="test-quiz__steps">
+									<li class="test-quiz__step active">Загальні питання</li>
+									<li class="test-quiz__step active">Запит</li>
+									<li class="test-quiz__step active">Особисті питання</li>
+									<li class="test-quiz__step current">Додаткові побажання</li>
+								</ol>
+								<div class="test-quiz__section">
+									<div class="test-quiz__blocks">
+										<div class="test-quiz__block">
+											<div class="test-quiz__block-title">
+												Як вам зручно зустрітися зі спеціалістом?
+											</div>
+											<div class="test-quiz__radio-btns">
+												<label class="test-quiz__radio-btn rounded">
+													<input type="radio" name="language">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														<span class='emoji'>🇺🇦</span> Українською
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn rounded">
+													<input type="radio" name="language">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+
+														<span class='emoji'>🏴‍☠️</span> Російською
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn rounded">
+													<input type="radio" name="language">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														Неважливо</div>
+												</label>
+											</div>
+										</div>
+										<div class="test-quiz__block">
+											<div class="test-quiz__block-title">
+												Якої статі має бути спеціаліст:
+											</div>
+											<div class="test-quiz__radio-btns">
+												<label class="test-quiz__radio-btn rounded">
+													<input type="radio" name="gender-expert">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														<span class='emoji'>👩</span> Жінка
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn rounded">
+													<input type="radio" name="gender-expert">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+
+														<span class='emoji'>👨</span> Чоловік
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn rounded">
+													<input type="radio" name="gender-expert">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														Неважливо</div>
+												</label>
+											</div>
+										</div>
+										<div class="test-quiz__block">
+											<div class="test-quiz__block-title">
+												Вік спеціаліста:
+											</div>
+											<div class="test-quiz__radio-btns">
+												<div class="test-quiz__inputs">
+													<div class="test-quiz__input">
+														<div class="field field--placeholder">
+															<div class="field__wrapper">
+																<div class="field__placeholder">
+																	Від:
+																</div>
+																<input type="number">
+															</div>
+														</div>
+													</div>
+													<div class="test-quiz__input">
+														<div class="field field--placeholder">
+															<div class="field__wrapper">
+																<div class="field__placeholder">
+																	До:
+																</div>
+																<input type="number">
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<label class="test-quiz__radio-btn rounded">
+													<input type="radio" name="age-expert">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														Від 25 до 30
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn rounded">
+													<input type="radio" name="age-expert">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														Від 30 до 35
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn rounded">
+													<input type="radio" name="age-expert">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+
+														Від 35 до 40
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn rounded">
+													<input type="radio" name="age-expert">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														Від 40 до 45
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn rounded">
+													<input type="radio" name="age-expert">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														Неважливо</div>
+												</label>
+											</div>
+										</div>
+										<div class="test-quiz__block">
+											<div class="test-quiz__block-title">
+												Яка ціна за консультацію для вас буде комфортна?
+											</div>
+											<div class="test-quiz__radio-btns">
+
+												<div class="test-quiz__inputs">
+													<div class="test-quiz__input">
+														<div class="field field--icons ">
+															<div class="field__wrapper">
+																<div class="field__placeholder">
+																	Від:
+																</div>
+																<input type="number">
+																<div class="field__icon">₴</div>
+															</div>
+														</div>
+													</div>
+													<div class="test-quiz__input">
+														<div class="field field--icons ">
+															<div class="field__wrapper">
+																<div class="field__placeholder">
+																	До:
+																</div>
+																<input type="number">
+																<div class="field__icon">₴</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<label class="test-quiz__radio-btn">
+													<input type="radio" name="age-expert">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														Від 25 до 30
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn">
+													<input type="radio" name="age-expert">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														Від 30 до 35
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn">
+													<input type="radio" name="age-expert">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+
+														Від 35 до 40
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn">
+													<input type="radio" name="age-expert">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														Від 40 до 45
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn">
+													<input type="radio" name="age-expert">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														Неважливо</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="test-quiz__bottom">
+									<a href='test-step-result.html' class="btn btn--accent test-quiz__next-btn">Далі
+										<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6.875 1.5L11.375 6L6.875 10.5M10.75 6L1.625 6" stroke="currentColor" stroke-width="1.5"
+												stroke-miterlimit="10" stroke-linecap="square" />
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	<script>
+
+	</script>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

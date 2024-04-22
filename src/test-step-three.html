@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{ "title":"Тест" })
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page main-page">
+			<div class="inner">
+				<div class="container">
+					<div class="test">
+						<div class="return-back"></div>
+						<div class="frame">
+							<div class="test__head">
+								<div class="main-head">
+									<a href="test-step-two.html" class="link-back" data-da='.return-back,767.98,first'>Повернутися
+										назад</a>
+									<h1 class='title main-head__title'>Пройди тест за 5 хвилин</h1>
+									<div class="main-head__text">та підбери ідеального спеціаліста для себе</div>
+								</div>
+							</div>
+							<div class="test-quiz">
+								<ol class="test-quiz__steps">
+									<li class="test-quiz__step active">Загальні питання</li>
+									<li class="test-quiz__step active">Запит</li>
+									<li class="test-quiz__step current">Особисті питання</li>
+									<li class="test-quiz__step">Додаткові побажання</li>
+								</ol>
+								<div class="test-quiz__section">
+									<div class="test-quiz__blocks">
+										<div class="test-quiz__block">
+											<div class="test-quiz__block-title">
+												Як ви себе почуваєте останнім часом?
+											</div>
+											<div class="test-quiz__radio-btns">
+												<label class="test-quiz__radio-btn">
+													<input type="radio" name="meet-specialist">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														<span class='emoji'>🙂</span> Добре
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn">
+													<input type="radio" name="meet-specialist">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+
+														<span class='emoji'> 😐</span> Нормально
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn">
+													<input type="radio" name="meet-specialist">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														<span class='emoji'>😞</span> Погано
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn">
+													<input type="radio" name="meet-specialist">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														<span class='emoji'>😰</span> Жахливо
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="test-quiz__block">
+											<div class="test-quiz__block-title">
+												Ви вперше звертаєтесь до психолога/психотерапевта?
+											</div>
+											<div class="test-quiz__radio-btns">
+												<label class="test-quiz__radio-btn rounded">
+													<input type="radio" name="first">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														Так
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn rounded">
+													<input type="radio" name="first">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														Ні
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="test-quiz__block">
+											<div class="test-quiz__block-title">
+												Чи є у вас уподобання щодо підходу, в якому працює фахівець?
+											</div>
+											<div class="test-quiz__toggler">
+												<div class="radio-toggler">
+													<label>
+														<input type="radio" name='your-expert-like' checked>
+														<span>
+															Так
+														</span>
+													</label>
+													<label>
+														<input type="radio" name='your-expert-like'>
+														<span>
+															Ні
+														</span>
+													</label>
+												</div>
+											</div>
+											<div class="test-quiz__checkboxes">
+												@@include('html/components/_checkbox-no-mod.htm',{
+												"label":"Кпт"
+												})
+												@@include('html/components/_checkbox-no-mod.htm',{
+												"label":"Психоаналіз"
+												})
+												@@include('html/components/_checkbox-no-mod.htm',{
+												"label":"Системна сімейна терапія"
+												})
+												@@include('html/components/_checkbox-no-mod.htm',{
+												"label":"Коучинг"
+												})
+												@@include('html/components/_checkbox-no-mod.htm',{
+												"label":"Схематерапія"
+												})
+												@@include('html/components/_checkbox-no-mod.htm',{
+												"label":"Гештальт"
+												})
+												@@include('html/components/_checkbox-no-mod.htm',{
+												"label":"Позитивна терапія"
+												})
+												@@include('html/components/_checkbox-no-mod.htm',{
+												"label":"Транзактний аналіз"
+												})
+												@@include('html/components/_checkbox-no-mod.htm',{
+												"label":
+												"Короткострокова стратегічна терапія"
+												})
+												@@include('html/components/_checkbox-no-mod.htm',{
+												"label":"Клієнтцентровані методи"
+												})
+											</div>
+										</div>
+
+
+										<div class="test-quiz__block">
+											<div class="test-quiz__block-title">
+												Додатковий досвід спеціаліста
+											</div>
+											<div class="test-quiz__radio-btns">
+												<label class="test-quiz__radio-btn rounded">
+													<input type="radio" name="addon">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														Працює з ЛГБТ+
+													</div>
+												</label>
+												<label class="test-quiz__radio-btn rounded">
+													<input type="radio" name="addon">
+													<span></span>
+													<div class="test-quiz__radio-btn-content">
+														Досвід роботи
+														з військовими
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="test-quiz__bottom">
+									<a href='test-step-four.html' class="btn btn--accent test-quiz__next-btn">Далі
+										<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M6.875 1.5L11.375 6L6.875 10.5M10.75 6L1.625 6" stroke="currentColor" stroke-width="1.5"
+												stroke-miterlimit="10" stroke-linecap="square" />
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	<script>
+
+	</script>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

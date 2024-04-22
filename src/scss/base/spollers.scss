@@ -10,7 +10,7 @@
 // Спойлер
 .spollers__item {
 	background: #FFFFFF;
-	border: 1px solid #E4EBE4;
+	border: 1px solid $lightGreyColor;
 	border-radius: 15px;
 
 }
@@ -27,6 +27,11 @@
 	position: relative;
 	list-style: none;
 
+	@media (max-width: em(767.98)) {
+		font-size: 1rem;
+		padding: 1rem 2rem 1rem 1rem;
+	}
+
 	&::marker {}
 
 	._spoller-init & {
@@ -42,6 +47,12 @@
 			height: 2px;
 			width: 8px;
 			transition: transform 0.2s ease-in-out;
+
+			@media (max-width: em(767.98)) {
+				right: 1rem;
+				background-color: $mainColor;
+				height: 1px;
+			}
 		}
 
 		&::before {
@@ -110,4 +121,8 @@
 		color: #CA6C46;
 	}
 
+	@media (max-width: em(767.98)) {
+		padding: 0 1rem 1rem;
+		font-size: $mobileFont;
+	}
 }

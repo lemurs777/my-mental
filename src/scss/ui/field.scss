@@ -13,8 +13,8 @@
 	}
 
 	input {
-		display: flex;
-		align-items: center;
+		// display: flex;
+		// align-items: center;
 		padding: 15px 16px;
 		gap: 10px;
 		height: 48px;
@@ -54,7 +54,12 @@
 		font-weight: 700;
 		line-height: 1.25;
 		margin-bottom: 1rem;
-		display: block;
+		display: flex;
+
+		.link {
+			margin-left: auto;
+			color: $accentColor;
+		}
 
 		span {
 			font-size: 12px;
@@ -104,9 +109,13 @@
 	}
 
 	input {
-		display: flex;
-		align-items: center;
+		// display: flex;
+		// align-items: center;
 		height: 48px;
+
+		@media (max-width: em(767.98)) {
+			height: 42px;
+		}
 
 		&[type='tel'] {
 			padding-left: 60px;
@@ -128,7 +137,18 @@
 		display: none;
 	}
 
+	&__placeholder {
+		position: absolute;
+		top: 50%;
+		translate: 0 -50%;
+		left: 15px;
+		font-size: 14px;
+		color: $text;
+	}
+
 	&--radio {
+		width: 100%;
+
 		.field {
 			&__radio-btns {
 				display: flex;
@@ -204,11 +224,36 @@
 	}
 
 	&--icon {
+		input {
+			padding-right: 42px;
+		}
+
 		.field {
 			&__icon {
 				right: 15px;
 				color: $text;
 			}
+		}
+	}
+
+	&--icons {
+		input {
+			padding-left: 42px;
+			padding-right: 42px;
+		}
+
+		.field {
+			&__icon {
+				right: 15px;
+				color: $text;
+				font-size: 14px;
+			}
+		}
+	}
+
+	&--placeholder {
+		input {
+			padding-left: 42px;
 		}
 	}
 }
@@ -218,6 +263,7 @@
 	align-items: center;
 	justify-content: space-between;
 	gap: 1rem;
+	flex-wrap: wrap;
 	font-size: 14px;
 	color: $text;
 

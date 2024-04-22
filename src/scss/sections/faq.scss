@@ -1,10 +1,14 @@
 .faq {
 	background-color: #F7FAF7;
+	padding-bottom: 128px;
+
+	@media (max-width: em(767.98)) {
+		padding-bottom: 40px;
+	}
 
 	// .faq__accordion
 	&__accordion {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
 		gap: 1rem;
 		align-items: start;
 
@@ -14,8 +18,16 @@
 			&__title {
 				display: flex;
 				align-items: center;
-				min-height: 92px;
+
+				@media (min-width:em(768)) {
+					min-height: 92px;
+				}
 			}
+		}
+
+		@media (min-width:em(768)) {
+			grid-template-columns: repeat(2, 1fr);
+
 		}
 	}
 }
