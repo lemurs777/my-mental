@@ -13,7 +13,11 @@
 // import noUiSlider from 'nouislider'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-
+import { Fancybox } from "@fancyapps/ui"
+import "@fancyapps/ui/dist/fancybox/fancybox.css"
+Fancybox.bind("[data-fancybox]", {
+	// Your custom options
+})
 AOS.init()
 
 let sliderAge = document.getElementById('team-range__age')
@@ -283,3 +287,26 @@ import "./libs/dynamic_adapt.js"
 /* Підключаємо файли зі своїм кодом */
 import "./files/script.js"
 //============================================================================================================================================================================================================================================
+import { Calendar } from '@fullcalendar/core'
+import dayGridPlugin from '@fullcalendar/daygrid'
+import timeGridPlugin from '@fullcalendar/timegrid'
+import listPlugin from '@fullcalendar/list'
+
+let calendarEl = document.getElementById('calendar')
+if (calendarEl) {
+
+	let calendar = new Calendar(calendarEl, {
+		plugins: [dayGridPlugin, timeGridPlugin, listPlugin],
+		initialView: 'timeGridWeek',
+		headerToolbar: {
+
+			left: 'title',
+			center: '',
+			// right: 'dayGridMonth,timeGridWeek,listWeek'
+			right: 'prev,next'
+		},
+		locale: 'uk',
+		timeZone: 'locale'
+	})
+	calendar.render()
+}

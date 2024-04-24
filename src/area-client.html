@@ -117,7 +117,7 @@
 												</a>
 											</div>
 										</div>
-										<div class="area-info__grid">
+										<div class="area-info__grid area-info__grid--client">
 											<div class="area-block">
 												<div class="area-slider">
 													<div class="area-slider__swiper swiper">
@@ -201,28 +201,28 @@
 											<div class="area-block">
 												<div class="my-expert">
 													<div class="my-expert__inner">
-														<div class="my-expert__title">Мій психолог</div>
+														<div class="my-expert__head">
+															<div class="my-expert__title">Мій психолог</div>
+														</div>
 														<div class="my-expert__body">
 															<div class="avatar avatar--sm my-expert__avatar"><img src="img/experts/expert-1.jpg"
 																	alt="avatar"></div>
-															<div class="my-expert__content">
-																<div class="my-expert__top">
-																	<div class="my-expert__name">Віталій Соколов</div>
-																	<div class="my-expert__type">Психолог, психотерапевт, психіатр</div>
+															<div class="my-expert__top">
+																<div class="my-expert__name">Віталій Соколов</div>
+																<div class="my-expert__type">Психолог, психотерапевт, психіатр</div>
+															</div>
+															<div class="my-expert__items">
+																<div class="my-expert__item">
+																	<img src="img/icons/check-shield.svg" alt="shield">
+																	<span>перевірений</span>
 																</div>
-																<div class="my-expert__items">
-																	<div class="my-expert__item">
-																		<img src="img/icons/check-shield.svg" alt="shield">
-																		<span>перевірений</span>
-																	</div>
-																	<div class="my-expert__item">
-																		200+
-																		<span>годин практики</span>
-																	</div>
-																	<div class="my-expert__item">
-																		2
-																		<span>років досвіду</span>
-																	</div>
+																<div class="my-expert__item">
+																	200+
+																	<span>годин практики</span>
+																</div>
+																<div class="my-expert__item">
+																	2
+																	<span>років досвіду</span>
 																</div>
 															</div>
 														</div>
@@ -241,7 +241,8 @@
 				</div>
 			</div>
 		</main>
-		@@include('html/_footer.htm',{})
+		<!-- @@include('html/_footer.htm',{}) -->
+		@@include('html/components/_client-widget.htm',{})
 	</div>
 	@@include('html/_js.htm',{})
 </body>

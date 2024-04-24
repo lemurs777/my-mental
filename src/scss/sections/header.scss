@@ -1,6 +1,8 @@
 .header {
 	border-bottom: 1px solid $lightGreyColor;
 	background-color: $lightColor;
+	position: relative;
+	z-index: 5;
 
 	&__logo {
 		position: relative;
@@ -71,14 +73,51 @@
 			}
 
 			li {
+				position: relative;
+
 				ul {
+					right: 0;
+					transition: .3s ease-in-out;
+					top: 100%;
+					display: flex;
+					flex-direction: column;
+					@extend .frame;
+					padding: 1rem;
+					gap: 1rem;
 					position: absolute;
-					display: none;
+					opacity: 0;
+					visibility: hidden;
+					pointer-events: none;
+
+					a {
+						padding: 5px 15px;
+					}
+
+					@media (max-width: em(767.98)) {
+						position: static;
+						background-color: transparent;
+						padding: 0;
+						border: none;
+						text-align: center;
+
+					}
+				}
+
+				@media(any-hover:hover) {
+					&:hover {
+						ul {
+							opacity: 1;
+							visibility: visible;
+							pointer-events: all;
+						}
+					}
 				}
 			}
+
+
 		}
 
-		a {
+		.menu__link {
 			display: inline-flex;
 			align-items: center;
 			gap: 5px;
@@ -168,8 +207,35 @@
 			}
 		}
 	}
+
+	&--client {
+		.header {
+			&__actions {
+
+				@media (min-width:em(768)) {
+					gap: 2rem;
+				}
+			}
+		}
+
+		.login-user {
+			@media (min-width:em(992)) {
+				width: 140px;
+
+			}
+		}
+	}
 }
 
+.header-action {
+	&__btn {
+		text-align: center;
+
+		@media (max-width: em(767.98)) {
+			display: none !important;
+		}
+	}
+}
 
 //Burger
 
@@ -238,6 +304,16 @@
 			&__body {
 				right: 0;
 			}
+		}
+	}
+}
+
+.has-sublist {
+	&.show {
+		ul {
+			opacity: 1 !important;
+			visibility: visible !important;
+			pointer-events: all !important;
 		}
 	}
 }

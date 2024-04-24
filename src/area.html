@@ -43,7 +43,8 @@
 										</li>
 									</ul>
 									<div class="area-sidebar__nav-bottom">
-										<a href="#" class="btn-sm btn-sm--grey-border area-sidebar__btn-google">
+										<a href="#" class="btn-sm btn-sm--grey-border area-sidebar__btn-google"
+											data-da='.area-page__grid,767.98,first'>
 											<img src="img/icons/google.svg" alt="google">
 											Connect Google Calendar</a>
 									</div>
@@ -149,7 +150,7 @@
 															</label>
 														</div>
 													</div>
-													<div class="area-media">
+													<div class="area-media area-media--video">
 														<div class="area-media__video">
 															<div class="expert-video expert-video--pause">
 																<img src="img/video.jpg" alt="video">
@@ -268,9 +269,30 @@
 												})
 											</div>
 											<div class="area-block__section">
-												@@include('html/sections/_expert-want.htm',{
-												"title":"З якими запитами я працюю"
-												})
+												<div class="expert-want">
+													<div class="frame__inner">
+														<div class="frame__head">
+															<h3 class="title-h5">З якими запитами я працюю</h3>
+														</div>
+														<div class="frame__body">
+															<div class="expert-want__labels">
+																<div class="label label--light">Побороти комплекси</div>
+																<div class="label label--light">Подолати травматичний досвід</div>
+																<div class="label label--light">Адаптуватися</div>
+																<div class="label label--light">Краще розуміти емоції</div>
+																<div class="label label--light">Підвищити самооцінку</div>
+																<div class="label label--light">Особистісне зростання</div>
+																<div class="label label--light">Здорові стосунки</div>
+																<div class="label label--light">Пережити горе</div>
+																<div class="label label--light">Пережити втрату</div>
+																<div class="label label--light">Подолати вікову кризу</div>
+																<div class="label label--light">Фізичне насильство</div>
+																<div class="label label--light">Сексуалізоване насильство</div>
+																<div class="label label--light">Пройти сепарацію</div>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -282,7 +304,32 @@
 				</div>
 			</div>
 		</main>
-		@@include('html/_footer.htm',{})
+		<!-- @@include('html/_footer.htm',{}) -->
+		<div class="bottom-widget">
+			<div class="area-mobile-menu">
+				<a href="area.html" class='area-nav active'>
+					<svg>
+						<use xlink:href="@img/icons/icons.svg#user-mobile"></use>
+					</svg>
+					Мій <br>
+					профіль
+				</a>
+				<a href="area-schedule.html" class='area-nav'>
+					<svg>
+						<use xlink:href="@img/icons/icons.svg#clock-mobile"></use>
+					</svg>
+					Графік <br>
+					роботи
+				</a>
+				<a href="area-payment.html" class='area-nav'>
+					<svg>
+						<use xlink:href="@img/icons/icons.svg#pay-mobile"></use>
+					</svg>
+					Платежі <br>
+					та сесії
+				</a>
+			</div>
+		</div>
 	</div>
 	@@include('html/_js.htm',{})
 </body>

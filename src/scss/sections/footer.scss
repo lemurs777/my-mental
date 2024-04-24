@@ -1,10 +1,56 @@
 .footer {}
 
+.top {
+	position: absolute;
+	right: -60px;
+	top: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	background: rgba(#fff, .6);
+	border: 1px solid #E2EBE3;
+	border-radius: 10px;
+	z-index: 15;
+
+	&:not(:active) {
+		transition: .3s ease-in-out;
+	}
+
+	@media(any-hover:hover) {
+		&:hover {
+			border-color: $accentColor;
+			color: $accentColor;
+		}
+	}
+
+	&:active {
+		background-color: $accentColor;
+		color: $lightColor;
+	}
+
+	@media (max-width: em(1366)) {
+		top: -20px;
+		right: 1rem;
+	}
+
+	@media (max-width: em(767.98)) {
+		width: 36px;
+		height: 36px;
+		top: 0;
+	}
+}
+
 .footer {
 	background-color: $lightGreyColor;
 	padding: 40px 0;
 	color: $text;
 	font-size: 14px;
+
+	.container {
+		position: relative;
+	}
 
 	&__bottom {
 		text-align: center;
@@ -36,6 +82,7 @@
 		display: grid;
 		gap: 20px;
 		grid-template-columns: repeat(4, 1fr);
+		position: relative;
 
 		@media (max-width: em(1024)) {
 			grid-template-columns: repeat(2, 1fr);

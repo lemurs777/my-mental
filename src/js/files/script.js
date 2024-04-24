@@ -15699,7 +15699,7 @@ if (moreInfo) {
 	moreInfo.forEach(info => {
 		const btn = info.querySelector('.more-info__btn')
 		const content = info.querySelector('.more-info__dropdown')
-
+		const closeBtn = info.querySelector('.more-info__close')
 		btn.addEventListener('click', e => {
 			moreInfo.forEach(info => {
 				info.classList.remove('show-info')
@@ -15712,6 +15712,9 @@ if (moreInfo) {
 			if (!withinBoundaries) {
 				info.classList.remove('show-info')
 			}
+		})
+		closeBtn.addEventListener('click', e => {
+			info.classList.remove('show-info')
 		})
 	})
 }
@@ -15752,4 +15755,40 @@ if (mobileFilter) {
 			filterMobileBody.classList.remove('active')
 		})
 	})
+}
+const chatContent = document.querySelector('.chat-main')
+const chatLine = document.querySelector('.area-page__chat-line')
+const chatItems = document.querySelectorAll('.chat-item')
+if (chatItems) {
+	chatItems.forEach(chatBtn => {
+		chatBtn.addEventListener('click', e => {
+			chatItems.forEach(item => {
+				item.classList.remove('chat-item--active')
+			})
+			chatBtn.classList.add('chat-item--active')
+			chatContent.classList.toggle('show')
+			chatLine.classList.toggle('hide-line')
+		})
+	})
+}
+const menuItems = document.querySelectorAll('.menu li')
+if (menuItems) {
+	menuItems.forEach(item => {
+		if (item.lastElementChild.tagName === 'UL') {
+			item.classList.add('has-sublist')
+		}
+		item.addEventListener('click', e => {
+			if (item.classList.contains('has-sublist')) {
+				item.classList.toggle('show')
+			}
+		})
+		document.addEventListener('click', (e) => {
+			const withinBoundaries = e.composedPath().includes(item)
+
+			if (!withinBoundaries) {
+				item.classList.remove('show')
+			}
+		})
+	})
+
 }

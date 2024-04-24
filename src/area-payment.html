@@ -43,7 +43,8 @@
 										</li>
 									</ul>
 									<div class="area-sidebar__nav-bottom">
-										<a href="#" class="btn-sm btn-sm--grey-border area-sidebar__btn-google">
+										<a href="#" class="btn-sm btn-sm--grey-border area-sidebar__btn-google"
+											data-da='.area-page__grid,767.98,first'>
 											<img src="img/icons/google.svg" alt="google">
 											Connect Google Calendar</a>
 									</div>
@@ -67,13 +68,23 @@
 									</nav>
 									<div data-tabs-body class="table-tabs__content">
 										<div class="table-tabs__body">
-											<div class="frame">
-												@@include('html/sections/_area-table.htm')
+											<div class="desktop-tablet">
+												<div class="frame">
+													@@include('html/sections/_area-table.htm')
+												</div>
+											</div>
+											<div class="tablet">
+												@@include('html/components/_mobile-table.htm')
 											</div>
 										</div>
 										<div class="table-tabs__body">
-											<div class="frame">
-												@@include('html/sections/_area-table.htm')
+											<div class="desktop-tablet">
+												<div class="frame">
+													@@include('html/sections/_area-table.htm')
+												</div>
+											</div>
+											<div class="tablet">
+												@@include('html/components/_mobile-table.htm')
 											</div>
 										</div>
 									</div>
@@ -84,7 +95,8 @@
 				</div>
 			</div>
 		</main>
-		@@include('html/_footer.htm',{})
+		<!-- @@include('html/_footer.htm',{}) -->
+		@@include('html/components/_area-widget.htm')
 	</div>
 	@@include('html/_js.htm',{})
 </body>

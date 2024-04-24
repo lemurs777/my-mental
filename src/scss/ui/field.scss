@@ -56,6 +56,11 @@
 		margin-bottom: 1rem;
 		display: flex;
 
+		@media (max-width: em(767.98)) {
+			font-size: $mobileFont;
+			margin-bottom: 0.5rem;
+		}
+
 		.link {
 			margin-left: auto;
 			color: $accentColor;
@@ -102,9 +107,14 @@
 		border: 2px solid #E2EBE3;
 		border-radius: 10px;
 		font-size: 14px;
+		transition: .2s ease-in-out;
 
 		&::placeholder {
 			color: $text;
+		}
+
+		&:focus {
+			border-color: $accentColor;
 		}
 	}
 
@@ -153,8 +163,12 @@
 			&__radio-btns {
 				display: flex;
 				gap: 1rem;
-				height: 48px;
 				align-items: center;
+
+				@media (min-width:em(768)) {
+
+					height: 48px;
+				}
 			}
 		}
 	}

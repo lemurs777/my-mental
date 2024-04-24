@@ -115,7 +115,7 @@ function initSliders() {
 					slidesPerView: 1.7,
 				},
 				768: {
-					slidesPerView: 'auto',
+					slidesPerView: 2.2,
 					navigation: {
 						prevEl: '.expert-review-prev',
 						nextEl: '.expert-review-next',

@@ -1,9 +1,34 @@
-<header class="header">
+<header class="header" id='header'>
 	<div class="container">
 		<div class="header__inner">
 			<a href="#" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+			<a href="#" class="header__logo header__logo--mobile"><img src="img/mobile-logo.svg" alt="logo"></a>
+
 			<div class="header__actions">
-				<a href="../" class="link-back">Повернутися назад</a>
+				<div class="mobile">
+					<a href="#" class="header__user _icon-user">Увійти</a>
+				</div>
+				<div class="desktop">
+					<a href="../" class="link-back">Повернутися назад</a>
+				</div>
+			</div>
+			<div class="mobile">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">Про нас</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Наші фахівці</a></li>
+							<li class="menu__item">
+								<button class="menu__link _icon-chevron">Спеціалістам</button>
+								<ul>
+									<li><a href="#">Спеціаліст</a></li>
+									<li><a href="#">Спеціаліст</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</div>
 	</div>

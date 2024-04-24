@@ -43,7 +43,8 @@
 										</li>
 									</ul>
 									<div class="area-sidebar__nav-bottom">
-										<a href="#" class="btn-sm btn-sm--grey-border area-sidebar__btn-google">
+										<a href="#" class="btn-sm btn-sm--grey-border area-sidebar__btn-google"
+											data-da='.area-page__grid,767.98,first'>
 											<img src="img/icons/google.svg" alt="google">
 											Connect Google Calendar</a>
 									</div>
@@ -111,8 +112,8 @@
 											</div>
 										</div>
 										<div class="area-info__block">
-											<h3 class="area-info__title">Персональна інформація <span>(Редагування)</span></h3>
-											<div class="area-info__items">
+											<h3 class="area-info__title">Вхід в особистий кабінет</h3>
+											<div class="area-info__items area-info__items--row">
 												<div class="field field--password">
 													<label class='field__label'>Новий пароль</label>
 													<div class="field__wrapper">
@@ -177,7 +178,8 @@
 													</div>
 												</div>
 												<div class="add-media__body">
-													<div class="add-media__img"><img src="img/avatars/empty-avatar.svg" alt="avatar"></div>
+													<div class="add-media__img"><img class='add-media__stub' src="img/avatars/empty-avatar.svg"
+															alt="avatar"></div>
 												</div>
 												<div class="add-media__bottom">
 													<button class="btn-md btn-md--secondary-border add-media__btn">Додати фото</button>
@@ -195,7 +197,9 @@
 													</div>
 												</div>
 												<div class="add-media__body">
-													<div class="add-media__video"><img src="img/avatars/empty-video.svg" alt="video"></div>
+													<div class="add-media__video">
+														<img class='add-media__stub' src="img/avatars/empty-video.svg" alt="video">
+													</div>
 												</div>
 												<div class="add-media__bottom">
 													<button class="btn-md btn-md--secondary-border add-media__btn">Додати відеовізитку</button>
@@ -579,7 +583,32 @@
 				</div>
 			</div>
 		</main>
-		@@include('html/_footer.htm',{})
+		<!-- @@include('html/_footer.htm',{}) -->
+		<div class="bottom-widget">
+			<div class="area-mobile-menu">
+				<a href="area.html" class='area-nav active'>
+					<svg>
+						<use xlink:href="@img/icons/icons.svg#user-mobile"></use>
+					</svg>
+					Мій <br>
+					профіль
+				</a>
+				<a href="area-schedule.html" class='area-nav'>
+					<svg>
+						<use xlink:href="@img/icons/icons.svg#clock-mobile"></use>
+					</svg>
+					Графік <br>
+					роботи
+				</a>
+				<a href="area-payment.html" class='area-nav'>
+					<svg>
+						<use xlink:href="@img/icons/icons.svg#pay-mobile"></use>
+					</svg>
+					Платежі <br>
+					та сесії
+				</a>
+			</div>
+		</div>
 	</div>
 	@@include('html/_js.htm',{})
 </body>

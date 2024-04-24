@@ -17,7 +17,7 @@
 		background-color: #fff;
 		cursor: pointer;
 		width: 100%;
-		border-radius: 4px;
+		border-radius: 10px;
 	}
 
 	// .select__value
@@ -81,13 +81,13 @@
 	&__options {
 		color: #000;
 		position: absolute;
-		top: calc(100% - rem(1));
-		border-radius: 0 0 4px 4px;
+		top: calc(100% - rem(8));
+		border-radius: 0 0 10px 10px;
 		min-width: 100%;
 		left: 0;
 		background-color: #fff;
 		border-top: 0;
-		border: 1px solid #d9d9d9;
+		border: 2px solid $lightGreyColor;
 		border-top: 0;
 		padding: 10px 0px 5px 0px;
 	}
@@ -113,7 +113,8 @@
 		text-align: left;
 		cursor: pointer;
 		padding: 5px 15px;
-		color: inherit;
+		color: $text;
+		font-size: 14px;
 
 		&._select-selected {
 			background-color: #eee;
@@ -121,7 +122,8 @@
 
 		@media (any-hover: hover) {
 			&:hover {
-				background: #d9d9d9;
+				font-weight: 700;
+				color: $accentColor;
 			}
 		}
 	}
@@ -148,7 +150,11 @@
 	}
 
 	// Стан селекту
-	&._select-open {}
+	&._select-open {
+		.select {
+			&__title {}
+		}
+	}
 
 	&._select-disabled {
 		color: red;

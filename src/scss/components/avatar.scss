@@ -14,8 +14,23 @@
 		object-fit: cover;
 	}
 
+	@media (max-width: em(767.98)) {
+		width: 100px;
+		flex: 0 0 100px;
+
+
+	}
+
 	&--sm {
 		width: 80px;
 		flex: 0 0 80px;
+
+		@media (max-width: em(767.98)) {
+			width: 50px;
+			flex: 0 0 50px;
+		}
 	}
+
+
+
 }

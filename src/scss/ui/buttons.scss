@@ -11,16 +11,39 @@
 	border: 1px solid $accentColor;
 	gap: 0.5rem;
 	line-height: 1;
+	transition: .2s ease-in-out;
+
+	@media(any-hover:hover) {
+		&:hover {
+			background-color: #0E352F;
+			color: $lightColor;
+		}
+	}
 
 	&--light {
 		background-color: $lightColor;
 		color: $accentColor;
+
+		@media(any-hover:hover) {
+			&:hover {
+				color: $accentColor;
+				background: #FFFFFF;
+				box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.08);
+
+			}
+		}
 	}
 
 	&--accent {
 		background-color: $brownColor;
 		color: $lightColor;
 		border-color: $brownColor;
+
+		@media(any-hover:hover) {
+			&:hover {
+				background-color: #C25F37;
+			}
+		}
 	}
 
 	&--accent-border {
@@ -28,6 +51,13 @@
 		color: $brownColor;
 		border-width: 2px;
 		border-color: $brownColor;
+
+		@media(any-hover:hover) {
+			&:hover {
+				background-color: $lightColor;
+				color: $brownColor;
+			}
+		}
 	}
 
 	&--secondary {
@@ -41,11 +71,20 @@
 		border-width: 2px;
 		border-color: $accentColor;
 		color: $accentColor;
+
+		@media(any-hover:hover) {
+			&:hover {
+				background-color: $accentColor;
+				color: $lightColor;
+			}
+		}
 	}
 
 	@media (max-width: em(767.98)) {
 		font-size: 14px;
 	}
+
+
 }
 
 .link {
@@ -75,6 +114,7 @@
 	gap: 10px;
 	color: $text;
 	font-size: 14px;
+	transition: .2s ease-in-out;
 
 	&::before {
 		content: url('data:image/svg+xml;charset=UTF-8,<svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.1366 5.44206L6.44607 1.13259L5.65674 0.343262L-0.000116124 6.00012L5.65674 11.657L6.44607 10.8676L2.13678 6.55835L10.4716 6.55834L10.4716 5.44207L2.1366 5.44206Z" fill="%235E6D55"/></svg>');
@@ -84,6 +124,13 @@
 
 	@media (max-width: em(767.98)) {
 		font-size: 12px;
+	}
+
+	@media(any-hover:hover) {
+		&:hover {
+			text-decoration: underline;
+			text-underline-offset: 4px;
+		}
 	}
 }
 
@@ -100,6 +147,13 @@
 	border: 2px solid $accentColor;
 	gap: 0.5rem;
 	line-height: 1;
+	transition: .2s ease-in-out;
+
+	@media(any-hover:hover) {
+		&:hover {
+			background-color: #0E352F;
+		}
+	}
 
 	&--light {
 		background-color: $lightColor;
@@ -110,6 +164,12 @@
 		background-color: $brownColor;
 		color: $lightColor;
 		border-color: $brownColor;
+
+		@media(any-hover:hover) {
+			&:hover {
+				background-color: #C25F37;
+			}
+		}
 	}
 
 	&--accent-border {
@@ -128,12 +188,26 @@
 		background-color: transparent;
 		border-color: $accentColor;
 		color: $accentColor;
+
+		@media(any-hover:hover) {
+			&:hover {
+				background-color: $accentColor;
+				color: $lightColor;
+			}
+		}
 	}
 
 	&--grey-border {
 		border: 2px solid rgba(94, 109, 85, 0.3);
 		color: $text;
 		background-color: transparent;
+
+		@media(any-hover:hover) {
+			&:hover {
+				background-color: #5E6D55;
+				color: $lightColor;
+			}
+		}
 	}
 
 	@media (max-width: em(767.98)) {
@@ -178,11 +252,19 @@
 	border-radius: 5px;
 	width: 28px;
 	height: 28px;
+	transition: .2s ease-in-out;
+	fill: #5A6E53;
 
 	svg {
 		width: 12px;
 		height: 12px;
-		fill: #5A6E53;
+	}
+
+	@media(any-hover:hover) {
+		&:hover {
+			background-color: #5E6D55;
+			fill: $lightColor;
+		}
 	}
 }
 
@@ -218,6 +300,12 @@
 		line-height: 0;
 		display: inline-block;
 	}
+
+	@media(any-hover:hover) {
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 
 .btn-sm {
@@ -235,6 +323,14 @@
 	gap: 0.5rem;
 	line-height: 1;
 	width: fit-content;
+	transition: .2s ease-in-out;
+
+	@media(any-hover:hover) {
+		&:hover {
+			background-color: #0E352F;
+			color: $lightColor;
+		}
+	}
 
 	&--light {
 		background-color: $lightColor;
@@ -245,12 +341,25 @@
 		background-color: $brownColor;
 		color: $lightColor;
 		border-color: $brownColor;
+
+		@media(any-hover:hover) {
+			&:hover {
+				background-color: #C25F37;
+			}
+		}
 	}
 
 	&--grey-border {
 		border: 2px solid rgba(94, 109, 85, 0.3);
 		color: $text;
 		background-color: transparent;
+
+		@media(any-hover:hover) {
+			&:hover {
+				background-color: #5E6D55;
+				color: $lightColor;
+			}
+		}
 	}
 
 	&--accent-border {
@@ -264,6 +373,13 @@
 		color: $accentColor;
 		border-color: $lightGreyColor;
 		background-color: $lightGreyColor;
+
+		@media(any-hover:hover) {
+			&:hover {
+				background-color: $accentColor;
+				color: $lightColor;
+			}
+		}
 	}
 }
 
@@ -278,10 +394,17 @@
 	align-items: center;
 	padding: 10px 12px;
 	gap: 5px;
-
+	transition: .2s ease-in-out;
 	background: #FFFFFF;
 	border: 1px solid $lightGreyColor;
 	border-radius: 12px;
+
+	@media(any-hover:hover) {
+		&:hover {
+			background-color: #29A9EB;
+			color: $lightColor;
+		}
+	}
 
 	// .social-btn__icon
 
@@ -318,6 +441,12 @@
 		color: $lightColor;
 		border-color: #29A9EB;
 	}
+
+	@media (max-width: em(767.98)) {
+		font-size: $mobileFont;
+		width: 100%;
+		padding: 12px;
+	}
 }
 
 .swiper-button-prev,
@@ -329,7 +458,14 @@
 	height: 54px;
 	border: 1px solid $accentColor;
 	border-radius: 5px;
+	transition: .2s ease-in-out;
 
+	@media(any-hover:hover) {
+		&:hover {
+			background-color: $accentColor;
+			color: $lightColor;
+		}
+	}
 }
 
 .swiper-button-next {
@@ -377,10 +513,24 @@
 	line-height: 1.285;
 	color: $text;
 
+	@media(any-hover:hover) {
+		&:hover {
+			background: #5A6E53;
+			border: 2px solid rgba(90, 110, 83, 0.3);
+			box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+		}
+	}
+
 	&--accent {
 		color: $lightColor;
 		background-color: $brownColor;
 		border-color: $brownColor;
+
+		@media(any-hover:hover) {
+			&:hover {
+				background-color: #C25F37;
+			}
+		}
 	}
 }
 

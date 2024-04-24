@@ -1,7 +1,8 @@
-<header class="header">
+<header class="header header--client" id='header'>
 	<div class="container">
 		<div class="header__inner">
 			<a href="#" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+			<a href="#" class="header__logo header__logo--mobile"><img src="img/mobile-logo.svg" alt="logo"></a>
 			<div class="header__menu menu">
 				<button type="button" class="menu__icon icon-menu"><span></span></button>
 				<nav class="menu__body">
@@ -9,7 +10,7 @@
 						<li class="menu__item"><a href="#" class="menu__link">Про нас</a></li>
 						<li class="menu__item"><a href="#" class="menu__link">Наші фахівці</a></li>
 						<li class="menu__item">
-							<a href="#" class="menu__link _icon-chevron">Спеціалістам</a>
+							<button class="menu__link _icon-chevron">Спеціалістам</button>
 							<ul>
 								<li><a href="#">Спеціаліст</a></li>
 								<li><a href="#">Спеціаліст</a></li>
@@ -19,8 +20,17 @@
 				</nav>
 			</div>
 			<div class="header__actions">
-				<a href="#" class="header__user _icon-user">Увійти</a>
-				<a href="#" class="btn">Підібрати психотерапевта</a>
+				<button type='button' class="login-comment">
+					<img src="img/icons/comment.svg" alt="comment">
+					<span class="login-comment__badge">4</span>
+				</button>
+				<a href="#" class="login-user">
+					<div class="login-user__avatar">
+						<img src="img/avatars/client-avatar.svg" alt="login">
+					</div>
+					<div class="login-user__btn">Сергій</div>
+				</a>
+				<a href="#" class="btn header-action__btn">Підібрати психотерапевта</a>
 			</div>
 		</div>
 	</div>

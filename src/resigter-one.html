@@ -21,43 +21,45 @@
 									<input type="text">
 								</div>
 								@@include('html/components/_phone-input.htm')
-								<div class="field field--password">
-									<label class='field__label'>Пароль</label>
-									<div class="field__wrapper">
-										<input class='field__input' type="password">
-										<button class='field__icon' type="button">
-											<span class="field__show-pass">
-												<svg>
-													<use xlink:href="@img/icons/icons.svg#show-pass"></use>
-												</svg>
-											</span>
-											<span class="field__hide-pass">
-												<svg>
-													<use xlink:href="@img/icons/icons.svg#hide-pass"></use>
-												</svg>
-											</span>
-										</button>
+								<div class="register__row">
+									<div class="field field--password">
+										<label class='field__label'>Пароль</label>
+										<div class="field__wrapper">
+											<input class='field__input' type="password">
+											<button class='field__icon' type="button">
+												<span class="field__show-pass">
+													<svg>
+														<use xlink:href="@img/icons/icons.svg#show-pass"></use>
+													</svg>
+												</span>
+												<span class="field__hide-pass">
+													<svg>
+														<use xlink:href="@img/icons/icons.svg#hide-pass"></use>
+													</svg>
+												</span>
+											</button>
+										</div>
+										<span class='field__error'>@@error</span>
 									</div>
-									<span class='field__error'>@@error</span>
-								</div>
-								<div class="field field--password">
-									<label class='field__label'>Підтвердіть пароль</label>
-									<div class="field__wrapper">
-										<input class='field__input' type="password">
-										<button class='field__icon' type="button">
-											<span class="field__show-pass">
-												<svg>
-													<use xlink:href="@img/icons/icons.svg#show-pass"></use>
-												</svg>
-											</span>
-											<span class="field__hide-pass">
-												<svg>
-													<use xlink:href="@img/icons/icons.svg#hide-pass"></use>
-												</svg>
-											</span>
-										</button>
+									<div class="field field--password">
+										<label class='field__label'>Підтвердіть пароль</label>
+										<div class="field__wrapper">
+											<input class='field__input' type="password">
+											<button class='field__icon' type="button">
+												<span class="field__show-pass">
+													<svg>
+														<use xlink:href="@img/icons/icons.svg#show-pass"></use>
+													</svg>
+												</span>
+												<span class="field__hide-pass">
+													<svg>
+														<use xlink:href="@img/icons/icons.svg#hide-pass"></use>
+													</svg>
+												</span>
+											</button>
+										</div>
+										<span class='field__error'>@@error</span>
 									</div>
-									<span class='field__error'>@@error</span>
 								</div>
 							</div>
 							<div class="register__checkbox">

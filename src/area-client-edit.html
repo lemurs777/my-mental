@@ -74,6 +74,21 @@
 									<form action="#" class="area-info__form">
 										<div class="area-info__block">
 											<h3 class="title-h5 area-info__title">Мій профіль <span>(Редагування)</span></h3>
+											<div class="edit-block">
+												<div class="edit-block__avatar"><img src="img/avatars/client-avatar.svg" alt="avatar"></div>
+												<div class="edit-block__content">
+													<label class="btn-md btn-md--secondary-border edit-block__btn">
+														<input type="file">
+														<span>Завантажити фото</span>
+													</label>
+													<div class="edit-block__text">
+														<span>Формати: JPEG, JPG, PNG</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="area-info__block">
+
 											<div class="area-info__items">
 												<div class="field">
 													<label class="field__label">Ім’я</label>
@@ -92,7 +107,7 @@
 										</div>
 										<div class="area-info__block">
 											<h3 class="area-info__title">Вхід в особистий кабінет</h3>
-											<div class="area-info__items">
+											<div class="area-info__items area-info__items--row">
 												<div class="field field--password">
 													<label class='field__label'>Новий пароль</label>
 													<div class="field__wrapper">
@@ -227,24 +242,22 @@
 												<div class="my-expert__body">
 													<div class="avatar avatar--sm my-expert__avatar"><img src="img/experts/expert-1.jpg"
 															alt="avatar"></div>
-													<div class="my-expert__content">
-														<div class="my-expert__top">
-															<div class="my-expert__name">Віталій Соколов</div>
-															<div class="my-expert__type">Психолог, психотерапевт, психіатр</div>
+													<div class="my-expert__top">
+														<div class="my-expert__name">Віталій Соколов</div>
+														<div class="my-expert__type">Психолог, психотерапевт, психіатр</div>
+													</div>
+													<div class="my-expert__items">
+														<div class="my-expert__item">
+															<img src="img/icons/check-shield.svg" alt="shield">
+															<span>перевірений</span>
 														</div>
-														<div class="my-expert__items">
-															<div class="my-expert__item">
-																<img src="img/icons/check-shield.svg" alt="shield">
-																<span>перевірений</span>
-															</div>
-															<div class="my-expert__item">
-																200+
-																<span>годин практики</span>
-															</div>
-															<div class="my-expert__item">
-																2
-																<span>років досвіду</span>
-															</div>
+														<div class="my-expert__item">
+															200+
+															<span>годин практики</span>
+														</div>
+														<div class="my-expert__item">
+															2
+															<span>років досвіду</span>
 														</div>
 													</div>
 												</div>
@@ -260,7 +273,8 @@
 				</div>
 			</div>
 		</main>
-		@@include('html/_footer.htm',{})
+		<!-- @@include('html/_footer.htm',{}) -->
+		@@include('html/components/_client-widget.htm',{})
 	</div>
 	@@include('html/_js.htm',{})
 </body>
