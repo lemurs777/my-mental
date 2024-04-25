@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Інформація про фахівця</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap&_v=20240425122408" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css?_v=20240425122408">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240425122408">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper main-area">
+		<header class="header header--login" id='header'>
+			<div class="container">
+				<div class="header__inner">
+					<a href="#" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+					<a href="#" class="header__logo header__logo--mobile"><img src="img/mobile-logo.svg" alt="logo"></a>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#" class="menu__link">Про нас</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Наші фахівці</a></li>
+								<li class="menu__item">
+									<button class="menu__link _icon-chevron">Спеціалістам</button>
+									<ul>
+										<li><a href="#">Спеціаліст</a></li>
+										<li><a href="#">Спеціаліст</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__actions">
+						<button type='button' class="login-comment">
+							<img src="img/icons/comment.svg" alt="comment">
+							<span class="login-comment__badge">4</span>
+						</button>
+						<a href="#" class="login-user">
+							<div class="login-user__avatar">
+								<img src="img/icons/user-avatar.svg" alt="login">
+							</div>
+							<div class="login-user__btn _icon-chevron">Віталій Соколов</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="area-page" data-one-select>
+				<div class="area-container">
+					<div class="area-page__grid">
+						<div class="area-page__aside">
+							<div class="area-sidebar">
+								<div class="area-sidebar__nav">
+									<ul class="area-sidebar__list">
+										<li>
+											<a href="/area-edit.html" class='active'>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#user"></use>
+												</svg>
+												Мій профіль</a>
+										</li>
+										<li>
+											<a href="/area-schedule.html">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#calendar"></use>
+												</svg>
+												Графік роботи</a>
+										</li>
+										<li>
+											<a href="/area-payment.html">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#pays"></use>
+												</svg>
+												Платежі та сесії</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#chat"></use>
+												</svg>
+												Чат</a>
+										</li>
+									</ul>
+									<div class="area-sidebar__nav-bottom">
+										<a href="#" class="btn-sm btn-sm--grey-border area-sidebar__btn-google" data-da='.area-page__grid,767.98,first'>
+											<img src="img/icons/google.svg" alt="google">
+											Connect Google Calendar</a>
+									</div>
+								</div>
+								<div class="area-sidebar__bottom">
+									<a href="#" class="area-sidebar__exit">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#exit"></use>
+										</svg>
+										Вийти</a>
+								</div>
+							</div>
+						</div>
+						<div class="area-page__main">
+							<h1 class="title-h4 area-page__title">Привіт, Віталій!</h1>
+							<div class="area-page__inner">
+								<div class="area-info">
+									<form action="#" class="area-info__form">
+										<div class="area-info__block">
+											<h3 class="title-h5 area-info__title">Персональна інформація <span>(Редагування)</span></h3>
+											<div class="area-info__items">
+												<div class="field">
+													<label class="field__label">Ім’я та прізвище</label>
+													<input type="text" value='Віталій Соколов'>
+												</div>
+												<div class="area-info__row">
+													<div class="field field--radio">
+														<label class="field__label">Стать</label>
+														<div class="field__radio-btns">
+															<label class="radio-input">
+																Чоловіча
+																<input type="radio" name='gender' checked>
+																<span></span>
+															</label>
+															<label class="radio-input">
+																Жіноча
+																<input type="radio" name='gender'>
+																<span></span>
+															</label>
+														</div>
+													</div>
+													<div class="field field--inputs">
+														<label class="field__label">Дата народження</label>
+														<div class="field__inputs">
+															<input type="text" value='11'>
+															<input type="text" value='8'>
+															<input type="text" value='1986'>
+														</div>
+													</div>
+												</div>
+												<div class="field field--error">
+													<label class='field__label'>E-mail</label>
+													<input class='field__input' type="email" value='sokolovvalen@gmail.com'>
+													<span class='field__error'>Будь ласка підтвердіть вашу електронну пошту</span>
+												</div>
+												<div class="field">
+													<label class="field__label">Телефон</label>
+													<input type="number">
+												</div>
+												<div class="area-info__switch">
+													<label class='switch'>
+														<div class="switch__line">
+															<input type="checkbox" role='switch'>
+														</div>
+														<span>Зробити мій профіль недоступним для нових клієнтів</span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="area-info__block">
+											<h3 class="area-info__title">Вхід в особистий кабінет</h3>
+											<div class="area-info__items area-info__items--row">
+												<div class="field field--password">
+													<label class='field__label'>Новий пароль</label>
+													<div class="field__wrapper">
+														<input class='field__input' type="password">
+														<button class='field__icon' type="button">
+															<span class="field__show-pass">
+																<svg>
+																	<use xlink:href="img/icons/icons.svg#show-pass"></use>
+																</svg>
+															</span>
+															<span class="field__hide-pass">
+																<svg>
+																	<use xlink:href="img/icons/icons.svg#hide-pass"></use>
+																</svg>
+															</span>
+														</button>
+													</div>
+													<span class='field__error'>@@error</span>
+												</div>
+												<div class="field field--password">
+													<label class='field__label'>Повторити пароль</label>
+													<div class="field__wrapper">
+														<input class='field__input' type="password">
+														<button class='field__icon' type="button">
+															<span class="field__show-pass">
+																<svg>
+																	<use xlink:href="img/icons/icons.svg#show-pass"></use>
+																</svg>
+															</span>
+															<span class="field__hide-pass">
+																<svg>
+																	<use xlink:href="img/icons/icons.svg#hide-pass"></use>
+																</svg>
+															</span>
+														</button>
+													</div>
+													<span class='field__error'>@@error</span>
+												</div>
+											</div>
+										</div>
+										<div class="area-info__controls">
+											<button type="submit" class='btn-md btn-md--accent'>Зберегти</button>
+											<button type="submit" class='btn-md btn-md--grey-border'>Скасувати</button>
+										</div>
+									</form>
+								</div>
+								<div class="area-info">
+									<h3 class="area-info__title">Публічна інформація
+										<span>(Редагування)</span>
+									</h3>
+									<div class="area-info__section">
+										<div class="area-info__grid">
+											<div class="add-media">
+												<div class="add-media__head">
+													<h5 class="add-media__title">Будь ласка, додайте своє фото</h5>
+													<div class="add-media__text">
+														<p>
+															Гарне фото у профілі - це дуже важливо. Багато клієнтів роблять свій вибір тільки
+															подивившись
+															на ваше фото, тому воно має виглядати професійно.
+														</p>
+													</div>
+												</div>
+												<div class="add-media__body">
+													<div class="add-media__img"><img class='add-media__stub' src="img/avatars/empty-avatar.svg" alt="avatar"></div>
+												</div>
+												<div class="add-media__bottom">
+													<button class="btn-md btn-md--secondary-border add-media__btn">Додати фото</button>
+												</div>
+											</div>
+											<div class="add-media">
+												<div class="add-media__head">
+													<h5 class="add-media__title">Додайте свою відеовізитку</h5>
+													<div class="add-media__text">
+														<p>
+															Відеовізитка фахівця це 1 - 2 хв протягом яких Ви розказуєте основне про себе та свій
+															досвід,
+															щоб зацікавити клієнта.
+														</p>
+													</div>
+												</div>
+												<div class="add-media__body">
+													<div class="add-media__video">
+														<img class='add-media__stub' src="img/avatars/empty-video.svg" alt="video">
+													</div>
+												</div>
+												<div class="add-media__bottom">
+													<button class="btn-md btn-md--secondary-border add-media__btn">Додати відеовізитку</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="area-info__section">
+										<div class="area-info__label">Кваліфікація</div>
+										<div class="area-info__line-checkbox">
+											<label class='checkbox-input '>
+												<input type="checkbox">
+												<span></span>
+												Психолог
+											</label>
+											<label class='checkbox-input '>
+												<input type="checkbox">
+												<span></span>
+												Психотерапевт
+											</label>
+											<label class='checkbox-input '>
+												<input type="checkbox">
+												<span></span>
+												Психіатр
+											</label>
+										</div>
+									</div>
+									<div class="area-info__section">
+										<div class="area-info__items">
+											<div class="field undefined">
+												<label class='field__label'>Кількість годин практики</label>
+												<input class='field__input' type="text" placeholder="Вкажіть вашу кількість годин практики">
+												<span class='field__error'>undefined</span>
+											</div>
+											<div class="field undefined">
+												<label class='field__label'>Кількість років досвіду</label>
+												<input class='field__input' type="text" placeholder="Вкажіть ваш досвід роботи в роках">
+												<span class='field__error'>undefined</span>
+											</div>
+											<div class="area-info__textarea">
+												<div class="field field--textarea">
+													<div class="field__head">
+														<label class='field__label'>
+															Про мене <span>(розгорнутий опис)</span>
+														</label>
+														<div class="field__counter-textarea">
+															<span class="field__counter-current">
+																0
+															</span>
+															/
+															<span class="field__counter-total">1500</span>
+														</div>
+													</div>
+													<textarea placeholder="Про мене"></textarea>
+													<span class='field__error'>@@error</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="area-info__section">
+										<div class="area-info__label">Якою мовою ви маєте можливість працювати з клієнтами:</div>
+										<div class="area-info__line-checkbox">
+											<label class="radio-input">
+												Українською
+												<input type="radio" name='language'>
+												<span></span>
+											</label>
+											<label class="radio-input">
+												Російською
+												<input type="radio" name='language'>
+												<span></span>
+											</label>
+											<label class="radio-input">
+												Підходять обидва варіанти
+												<input type="radio" name='language'>
+												<span></span>
+											</label>
+										</div>
+									</div>
+									<div class="area-info__section">
+										<div class="area-info__items">
+											<div class="area-info__item">
+												<div class="area-info__label">В якому форматі ви проводите консультації:</div>
+												<div class="area-info__line-checkbox">
+													<label class="radio-input">
+														Онлайн
+														<input type="radio" name='consultation-format'>
+														<span></span>
+													</label>
+													<label class="radio-input">
+														Очно
+														<input type="radio" name='consultation-format'>
+														<span></span>
+													</label>
+													<label class="radio-input">
+														Підходять обидва варіанти
+														<input type="radio" name='consultation-format'>
+														<span></span>
+													</label>
+												</div>
+											</div>
+											<div class="area-info__selects">
+												<div class="field">
+													<label class='field__label'>Якщо Ви проводите очні консультації, вкажіть місто,
+														де ви проводите прийом:</label>
+													<select data-class-modif='custom'>
+														<option value="" selected>Київ</option>
+														<option value="2">Пункт №2</option>
+														<option value="3">Пункт №3</option>
+														<option value="4">Пункт №4</option>
+													</select>
+												</div>
+												<div class="field">
+													<label class='field__label'>Виберіть район:</label>
+													<select data-class-modif='custom'>
+														<option value="" selected>Голосіївський</option>
+														<option value="2">Пункт №2</option>
+														<option value="3">Пункт №3</option>
+														<option value="4">Пункт №4</option>
+													</select>
+												</div>
+												<div class="field">
+													<label class='field__label'>Вкажіть вашу адресу</label>
+													<select data-class-modif='custom'>
+														<option value="" selected data-class='select-placeholder'>Введіть або виберіть зі
+															списку
+															вашу адресу</option>
+														<option value="2">Пункт №2</option>
+														<option value="3">Пункт №3</option>
+														<option value="4">Пункт №4</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="area-info__section">
+										<h3 class="area-info__title">Вартість за сеанс
+										</h3>
+										<div class="area-info__grid">
+											<div class="frame area-info__col">
+												<div class="area-info__sub-title">Офлайн</div>
+												<div class="area-info__rows">
+													<div class="field-horizontal">
+														<label class="field-horizontal__label">Діти</label>
+														<div class="field-horizontal__items">
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number">
+																	<div class="field__icon">₴</div>
+																</div>
+															</div>
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number">
+																	<div class="field__icon">хв.</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="field-horizontal">
+														<label class="field-horizontal__label">Підлітки</label>
+														<div class="field-horizontal__items">
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number">
+																	<div class="field__icon">₴</div>
+																</div>
+															</div>
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number">
+																	<div class="field__icon">хв.</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="field-horizontal field-horizontal--choose">
+														<label class="field-horizontal__label">Дорослі</label>
+														<div class="field-horizontal__items">
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number" value='2000'>
+																	<div class="field__icon">₴</div>
+																</div>
+															</div>
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number" value='50'>
+																	<div class="field__icon">хв.</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="field-horizontal field-horizontal--choose">
+														<label class="field-horizontal__label">Пари</label>
+														<div class="field-horizontal__items">
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number" value='2500'>
+																	<div class="field__icon">₴</div>
+																</div>
+															</div>
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number" value='50'>
+																	<div class="field__icon">хв.</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="field-horizontal">
+														<label class="field-horizontal__label">Кар’єрний
+															коучинг</label>
+														<div class="field-horizontal__items">
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number">
+																	<div class="field__icon">₴</div>
+																</div>
+															</div>
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number">
+																	<div class="field__icon">хв.</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="frame area-info__col">
+												<div class="area-info__sub-title">Онлайн</div>
+												<div class="area-info__rows">
+													<div class="field-horizontal">
+														<label class="field-horizontal__label">Діти</label>
+														<div class="field-horizontal__items">
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number">
+																	<div class="field__icon">₴</div>
+																</div>
+															</div>
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number">
+																	<div class="field__icon">хв.</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="field-horizontal">
+														<label class="field-horizontal__label">Підлітки</label>
+														<div class="field-horizontal__items">
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number">
+																	<div class="field__icon">₴</div>
+																</div>
+															</div>
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number">
+																	<div class="field__icon">хв.</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="field-horizontal field-horizontal--choose">
+														<label class="field-horizontal__label">Дорослі</label>
+														<div class="field-horizontal__items">
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number" value='2000'>
+																	<div class="field__icon">₴</div>
+																</div>
+															</div>
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number" value='50'>
+																	<div class="field__icon">хв.</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="field-horizontal field-horizontal--choose">
+														<label class="field-horizontal__label">Пари</label>
+														<div class="field-horizontal__items">
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number" value='2500'>
+																	<div class="field__icon">₴</div>
+																</div>
+															</div>
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number" value='50'>
+																	<div class="field__icon">хв.</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="field-horizontal">
+														<label class="field-horizontal__label">Кар’єрний
+															коучинг</label>
+														<div class="field-horizontal__items">
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number">
+																	<div class="field__icon">₴</div>
+																</div>
+															</div>
+															<div class="field field--icon">
+																<div class="field__wrapper">
+																	<input type="number">
+																	<div class="field__icon">хв.</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="area-info__section">
+										<div class="education-info">
+											<div class="education-info__head">
+												<h3 class="education-info__title">Освіта в хронологічному порядку по роках, починаючи з
+													раннього</h3>
+												<div class="education-info__text">
+													<p>97% наших клієнтів переходять до перегляду освіти спеціаліста перед бронюванням сеансу.
+														Ваша освіта та курси формують ціну яку ви ставите у профілі, тому вказуйте якомога більше
+														релевантної освіти.</p>
+												</div>
+											</div>
+											<div class="education-info__grid">
+												<div class="education-info__block">
+													<div class="education-info__block-title">Додати диплом #1</div>
+													<form class="education-info__form">
+														<div class="field">
+															<textarea style='height: 80px;' placeholder='Назва навчального закладу'></textarea>
+														</div>
+														<div class="field">
+															<textarea style='height: 80px;' placeholder='Спеціальність'></textarea>
+														</div>
+														<div class="field field--select">
+															<select data-class-modif="custom">
+																<option value="" selected data-class="select-placeholder">Рік вступу</option>
+																<option value="2">Пункт №2</option>
+																<option value="3">Пункт №3</option>
+																<option value="4">Пункт №4</option>
+															</select>
+														</div>
+														<div class="field field--select">
+															<select data-class-modif="custom">
+																<option value="" selected data-class="select-placeholder">Рік закінчення</option>
+																<option value="2">Пункт №2</option>
+																<option value="3">Пункт №3</option>
+																<option value="4">Пункт №4</option>
+															</select>
+														</div>
+														<button type="submit" class="btn btn--secondary-border education-info__submit">
+															Завантажити фото диплому
+														</button>
+													</form>
+												</div>
+												<label class="education-info__add">
+													<input type="file">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#plus"></use>
+													</svg>
+													<span>Додати ще один диплом</span>
+												</label>
+											</div>
+											<div class="education-info__bottom">
+												<p>Основні вимоги до дипломів:</p>
+												<br>
+												<ul>
+													<li>До кожного курсу, або освіти ви можете додати тільки 1 диплом</li>
+													<li>
+														Диплом повинен бути у форматі картинки (jpg, jpeg, png)
+													</li>
+													<li>
+														Диплом має бути хорошої якості (в ідеалі скан)
+													</li>
+													<li>Обовʼязково перевірте, що ви завантажили диплом правильно, а не догори дригом</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="area-info__section">
+										<div class="area-methods">
+											<div class="area-methods__title">Методи, в яких я працюю</div>
+											<div class="area-methods__input">
+												<div class="field">
+													<input class='field__input' type="text" placeholder="Будь ласка, введіть свій метод, якщо його немає в списку">
+													<span class='field__error'></span>
+												</div>
+											</div>
+											<div class="area-methods__grid">
+												<label class='checkbox-input undefined'>
+													<input type="checkbox">
+													<span></span>
+													КПТ
+												</label>
+												<label class='checkbox-input undefined'>
+													<input type="checkbox">
+													<span></span>
+													Гештальт
+												</label>
+												<label class='checkbox-input undefined'>
+													<input type="checkbox">
+													<span></span>
+													Клієнт-центровані методи
+												</label>
+												<label class='checkbox-input undefined'>
+													<input type="checkbox">
+													<span></span>
+													Психодинамічні методи
+												</label>
+												<label class='checkbox-input undefined'>
+													<input type="checkbox">
+													<span></span>
+													Схематерапія
+												</label>
+												<label class='checkbox-input undefined'>
+													<input type="checkbox">
+													<span></span>
+													Системна сімейна терапія
+												</label>
+												<label class='checkbox-input undefined'>
+													<input type="checkbox">
+													<span></span>
+													Нейропсихологічні методи
+												</label>
+												<label class='checkbox-input undefined'>
+													<input type="checkbox">
+													<span></span>
+													Тілесно-орієнтовані методи
+												</label>
+												<label class='checkbox-input undefined'>
+													<input type="checkbox">
+													<span></span>
+													Короткострокова стратегічна терапія
+												</label>
+												<label class='checkbox-input undefined'>
+													<input type="checkbox">
+													<span></span>
+													Позитивна терапія
+												</label>
+												<label class='checkbox-input undefined'>
+													<input type="checkbox">
+													<span></span>
+													Транзактний аналіз
+												</label>
+												<label class='checkbox-input undefined'>
+													<input type="checkbox">
+													<span></span>
+													Коучинг
+												</label>
+												<label class='checkbox-input undefined'>
+													<input type="checkbox">
+													<span></span>
+													Психоаналіз
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="area-info__section">
+										<div class="area-info__head">
+											<h3 class="area-info__title">З якими запитами я працюю</h3>
+											<div class="area-info__row-md">
+												<div class="area-info__column">
+													<div class="area-info__column-head">
+														<div class="area-info__column-title">Стан та якість життя:</div>
+													</div>
+													<div class="area-info__column-body">
+														<div class="area-info__column-list">
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Самооцінка та самоцінність
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Самовизначення та самоідентифікація
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Особистий розвиток
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Апатія,депресивні стани, пригніченість
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Тривожні стани
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Проблеми зі сном
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Дратівливість, агресія, імпульсивність
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Емоційні зриви
+															</label>
+														</div>
+														<div class="area-info__column-more">
+															<button type="button" class="show-more-item">Ще 8</button>
+														</div>
+													</div>
+												</div>
+												<div class="area-info__column">
+													<div class="area-info__column-head">
+														<div class="area-info__column-title">Відносини::</div>
+													</div>
+													<div class="area-info__column-body">
+														<div class="area-info__column-list">
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Складнощі у відносинах
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Самотність
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Інтимність та сексуальність
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Розставання, розлучення
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Співзалежність
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Відносини з батьками, сепарація
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Відносини з дітьми
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Аб’юз, емоційне насилля
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Домашнє насильство
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="area-info__column">
+													<div class="area-info__column-head">
+														<div class="area-info__column-title">Професійна діяльність, навчання:</div>
+													</div>
+													<div class="area-info__column-body">
+														<div class="area-info__column-list">
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Вигорання на роботі (емоційне вигорання)
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Трудоголізм
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Конфлікти на роботі
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Прокрастинація
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="area-info__column">
+													<div class="area-info__column-head">
+														<div class="area-info__column-title">Зміни в житті:</div>
+													</div>
+													<div class="area-info__column-body">
+														<div class="area-info__column-list">
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Вагітність та народження дітей
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Вікові кризи
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Втрата та горе
+															</label>
+															<label class='checkbox-input'>
+																<input type="checkbox">
+																<span></span>
+																Адаптація, еміграція
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="area-page__control">
+										<a href="#" class="btn-md btn-md--accent">Зберегти</a>
+										<a href="#" class="btn-md btn-md--grey-border">Скасувати</a>
+									</div>
+								</div>
+								<div class="area-page__bottom">
+									<a href="#" class="btn">Відправити на модерацію</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- <footer class="footer">
+	<div class="container">
+		<a href='#header' class="top">
+	<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M16.583 9.00065L8.99968 1.41732M8.99968 1.41732L1.41634 9.00065M8.99968 1.41732L8.99968 16.584"
+			stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+
+</a>
+		<div class="footer__inner">
+			<div class="footer__col footer__col--left">
+				<div class="footer__block">
+					<a href='#' class="footer__logo"><img src="img/logo.svg" alt="logo"></a>
+					<a href="#" class="footer__link">Психотерапія та <br> ментальне здоров’я</a>
+					<a href="mailto:" class="footer__mail-link">Support@mymental.com.ua</a>
+					<a href="#" class="social-btn">
+						<span class="social-btn__icon">
+							<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M18.4998 0.775709L15.6529 15.1293C15.6529 15.1293 15.2549 16.1246 14.1598 15.6468L7.56063 10.5959C8.44762 9.79856 15.3288 3.61212 15.6297 3.33157C16.0948 2.89739 15.8062 2.63899 15.2655 2.96735L5.10145 9.42204L1.18012 8.10192C1.18012 8.10192 0.562777 7.8829 0.503363 7.40512C0.443598 6.92735 1.20016 6.6686 1.20016 6.6686L17.1861 0.397428C17.1861 0.397428 18.4998 -0.179838 18.4998 0.775709Z"
+									fill="currentColor" />
+							</svg>
+						</span>
+						Telegram
+					</a>
+				</div>
+				<div class="footer__copy">
+					<span>© 2024 MyMental. Всі права захищені.</span>
+				</div>
+			</div>
+			<div class="footer__col">
+				<div class="footer__title-sm">Навігація</div>
+				<ul class="footer__list">
+					<li><a href="#">Про нас</a></li>
+					<li><a href="#">Всі фахівці</a></li>
+					<li><a href="#">Психотерапевтам</a></li>
+				</ul>
+			</div>
+			<div class="footer__col">
+				<div class="footer__title-sm">Юридична інформація</div>
+				<ul class="footer__list">
+					<li><a href="#">Дисклеймер</a></li>
+					<li><a href="#">Політика використання</a></li>
+					<li><a href="#">Ліцензійна угода Умови</a></li>
+					<li><a href="#">Умови та положення</a></li>
+					<li><a href="#">Політика конфіденційності</a></li>
+					<li><a href="#">Договір публічної оферти</a></li>
+					<li><a href="#">Угода користувача</a></li>
+				</ul>
+			</div>
+			<div class="footer__col">
+				<div class="footer__title-sm">Корисна інформація</div>
+				<ul class="footer__list">
+					<li><a href="tel:">0 800 505 201</a> - Гаряча лінія МОЗ</li>
+					<li><a href="tel:">0 800 60 20 19</a> - Контакт-центр МОЗ</li>
+					<li><a class='footer__link-mail' href="mailto:">moz.gov.ua</a></li>
+					<li><a href="tel:">7333</a> - Цілодобова гаряча лінія з попередження суїцидів та психологічної підтримки
+						Lifeline Ukraine
+						для ветеранів</li>
+					<li><a href="tel:">0–800–501–701</a> - Всеукраїнський телефон довіри</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__copy">
+				<span>© 2024 MyMental. Всі права захищені.</span>
+			</div>
+		</div>
+	</div>
+
+</footer> -->
+		<div class="bottom-widget">
+			<div class="area-mobile-menu">
+				<a href="area.html" class='area-nav active'>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#user-mobile"></use>
+					</svg>
+					Мій <br>
+					профіль
+				</a>
+				<a href="area-schedule.html" class='area-nav'>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#clock-mobile"></use>
+					</svg>
+					Графік <br>
+					роботи
+				</a>
+				<a href="area-payment.html" class='area-nav'>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#pay-mobile"></use>
+					</svg>
+					Платежі <br>
+					та сесії
+				</a>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js?_v=20240425122408"></script>
+	<script src="js/app.min.js?_v=20240425122408"></script>
+</body>
+
+</html>

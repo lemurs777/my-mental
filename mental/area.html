@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Інформація про фахівця</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap&_v=20240425122408" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css?_v=20240425122408">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240425122408">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper main-area">
+		<header class="header header--login" id='header'>
+			<div class="container">
+				<div class="header__inner">
+					<a href="#" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+					<a href="#" class="header__logo header__logo--mobile"><img src="img/mobile-logo.svg" alt="logo"></a>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#" class="menu__link">Про нас</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Наші фахівці</a></li>
+								<li class="menu__item">
+									<button class="menu__link _icon-chevron">Спеціалістам</button>
+									<ul>
+										<li><a href="#">Спеціаліст</a></li>
+										<li><a href="#">Спеціаліст</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__actions">
+						<button type='button' class="login-comment">
+							<img src="img/icons/comment.svg" alt="comment">
+							<span class="login-comment__badge">4</span>
+						</button>
+						<a href="#" class="login-user">
+							<div class="login-user__avatar">
+								<img src="img/icons/user-avatar.svg" alt="login">
+							</div>
+							<div class="login-user__btn _icon-chevron">Віталій Соколов</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="area-page" data-one-select>
+				<div class="area-container">
+					<div class="area-page__grid">
+						<div class="area-page__aside">
+							<div class="area-sidebar">
+								<div class="area-sidebar__nav">
+									<ul class="area-sidebar__list">
+										<li>
+											<a href="/area.html" class='active'>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#user"></use>
+												</svg>
+												Мій профіль</a>
+										</li>
+										<li>
+											<a href="/area-schedule.html">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#calendar"></use>
+												</svg>
+												Графік роботи</a>
+										</li>
+										<li>
+											<a href="/area-payment.html">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#pays"></use>
+												</svg>
+												Платежі та сесії</a>
+										</li>
+										<li>
+											<a href="/area-chat.html">
+												<svg>
+													<use xlink:href="img/icons/icons.svg#chat"></use>
+												</svg>
+												Чат</a>
+										</li>
+									</ul>
+									<div class="area-sidebar__nav-bottom">
+										<a href="#" class="btn-sm btn-sm--grey-border area-sidebar__btn-google" data-da='.area-page__grid,767.98,first'>
+											<img src="img/icons/google.svg" alt="google">
+											Connect Google Calendar</a>
+									</div>
+								</div>
+								<div class="area-sidebar__bottom">
+									<a href="#" class="area-sidebar__exit">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#exit"></use>
+										</svg>
+										Вийти</a>
+								</div>
+							</div>
+						</div>
+						<div class="area-page__main">
+							<h1 class="title-h4 area-page__title">Привіт, Віталій!</h1>
+							<div class="area-page__inner">
+								<div class="area">
+									<div class="area__inner">
+										<div class="area-block">
+											<div class="area-block__top">
+												<div class="area-block__head">
+													<h3 class="area-block__title">Персональна інформація</h3>
+													<button class="area-block__edit" type='button'>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#pencil"></use>
+														</svg>
+													</button>
+												</div>
+												<div class="area-block__name">Віталій Соколов</div>
+												<div class="area-block__info-list">
+													<div class="area-block__info-item">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#gender-man"></use>
+														</svg>
+														Чоловік
+													</div>
+
+													<div class="area-block__info-item">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#calendar-2"></use>
+														</svg>
+														11.08.1986
+													</div>
+
+													<div class="area-block__info-item">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#mail"></use>
+														</svg>
+														sokolovvalen@gmail.com
+													</div>
+
+													<div class="area-block__info-item">
+														<svg>
+															<use xlink:href="img/icons/icons.svg#phone"></use>
+														</svg>
+														+380 95 675 24 56
+													</div>
+												</div>
+											</div>
+											<div class="area-block__section">
+												<label class='switch'>
+													<div class="switch__line">
+														<input type="checkbox" role='switch'>
+													</div>
+													<span>Зробити мій профіль недоступним для нових клієнтів</span>
+												</label>
+											</div>
+											<div class="area-block__bottom">
+												<a href="#" class="area-block__link-btn">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#lock"></use>
+													</svg>
+													Скинути пароль
+												</a>
+												<a href="#" class="area-block__link-btn">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#trash"></use>
+													</svg>
+													Скинути пароль
+												</a>
+											</div>
+										</div>
+										<div class="area-block">
+											<div class="area-block__top">
+												<div class="area-block__head">
+													<h3 class="area-block__title">Публічна інформація</h3>
+													<button class="area-block__edit" type='button'>
+														<svg>
+															<use xlink:href="img/icons/icons.svg#pencil"></use>
+														</svg>
+													</button>
+												</div>
+											</div>
+											<div class="area-block__section">
+												<div class="area-block__media">
+													<div class="area-media">
+														<div class="area-media__avatar avatar avatar--sm">
+															<picture><source srcset="img/avatars/avatar-6.webp" type="image/webp"><img src="img/avatars/avatar-6.jpg" alt="avatar"></picture>
+														</div>
+														<div class="area-media__info">
+															<div class="area-media__title">Фото профілю</div>
+															<div class="area-media__link">IMG_8a043_c6f41234_14fdfa123...JPG</div>
+															<label class="area-media__add">
+																<input type="file">
+																<span>Завантажити нове фото</span>
+															</label>
+														</div>
+													</div>
+													<div class="area-media area-media--video">
+														<div class="area-media__video">
+															<div class="expert-video expert-video--pause">
+																<picture><source srcset="img/video.webp" type="image/webp"><img src="img/video.jpg" alt="video"></picture>
+																<button class="expert-video__play"><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path fill-rule="evenodd" clip-rule="evenodd" d="M16.9651 8.22131L3.46117 0.425217C3.14892 0.245123 2.79479 0.150341 2.43432 0.150391C2.07386 0.15044 1.71975 0.245317 1.40755 0.425497C1.09535 0.605677 0.83605 0.864818 0.655673 1.1769C0.475296 1.48899 0.380194 1.84304 0.379917 2.2035V17.7972C0.377835 18.1582 0.471816 18.5132 0.652217 18.8258C0.832618 19.1384 1.09294 19.3974 1.40648 19.5762C1.71822 19.7583 2.07278 19.8543 2.43382 19.8543C2.79487 19.8543 3.14943 19.7583 3.46117 19.5762L16.9651 11.7793C17.2772 11.5989 17.5363 11.3395 17.7165 11.0273C17.8967 10.715 17.9915 10.3609 17.9915 10.0004C17.9915 9.63987 17.8967 9.28572 17.7165 8.97347C17.5363 8.66122 17.2772 8.40187 16.9651 8.22147V8.22131Z" fill="currentColor" />
+																	</svg>
+
+																</button>
+																<div class="expert-video__timer">
+																	<span><svg width="7" height="8" viewBox="0 0 7 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+																			<path fill-rule="evenodd" clip-rule="evenodd" d="M6.57938 3.27688L1.46765 0.111583C1.34945 0.0384622 1.2154 -1.9991e-05 1.07895 7.7909e-09C0.942503 2.00066e-05 0.80846 0.0385413 0.690281 0.111696C0.572102 0.184851 0.473946 0.290065 0.405666 0.416776C0.337387 0.543486 0.301387 0.687233 0.301282 0.833585V7.16482C0.300494 7.31136 0.33607 7.45549 0.404358 7.58241C0.472646 7.70934 0.571189 7.81449 0.689874 7.88708C0.807879 7.96103 0.942092 8 1.07876 8C1.21543 8 1.34965 7.96103 1.46765 7.88708L6.57938 4.72146C6.69753 4.64821 6.79563 4.54292 6.86383 4.41614C6.93203 4.28936 6.96794 4.14557 6.96794 3.9992C6.96794 3.85284 6.93203 3.70904 6.86383 3.58227C6.79563 3.45549 6.69753 3.35019 6.57938 3.27695V3.27688Z" fill="currentColor" />
+																		</svg>
+																	</span>
+																	01:33
+																</div>
+															</div>
+														</div>
+														<div class="area-media__info">
+															<div class="area-media__title">Відеовізитка</div>
+															<div class="area-media__link">IMG_8a043_c6f41234_14fdfa123...MP4</div>
+															<label class="area-media__add">
+																<input type="file">
+																<span>Завантажити нове відео</span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="area-block__section">
+												<div class="area-block__items">
+													<div class="area-block__item">
+														<div class='area-block__item-title'>Ваша кваліфікація</div>
+														<div class='area-block__item-text'>Психолог</div>
+													</div>
+												</div>
+											</div>
+											<div class="area-block__section">
+												<div class="area-block__items">
+													<div class="area-block__item">
+														<div class='area-block__item-title'>Кількість годин практики</div>
+														<div class='area-block__item-text'>130</div>
+													</div>
+													<div class="area-block__item">
+														<div class='area-block__item-title'>Кількість років досвіду</div>
+														<div class='area-block__item-text'>2</div>
+													</div>
+												</div>
+											</div>
+											<div class="area-block__section">
+												<div class="area-block__items">
+													<div class="area-block__item">
+														<div class='area-block__item-title'>Про мене</div>
+														<div class='area-block__item-text'>
+															<p>Вітаю! Я — професійний психолог з багаторічним досвідом роботи. Моя місія — допомагати
+																людям знаходити гармонію в собі та у відносинах з навколишнім світом. Я вірю, що кожна
+																людина володіє внутрішнім потенціалом для щастя та самореалізації, а моя задача —
+																допомогти вам цей потенціал розкрити.</p>
+															<br>
+															<p>
+																У своїй роботі я використовую індивідуальний підхід, поєднуючи класичні та інноваційні
+																методики психотерапії. Мої спеціалізації включають роботу з тривожними розладами,
+																депресією, проблемами у відносинах, самооцінкою та особистісним зростанням. Я також
+																проводжу сімейні консультації та допомагаю у вирішенні конфліктів.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="area-block__section">
+												<div class="area-block__items">
+													<div class="area-block__item">
+														<div class='area-block__item-title'>Мова консультацій</div>
+														<div class='area-block__item-text'>Українська</div>
+													</div>
+												</div>
+											</div>
+											<div class="area-block__section">
+												<div class="area-block__items">
+													<div class="area-block__item">
+														<div class='area-block__item-title'>Формат консультацій</div>
+														<div class='area-block__item-text'>Тільки онлайн</div>
+													</div>
+												</div>
+											</div>
+											<div class="area-block__section">
+												<div class="area-block__items">
+													<div class="area-block__item">
+														<div class='area-block__item-title'>Вартість за сеанс</div>
+														<div class='area-block__item-labels'>
+															<div class="item-label">
+																<div class="item-label__title">Дорослі</div>
+																<div class="item-label__content">2 000 ₴ / 50хв.</div>
+															</div>
+															<div class="item-label">
+																<div class="item-label__title">Дорослі</div>
+																<div class="item-label__content">2 000 ₴ / 50хв.</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="area-block__section">
+												<div class="expert-education">
+													<div class="frame__inner">
+														<div class="frame__head">
+															<h3 class="title-h5">Моя освіта</h3>
+														</div>
+														<div class="frame__body">
+															<div class="expert-education__list">
+																<div class="education-item">
+																	<div class="education-item__icon">
+																		<img src="img/icons/education.svg" alt="education">
+																	</div>
+																	<div class="education-item__content">
+																		<h4 class="education-item__title title-h6">Львівський національний університет імені
+																			І. Франка
+																		</h4>
+																		<div class="education-item__dir">Психологія</div>
+																		<div class="education-item__years">2019 - 2021</div>
+																	</div>
+																	<div class="education-item__btns">
+																		<button class="btn btn--secondary education-item__btn">
+																			<img src="img/icons/document.svg" alt="document">
+																			<span>Документ</span>
+																		</button>
+																	</div>
+																</div>
+																<div class="education-item">
+																	<div class="education-item__icon">
+																		<img src="img/icons/education.svg" alt="education">
+																	</div>
+																	<div class="education-item__content">
+																		<h4 class="education-item__title title-h6">Український інститут когнітивно
+																			поведнікової
+																			терапії
+																		</h4>
+																		<div class="education-item__dir">Схема терапія</div>
+																		<div class="education-item__years">2022 - 2023</div>
+																	</div>
+																	<div class="education-item__btns">
+																		<button class="btn btn--secondary education-item__btn">
+																			<img src="img/icons/document.svg" alt="document">
+																			<span>Документ</span>
+																		</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="area-block__section">
+
+												<div class="expert-dir">
+													<div class="frame__inner">
+														<div class="frame__head">
+															<h3 class="title-h5">Методи, в яких я працюю</h3>
+														</div>
+														<div class="frame__body">
+															<ul class="expert-dir__list">
+																<li>Посттравматичний стресовий розлад</li>
+																<li>Інтегративний підхід</li>
+																<li>Тілесна терапія</li>
+																<li>Психосоматика</li>
+																<li>Дитячо-батьківські відносини</li>
+																<li>Коучинг</li>
+																<li>Пережите насильство</li>
+																<li>Когнітивно-поведінкова терапія</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="area-block__section">
+												<div class="expert-want">
+													<div class="frame__inner">
+														<div class="frame__head">
+															<h3 class="title-h5">З якими запитами я працюю</h3>
+														</div>
+														<div class="frame__body">
+															<div class="expert-want__labels">
+																<div class="label label--light">Побороти комплекси</div>
+																<div class="label label--light">Подолати травматичний досвід</div>
+																<div class="label label--light">Адаптуватися</div>
+																<div class="label label--light">Краще розуміти емоції</div>
+																<div class="label label--light">Підвищити самооцінку</div>
+																<div class="label label--light">Особистісне зростання</div>
+																<div class="label label--light">Здорові стосунки</div>
+																<div class="label label--light">Пережити горе</div>
+																<div class="label label--light">Пережити втрату</div>
+																<div class="label label--light">Подолати вікову кризу</div>
+																<div class="label label--light">Фізичне насильство</div>
+																<div class="label label--light">Сексуалізоване насильство</div>
+																<div class="label label--light">Пройти сепарацію</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- <footer class="footer">
+	<div class="container">
+		<a href='#header' class="top">
+	<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M16.583 9.00065L8.99968 1.41732M8.99968 1.41732L1.41634 9.00065M8.99968 1.41732L8.99968 16.584"
+			stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+
+</a>
+		<div class="footer__inner">
+			<div class="footer__col footer__col--left">
+				<div class="footer__block">
+					<a href='#' class="footer__logo"><img src="img/logo.svg" alt="logo"></a>
+					<a href="#" class="footer__link">Психотерапія та <br> ментальне здоров’я</a>
+					<a href="mailto:" class="footer__mail-link">Support@mymental.com.ua</a>
+					<a href="#" class="social-btn">
+						<span class="social-btn__icon">
+							<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M18.4998 0.775709L15.6529 15.1293C15.6529 15.1293 15.2549 16.1246 14.1598 15.6468L7.56063 10.5959C8.44762 9.79856 15.3288 3.61212 15.6297 3.33157C16.0948 2.89739 15.8062 2.63899 15.2655 2.96735L5.10145 9.42204L1.18012 8.10192C1.18012 8.10192 0.562777 7.8829 0.503363 7.40512C0.443598 6.92735 1.20016 6.6686 1.20016 6.6686L17.1861 0.397428C17.1861 0.397428 18.4998 -0.179838 18.4998 0.775709Z"
+									fill="currentColor" />
+							</svg>
+						</span>
+						Telegram
+					</a>
+				</div>
+				<div class="footer__copy">
+					<span>© 2024 MyMental. Всі права захищені.</span>
+				</div>
+			</div>
+			<div class="footer__col">
+				<div class="footer__title-sm">Навігація</div>
+				<ul class="footer__list">
+					<li><a href="#">Про нас</a></li>
+					<li><a href="#">Всі фахівці</a></li>
+					<li><a href="#">Психотерапевтам</a></li>
+				</ul>
+			</div>
+			<div class="footer__col">
+				<div class="footer__title-sm">Юридична інформація</div>
+				<ul class="footer__list">
+					<li><a href="#">Дисклеймер</a></li>
+					<li><a href="#">Політика використання</a></li>
+					<li><a href="#">Ліцензійна угода Умови</a></li>
+					<li><a href="#">Умови та положення</a></li>
+					<li><a href="#">Політика конфіденційності</a></li>
+					<li><a href="#">Договір публічної оферти</a></li>
+					<li><a href="#">Угода користувача</a></li>
+				</ul>
+			</div>
+			<div class="footer__col">
+				<div class="footer__title-sm">Корисна інформація</div>
+				<ul class="footer__list">
+					<li><a href="tel:">0 800 505 201</a> - Гаряча лінія МОЗ</li>
+					<li><a href="tel:">0 800 60 20 19</a> - Контакт-центр МОЗ</li>
+					<li><a class='footer__link-mail' href="mailto:">moz.gov.ua</a></li>
+					<li><a href="tel:">7333</a> - Цілодобова гаряча лінія з попередження суїцидів та психологічної підтримки
+						Lifeline Ukraine
+						для ветеранів</li>
+					<li><a href="tel:">0–800–501–701</a> - Всеукраїнський телефон довіри</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__copy">
+				<span>© 2024 MyMental. Всі права захищені.</span>
+			</div>
+		</div>
+	</div>
+
+</footer> -->
+		<div class="bottom-widget">
+			<div class="area-mobile-menu">
+				<a href="area.html" class='area-nav active'>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#user-mobile"></use>
+					</svg>
+					Мій <br>
+					профіль
+				</a>
+				<a href="area-schedule.html" class='area-nav'>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#clock-mobile"></use>
+					</svg>
+					Графік <br>
+					роботи
+				</a>
+				<a href="area-payment.html" class='area-nav'>
+					<svg>
+						<use xlink:href="img/icons/icons.svg#pay-mobile"></use>
+					</svg>
+					Платежі <br>
+					та сесії
+				</a>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js?_v=20240425122408"></script>
+	<script src="js/app.min.js?_v=20240425122408"></script>
+</body>
+
+</html>

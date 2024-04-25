@@ -1,0 +1,1927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Реєстрація</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap&_v=20240425122408" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css?_v=20240425122408">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240425122408">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper auth-page">
+		<header class="header" id='header'>
+			<div class="container">
+				<div class="header__inner">
+					<a href="#" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+					<a href="#" class="header__logo header__logo--mobile"><img src="img/mobile-logo.svg" alt="logo"></a>
+
+					<div class="header__actions">
+						<div class="mobile">
+							<a href="#" class="header__user _icon-user">Увійти</a>
+						</div>
+						<div class="desktop">
+							<a href="../" class="link-back">Повернутися назад</a>
+						</div>
+					</div>
+					<div class="mobile">
+						<div class="header__menu menu">
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="#" class="menu__link">Про нас</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">Наші фахівці</a></li>
+									<li class="menu__item">
+										<button class="menu__link _icon-chevron">Спеціалістам</button>
+										<ul>
+											<li><a href="#">Спеціаліст</a></li>
+											<li><a href="#">Спеціаліст</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page ">
+			<div class="container">
+				<div class="frame frame-register" style='position: relative;'>
+					<div class="register">
+						<h1 class="register__title">Реєстрація ✨</h1>
+						<div class="register__item">
+							<div class="register__fields">
+								<div class="field">
+									<label class="field__label">E-mail</label>
+									<input type="email">
+								</div>
+								<div class="field">
+									<label class="field__label">Ім’я</label>
+									<input type="text">
+								</div>
+								<div class="field">
+									<label class="field__label">Телефон</label>
+									<div class="field__wrapper">
+										<div class="flag-container">
+											<div class="selected-flag">
+												<div class="flag us"></div>
+												<div class="arrow"></div>
+											</div>
+										</div>
+										<ul class="country-list">
+											<li class="country preferred active">
+												<div class="flag-box">
+													<div class="flag us"></div>
+												</div>
+												<span class="country-name">United States</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country preferred">
+												<div class="flag-box">
+													<div class="flag gb"></div>
+												</div>
+												<span class="country-name">United Kingdom</span>
+												<span class="dial-code">+44</span>
+											</li>
+											<li class="divider"></li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag af"></div>
+												</div>
+												<span class="country-name">Afghanistan</span>
+												<span class="dial-code">+93</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ax"></div>
+												</div>
+												<span class="country-name">Aland Islands</span>
+												<span class="dial-code">+358</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag al"></div>
+												</div>
+												<span class="country-name">Albania</span>
+												<span class="dial-code">+355</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag dz"></div>
+												</div>
+												<span class="country-name">Algeria</span>
+												<span class="dial-code">+213</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag as"></div>
+												</div>
+												<span class="country-name">American Samoa</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ad"></div>
+												</div>
+												<span class="country-name">Andorra</span>
+												<span class="dial-code">+376</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ao"></div>
+												</div>
+												<span class="country-name">Angola</span>
+												<span class="dial-code">+244</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ai"></div>
+												</div>
+												<span class="country-name">Anguilla</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ag"></div>
+												</div>
+												<span class="country-name">Antigua and Barbuda</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ar"></div>
+												</div>
+												<span class="country-name">Argentina</span>
+												<span class="dial-code">+54</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag am"></div>
+												</div>
+												<span class="country-name">Armenia</span>
+												<span class="dial-code">+374</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag aw"></div>
+												</div>
+												<span class="country-name">Aruba</span>
+												<span class="dial-code">+297</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ac"></div>
+												</div>
+												<span class="country-name">Ascension Island</span>
+												<span class="dial-code">+247</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag au"></div>
+												</div>
+												<span class="country-name">Australia</span>
+												<span class="dial-code">+61</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag at"></div>
+												</div>
+												<span class="country-name">Austria</span>
+												<span class="dial-code">+43</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag az"></div>
+												</div>
+												<span class="country-name">Azerbaijan</span>
+												<span class="dial-code">+994</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag bs"></div>
+												</div>
+												<span class="country-name">Bahamas</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag bh"></div>
+												</div>
+												<span class="country-name">Bahrain</span>
+												<span class="dial-code">+973</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag bd"></div>
+												</div>
+												<span class="country-name">Bangladesh</span>
+												<span class="dial-code">+880</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag bb"></div>
+												</div>
+												<span class="country-name">Barbados</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag by"></div>
+												</div>
+												<span class="country-name">Belarus</span>
+												<span class="dial-code">+375</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag be"></div>
+												</div>
+												<span class="country-name">Belgium</span>
+												<span class="dial-code">+32</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag bz"></div>
+												</div>
+												<span class="country-name">Belize</span>
+												<span class="dial-code">+501</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag bj"></div>
+												</div>
+												<span class="country-name">Benin</span>
+												<span class="dial-code">+229</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag bm"></div>
+												</div>
+												<span class="country-name">Bermuda</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag bt"></div>
+												</div>
+												<span class="country-name">Bhutan</span>
+												<span class="dial-code">+975</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag bo"></div>
+												</div>
+												<span class="country-name">Bolivia</span>
+												<span class="dial-code">+591</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ba"></div>
+												</div>
+												<span class="country-name">Bosnia and Herzegovina</span>
+												<span class="dial-code">+387</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag bw"></div>
+												</div>
+												<span class="country-name">Botswana</span>
+												<span class="dial-code">+267</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag br"></div>
+												</div>
+												<span class="country-name">Brazil</span>
+												<span class="dial-code">+55</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag io"></div>
+												</div>
+												<span class="country-name">British Indian Ocean Territory</span>
+												<span class="dial-code">+246</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag bn"></div>
+												</div>
+												<span class="country-name">Brunei Darussalam</span>
+												<span class="dial-code">+673</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag bg"></div>
+												</div>
+												<span class="country-name">Bulgaria</span>
+												<span class="dial-code">+359</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag bf"></div>
+												</div>
+												<span class="country-name">Burkina Faso</span>
+												<span class="dial-code">+226</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag bi"></div>
+												</div>
+												<span class="country-name">Burundi</span>
+												<span class="dial-code">+257</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag kh"></div>
+												</div>
+												<span class="country-name">Cambodia</span>
+												<span class="dial-code">+855</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag cm"></div>
+												</div>
+												<span class="country-name">Cameroon</span>
+												<span class="dial-code">+237</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ca"></div>
+												</div>
+												<span class="country-name">Canada</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag cv"></div>
+												</div>
+												<span class="country-name">Cape Verde</span>
+												<span class="dial-code">+238</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag bq"></div>
+												</div>
+												<span class="country-name">Caribbean Netherlands</span>
+												<span class="dial-code">+599</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ky"></div>
+												</div>
+												<span class="country-name">Cayman Islands</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag cf"></div>
+												</div>
+												<span class="country-name">Central African Republic</span>
+												<span class="dial-code">+236</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag td"></div>
+												</div>
+												<span class="country-name">Chad</span>
+												<span class="dial-code">+235</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag cl"></div>
+												</div>
+												<span class="country-name">Chile</span>
+												<span class="dial-code">+56</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag cn"></div>
+												</div>
+												<span class="country-name">China</span>
+												<span class="dial-code">+86</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag cx"></div>
+												</div>
+												<span class="country-name">Christmas Island</span>
+												<span class="dial-code">+61</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag cc"></div>
+												</div>
+												<span class="country-name">Cocos (Keeling) Islands</span>
+												<span class="dial-code">+61</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag co"></div>
+												</div>
+												<span class="country-name">Colombia</span>
+												<span class="dial-code">+57</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag km"></div>
+												</div>
+												<span class="country-name">Comoros</span>
+												<span class="dial-code">+269</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag cd"></div>
+												</div>
+												<span class="country-name">Congo (DRC)</span>
+												<span class="dial-code">+243</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag cg"></div>
+												</div>
+												<span class="country-name">Congo (Republic)</span>
+												<span class="dial-code">+242</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ck"></div>
+												</div>
+												<span class="country-name">Cook Islands</span>
+												<span class="dial-code">+682</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag cr"></div>
+												</div>
+												<span class="country-name">Costa Rica</span>
+												<span class="dial-code">+506</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ci"></div>
+												</div>
+												<span class="country-name">Côte d'Ivoire</span>
+												<span class="dial-code">+225</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag hr"></div>
+												</div>
+												<span class="country-name">Croatia</span>
+												<span class="dial-code">+385</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag cu"></div>
+												</div>
+												<span class="country-name">Cuba</span>
+												<span class="dial-code">+53</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag cw"></div>
+												</div>
+												<span class="country-name">Curaçao</span>
+												<span class="dial-code">+599</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag cy"></div>
+												</div>
+												<span class="country-name">Cyprus</span>
+												<span class="dial-code">+357</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag cz"></div>
+												</div>
+												<span class="country-name">Czech Republic</span>
+												<span class="dial-code">+420</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag dk"></div>
+												</div>
+												<span class="country-name">Denmark</span>
+												<span class="dial-code">+45</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag dj"></div>
+												</div>
+												<span class="country-name">Djibouti</span>
+												<span class="dial-code">+253</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag dm"></div>
+												</div>
+												<span class="country-name">Dominica</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag do"></div>
+												</div>
+												<span class="country-name">Dominican Republic</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ec"></div>
+												</div>
+												<span class="country-name">Ecuador</span>
+												<span class="dial-code">+593</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag eg"></div>
+												</div>
+												<span class="country-name">Egypt</span>
+												<span class="dial-code">+20</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag sv"></div>
+												</div>
+												<span class="country-name">El Salvador</span>
+												<span class="dial-code">+503</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag gq"></div>
+												</div>
+												<span class="country-name">Equatorial Guinea</span>
+												<span class="dial-code">+240</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag er"></div>
+												</div>
+												<span class="country-name">Eritrea</span>
+												<span class="dial-code">+291</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ee"></div>
+												</div>
+												<span class="country-name">Estonia</span>
+												<span class="dial-code">+372</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag et"></div>
+												</div>
+												<span class="country-name">Ethiopia</span>
+												<span class="dial-code">+251</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag fk"></div>
+												</div>
+												<span class="country-name">Falkland Islands (Islas Malvinas)</span>
+												<span class="dial-code">+500</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag fo"></div>
+												</div>
+												<span class="country-name">Faroe Islands</span>
+												<span class="dial-code">+298</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag fj"></div>
+												</div>
+												<span class="country-name">Fiji</span>
+												<span class="dial-code">+679</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag fi"></div>
+												</div>
+												<span class="country-name">Finland</span>
+												<span class="dial-code">+358</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag fr"></div>
+												</div>
+												<span class="country-name">France</span>
+												<span class="dial-code">+33</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag gf"></div>
+												</div>
+												<span class="country-name">French Guiana</span>
+												<span class="dial-code">+594</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag pf"></div>
+												</div>
+												<span class="country-name">French Polynesia</span>
+												<span class="dial-code">+689</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ga"></div>
+												</div>
+												<span class="country-name">Gabon</span>
+												<span class="dial-code">+241</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag gm"></div>
+												</div>
+												<span class="country-name">Gambia</span>
+												<span class="dial-code">+220</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ge"></div>
+												</div>
+												<span class="country-name">Georgia</span>
+												<span class="dial-code">+995</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag de"></div>
+												</div>
+												<span class="country-name">Germany</span>
+												<span class="dial-code">+49</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag gh"></div>
+												</div>
+												<span class="country-name">Ghana</span>
+												<span class="dial-code">+233</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag gi"></div>
+												</div>
+												<span class="country-name">Gibraltar</span>
+												<span class="dial-code">+350</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag gr"></div>
+												</div>
+												<span class="country-name">Greece</span>
+												<span class="dial-code">+30</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag gl"></div>
+												</div>
+												<span class="country-name">Greenland</span>
+												<span class="dial-code">+299</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag gd"></div>
+												</div>
+												<span class="country-name">Grenada</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag gp"></div>
+												</div>
+												<span class="country-name">Guadeloupe</span>
+												<span class="dial-code">+590</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag pm"></div>
+												</div>
+												<span class="country-name">Saint Pierre and Miquelon</span>
+												<span class="dial-code">+508</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag sh"></div>
+												</div>
+												<span class="country-name">Saint Helena, Ascension and Tristan Da Cunha</span>
+												<span class="dial-code">+290</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag gu"></div>
+												</div>
+												<span class="country-name">Guam</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag gt"></div>
+												</div>
+												<span class="country-name">Guatemala</span>
+												<span class="dial-code">+502</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag gg"></div>
+												</div>
+												<span class="country-name">Guernsey</span>
+												<span class="dial-code">+44</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag gn"></div>
+												</div>
+												<span class="country-name">Guinea</span>
+												<span class="dial-code">+224</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag gw"></div>
+												</div>
+												<span class="country-name">Guinea-Bissau</span>
+												<span class="dial-code">+245</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag gy"></div>
+												</div>
+												<span class="country-name">Guyana</span>
+												<span class="dial-code">+592</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ht"></div>
+												</div>
+												<span class="country-name">Haiti</span>
+												<span class="dial-code">+509</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag hn"></div>
+												</div>
+												<span class="country-name">Honduras</span>
+												<span class="dial-code">+504</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag hk"></div>
+												</div>
+												<span class="country-name">Hong Kong</span>
+												<span class="dial-code">+852</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag hu"></div>
+												</div>
+												<span class="country-name">Hungary</span>
+												<span class="dial-code">+36</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag is"></div>
+												</div>
+												<span class="country-name">Iceland</span>
+												<span class="dial-code">+354</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag in"></div>
+												</div>
+												<span class="country-name">India</span>
+												<span class="dial-code">+91</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag id"></div>
+												</div>
+												<span class="country-name">Indonesia</span>
+												<span class="dial-code">+62</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ir"></div>
+												</div>
+												<span class="country-name">Iran</span>
+												<span class="dial-code">+98</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag iq"></div>
+												</div>
+												<span class="country-name">Iraq</span>
+												<span class="dial-code">+964</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ie"></div>
+												</div>
+												<span class="country-name">Ireland</span>
+												<span class="dial-code">+353</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag im"></div>
+												</div>
+												<span class="country-name">Isle of Man</span>
+												<span class="dial-code">+44</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag il"></div>
+												</div>
+												<span class="country-name">Israel</span>
+												<span class="dial-code">+972</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag it"></div>
+												</div>
+												<span class="country-name">Italy</span>
+												<span class="dial-code">+39</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag jm"></div>
+												</div>
+												<span class="country-name">Jamaica</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag jp"></div>
+												</div>
+												<span class="country-name">Japan</span>
+												<span class="dial-code">+81</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag je"></div>
+												</div>
+												<span class="country-name">Jersey</span>
+												<span class="dial-code">+44</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag jo"></div>
+												</div>
+												<span class="country-name">Jordan</span>
+												<span class="dial-code">+962</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag kz"></div>
+												</div>
+												<span class="country-name">Kazakhstan</span>
+												<span class="dial-code">+7</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ke"></div>
+												</div>
+												<span class="country-name">Kenya</span>
+												<span class="dial-code">+254</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ki"></div>
+												</div>
+												<span class="country-name">Kiribati</span>
+												<span class="dial-code">+686</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag kw"></div>
+												</div>
+												<span class="country-name">Kuwait</span>
+												<span class="dial-code">+965</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag kg"></div>
+												</div>
+												<span class="country-name">Kyrgyzstan</span>
+												<span class="dial-code">+996</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag la"></div>
+												</div>
+												<span class="country-name">Laos</span>
+												<span class="dial-code">+856</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag lv"></div>
+												</div>
+												<span class="country-name">Latvia</span>
+												<span class="dial-code">+371</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag lb"></div>
+												</div>
+												<span class="country-name">Lebanon</span>
+												<span class="dial-code">+961</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ls"></div>
+												</div>
+												<span class="country-name">Lesotho</span>
+												<span class="dial-code">+266</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag lr"></div>
+												</div>
+												<span class="country-name">Liberia</span>
+												<span class="dial-code">+231</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ly"></div>
+												</div>
+												<span class="country-name">Libya</span>
+												<span class="dial-code">+218</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag li"></div>
+												</div>
+												<span class="country-name">Liechtenstein</span>
+												<span class="dial-code">+423</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag lt"></div>
+												</div>
+												<span class="country-name">Lithuania</span>
+												<span class="dial-code">+370</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag lu"></div>
+												</div>
+												<span class="country-name">Luxembourg</span>
+												<span class="dial-code">+352</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag mo"></div>
+												</div>
+												<span class="country-name">Macao</span>
+												<span class="dial-code">+853</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag mk"></div>
+												</div>
+												<span class="country-name">Macedonia</span>
+												<span class="dial-code">+389</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag mg"></div>
+												</div>
+												<span class="country-name">Madagascar</span>
+												<span class="dial-code">+261</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag mw"></div>
+												</div>
+												<span class="country-name">Malawi</span>
+												<span class="dial-code">+265</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag my"></div>
+												</div>
+												<span class="country-name">Malaysia</span>
+												<span class="dial-code">+60</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag mv"></div>
+												</div>
+												<span class="country-name">Maldives</span>
+												<span class="dial-code">+960</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ml"></div>
+												</div>
+												<span class="country-name">Mali</span>
+												<span class="dial-code">+223</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag mt"></div>
+												</div>
+												<span class="country-name">Malta</span>
+												<span class="dial-code">+356</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag mh"></div>
+												</div>
+												<span class="country-name">Marshall Islands</span>
+												<span class="dial-code">+692</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag mq"></div>
+												</div>
+												<span class="country-name">Martinique</span>
+												<span class="dial-code">+596</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag mr"></div>
+												</div>
+												<span class="country-name">Mauritania</span>
+												<span class="dial-code">+222</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag mu"></div>
+												</div>
+												<span class="country-name">Mauritius</span>
+												<span class="dial-code">+230</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag yt"></div>
+												</div>
+												<span class="country-name">Mayotte</span>
+												<span class="dial-code">+262</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag mx"></div>
+												</div>
+												<span class="country-name">Mexico</span>
+												<span class="dial-code">+52</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag fm"></div>
+												</div>
+												<span class="country-name">Micronesia</span>
+												<span class="dial-code">+691</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag md"></div>
+												</div>
+												<span class="country-name">Moldova</span>
+												<span class="dial-code">+373</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag mc"></div>
+												</div>
+												<span class="country-name">Monaco</span>
+												<span class="dial-code">+377</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag mn"></div>
+												</div>
+												<span class="country-name">Mongolia</span>
+												<span class="dial-code">+976</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag me"></div>
+												</div>
+												<span class="country-name">Montenegro</span>
+												<span class="dial-code">+382</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ms"></div>
+												</div>
+												<span class="country-name">Montserrat</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ma"></div>
+												</div>
+												<span class="country-name">Morocco</span>
+												<span class="dial-code">+212</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag mz"></div>
+												</div>
+												<span class="country-name">Mozambique</span>
+												<span class="dial-code">+258</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag mm"></div>
+												</div>
+												<span class="country-name">Myanmar (Burma)</span>
+												<span class="dial-code">+95</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag na"></div>
+												</div>
+												<span class="country-name">Namibia</span>
+												<span class="dial-code">+264</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag nr"></div>
+												</div>
+												<span class="country-name">Nauru</span>
+												<span class="dial-code">+674</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag np"></div>
+												</div>
+												<span class="country-name">Nepal</span>
+												<span class="dial-code">+977</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag nl"></div>
+												</div>
+												<span class="country-name">Netherlands</span>
+												<span class="dial-code">+31</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag nc"></div>
+												</div>
+												<span class="country-name">New Caledonia</span>
+												<span class="dial-code">+687</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag nz"></div>
+												</div>
+												<span class="country-name">New Zealand</span>
+												<span class="dial-code">+64</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ni"></div>
+												</div>
+												<span class="country-name">Nicaragua</span>
+												<span class="dial-code">+505</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ne"></div>
+												</div>
+												<span class="country-name">Niger</span>
+												<span class="dial-code">+227</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ng"></div>
+												</div>
+												<span class="country-name">Nigeria</span>
+												<span class="dial-code">+234</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag NU"></div>
+												</div>
+												<span class="country-name">Niue</span>
+												<span class="dial-code">+683</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag NF"></div>
+												</div>
+												<span class="country-name">Norfolk Island</span>
+												<span class="dial-code">+672</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag kp"></div>
+												</div>
+												<span class="country-name">North Korea</span>
+												<span class="dial-code">+850</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag no"></div>
+												</div>
+												<span class="country-name">Norway</span>
+												<span class="dial-code">+47</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag om"></div>
+												</div>
+												<span class="country-name">Oman</span>
+												<span class="dial-code">+968</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag pk"></div>
+												</div>
+												<span class="country-name">Pakistan</span>
+												<span class="dial-code">+92</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag pw"></div>
+												</div>
+												<span class="country-name">Palau</span>
+												<span class="dial-code">+680</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ps"></div>
+												</div>
+												<span class="country-name">Palestinian Territory</span>
+												<span class="dial-code">+970</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag pa"></div>
+												</div>
+												<span class="country-name">Panama</span>
+												<span class="dial-code">+507</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag pg"></div>
+												</div>
+												<span class="country-name">Papua New Guinea</span>
+												<span class="dial-code">+675</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag py"></div>
+												</div>
+												<span class="country-name">Paraguay</span>
+												<span class="dial-code">+595</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag pe"></div>
+												</div>
+												<span class="country-name">Peru</span>
+												<span class="dial-code">+51</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ph"></div>
+												</div>
+												<span class="country-name">Philippines</span>
+												<span class="dial-code">+63</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag pl"></div>
+												</div>
+												<span class="country-name">Poland</span>
+												<span class="dial-code">+48</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag pt"></div>
+												</div>
+												<span class="country-name">Portugal</span>
+												<span class="dial-code">+351</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag pr"></div>
+												</div>
+												<span class="country-name">Puerto Rico</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag qa"></div>
+												</div>
+												<span class="country-name">Qatar</span>
+												<span class="dial-code">+974</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag re"></div>
+												</div>
+												<span class="country-name">Réunion</span>
+												<span class="dial-code">+262</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag bl"></div>
+												</div>
+												<span class="country-name">Saint Barthelemy</span>
+												<span class="dial-code">+590</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ro"></div>
+												</div>
+												<span class="country-name">Romania</span>
+												<span class="dial-code">+40</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ru"></div>
+												</div>
+												<span class="country-name">Russian Federation</span>
+												<span class="dial-code">+7</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag rw"></div>
+												</div>
+												<span class="country-name">Rwanda</span>
+												<span class="dial-code">+250</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag kn"></div>
+												</div>
+												<span class="country-name">Saint Kitts and Nevis</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag lc"></div>
+												</div>
+												<span class="country-name">Saint Lucia</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag mf"></div>
+												</div>
+												<span class="country-name">Saint Martin (Saint-Martin</span>
+												<span class="dial-code">+590</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag vc"></div>
+												</div>
+												<span class="country-name">Saint Vincent and the Grenadines</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ws"></div>
+												</div>
+												<span class="country-name">Samoa</span>
+												<span class="dial-code">+685</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag sm"></div>
+												</div>
+												<span class="country-name">San Marino</span>
+												<span class="dial-code">+378</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag st"></div>
+												</div>
+												<span class="country-name">São Tomé and Príncipe</span>
+												<span class="dial-code">+239</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag sa"></div>
+												</div>
+												<span class="country-name">Saudi Arabia</span>
+												<span class="dial-code">+966</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag sn"></div>
+												</div>
+												<span class="country-name">Senegal</span>
+												<span class="dial-code">+221</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag rs"></div>
+												</div>
+												<span class="country-name">Serbia</span>
+												<span class="dial-code">+381</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag sc"></div>
+												</div>
+												<span class="country-name">Seychelles</span>
+												<span class="dial-code">+248</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag sl"></div>
+												</div>
+												<span class="country-name">Sierra Leone</span>
+												<span class="dial-code">+232</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag sg"></div>
+												</div>
+												<span class="country-name">Singapore</span>
+												<span class="dial-code">+65</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag sk"></div>
+												</div>
+												<span class="country-name">Slovakia</span>
+												<span class="dial-code">+421</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag si"></div>
+												</div>
+												<span class="country-name">Slovenia</span>
+												<span class="dial-code">+386</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag sb"></div>
+												</div>
+												<span class="country-name">Solomon Islands</span>
+												<span class="dial-code">+677</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag so"></div>
+												</div>
+												<span class="country-name">Somalia</span>
+												<span class="dial-code">+252</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag za"></div>
+												</div>
+												<span class="country-name">South Africa</span>
+												<span class="dial-code">+27</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag kr"></div>
+												</div>
+												<span class="country-name">South Korea</span>
+												<span class="dial-code">+82</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ss"></div>
+												</div>
+												<span class="country-name">South Sudan</span>
+												<span class="dial-code">+211</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag es"></div>
+												</div>
+												<span class="country-name">Spain</span>
+												<span class="dial-code">+34</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag lk"></div>
+												</div>
+												<span class="country-name">Sri Lanka</span>
+												<span class="dial-code">+94</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag sd"></div>
+												</div>
+												<span class="country-name">Sudan</span>
+												<span class="dial-code">+249</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag sr"></div>
+												</div>
+												<span class="country-name">Suriname</span>
+												<span class="dial-code">+597</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag sz"></div>
+												</div>
+												<span class="country-name">Swaziland</span>
+												<span class="dial-code">+268</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag se"></div>
+												</div>
+												<span class="country-name">Sweden</span>
+												<span class="dial-code">+46</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ch"></div>
+												</div>
+												<span class="country-name">Switzerland</span>
+												<span class="dial-code">+41</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag sy"></div>
+												</div>
+												<span class="country-name">Syrian Arab Republic</span>
+												<span class="dial-code">+963</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag tw"></div>
+												</div>
+												<span class="country-name">Taiwan, Province of China</span>
+												<span class="dial-code">+886</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag tj"></div>
+												</div>
+												<span class="country-name">Tajikistan</span>
+												<span class="dial-code">+992</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag tz"></div>
+												</div>
+												<span class="country-name">Tanzania</span>
+												<span class="dial-code">+255</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag th"></div>
+												</div>
+												<span class="country-name">Thailand</span>
+												<span class="dial-code">+66</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag tl"></div>
+												</div>
+												<span class="country-name">Timor-Leste</span>
+												<span class="dial-code">+670</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag tg"></div>
+												</div>
+												<span class="country-name">Togo</span>
+												<span class="dial-code">+228</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag tk"></div>
+												</div>
+												<span class="country-name">Tokelau</span>
+												<span class="dial-code">+690</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag to"></div>
+												</div>
+												<span class="country-name">Tonga</span>
+												<span class="dial-code">+676</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag tt"></div>
+												</div>
+												<span class="country-name">Trinidad and Tobago</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ta"></div>
+												</div>
+												<span class="country-name">Tristan da Cunha</span>
+												<span class="dial-code">+290</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag tn"></div>
+												</div>
+												<span class="country-name">Tunisia</span>
+												<span class="dial-code">+216</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag tr"></div>
+												</div>
+												<span class="country-name">Turkey</span>
+												<span class="dial-code">+90</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag tm"></div>
+												</div>
+												<span class="country-name">Turkmenistan</span>
+												<span class="dial-code">+993</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag tc"></div>
+												</div>
+												<span class="country-name">Turks and Caicos Islands</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag tv"></div>
+												</div>
+												<span class="country-name">Tuvalu</span>
+												<span class="dial-code">+688</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ug"></div>
+												</div>
+												<span class="country-name">Uganda</span>
+												<span class="dial-code">+256</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ua"></div>
+												</div>
+												<span class="country-name">Ukraine</span>
+												<span class="dial-code">+380</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ae"></div>
+												</div>
+												<span class="country-name">United Arab Emirates</span>
+												<span class="dial-code">+971</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag gb"></div>
+												</div>
+												<span class="country-name">United Kingdom</span>
+												<span class="dial-code">+44</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag us"></div>
+												</div>
+												<span class="country-name">United States</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag uy"></div>
+												</div>
+												<span class="country-name">Uruguay</span>
+												<span class="dial-code">+598</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag uz"></div>
+												</div>
+												<span class="country-name">Uzbekistan</span>
+												<span class="dial-code">+998</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag vu"></div>
+												</div>
+												<span class="country-name">Vanuatu</span>
+												<span class="dial-code">+678</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag va"></div>
+												</div>
+												<span class="country-name">Vatican City</span>
+												<span class="dial-code">+379</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ve"></div>
+												</div>
+												<span class="country-name">Venezuela</span>
+												<span class="dial-code">+58</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag vn"></div>
+												</div>
+												<span class="country-name">Viet Nam</span>
+												<span class="dial-code">+84</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag vg"></div>
+												</div>
+												<span class="country-name">Virgin Islands (British)</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag vi"></div>
+												</div>
+												<span class="country-name">Virgin Islands (U.S.)</span>
+												<span class="dial-code">+1</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag wf"></div>
+												</div>
+												<span class="country-name">Wallis and Futuna</span>
+												<span class="dial-code">+681</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag eh"></div>
+												</div>
+												<span class="country-name">Western Sahara</span>
+												<span class="dial-code">+212</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag ye"></div>
+												</div>
+												<span class="country-name">Yemen</span>
+												<span class="dial-code">+967</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag zm"></div>
+												</div>
+												<span class="country-name">Zambia</span>
+												<span class="dial-code">+260</span>
+											</li>
+											<li class="country standard">
+												<div class="flag-box">
+													<div class="flag zw"></div>
+												</div>
+												<span class="country-name">Zimbabwe</span>
+												<span class="dial-code">+263</span>
+											</li>
+										</ul><input type="tel" name="phone">
+									</div>
+								</div>
+								<div class="register__row">
+									<div class="field field--password">
+										<label class='field__label'>Пароль</label>
+										<div class="field__wrapper">
+											<input class='field__input' type="password">
+											<button class='field__icon' type="button">
+												<span class="field__show-pass">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#show-pass"></use>
+													</svg>
+												</span>
+												<span class="field__hide-pass">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#hide-pass"></use>
+													</svg>
+												</span>
+											</button>
+										</div>
+										<span class='field__error'>@@error</span>
+									</div>
+									<div class="field field--password">
+										<label class='field__label'>Підтвердіть пароль</label>
+										<div class="field__wrapper">
+											<input class='field__input' type="password">
+											<button class='field__icon' type="button">
+												<span class="field__show-pass">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#show-pass"></use>
+													</svg>
+												</span>
+												<span class="field__hide-pass">
+													<svg>
+														<use xlink:href="img/icons/icons.svg#hide-pass"></use>
+													</svg>
+												</span>
+											</button>
+										</div>
+										<span class='field__error'>@@error</span>
+									</div>
+								</div>
+							</div>
+							<div class="register__checkbox">
+								<label class='checkbox-input'>
+									<input type="checkbox">
+									<span></span>
+									<p> Приймаю
+										<a href='#' class='link'>Умови Користування сайтом</a>
+										&nbsp;та&nbsp;
+										<a href='#' class='link'>Політику
+											Конфіденційності</a>
+									</p>
+								</label>
+							</div>
+							<div class="register__bottom">
+								<a href="resigter-two.html" class="btn-md">Перейти до наступного кроку <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.752 4.99921C13.752 5.16179 13.7167 5.32244 13.6485 5.47002C13.5803 5.61761 13.4808 5.74861 13.357 5.85395L8.7451 9.78466C8.66934 9.84876 8.57126 9.88022 8.47235 9.87214C8.37344 9.86406 8.28176 9.8171 8.21741 9.74155C8.15306 9.66601 8.12128 9.56803 8.12903 9.46909C8.13678 9.37016 8.18343 9.27833 8.25877 9.21372L12.7637 5.37421H0.626953C0.527497 5.37421 0.432114 5.3347 0.361788 5.26438C0.291462 5.19405 0.251953 5.09867 0.251953 4.99921C0.251953 4.89976 0.291462 4.80437 0.361788 4.73405C0.432114 4.66372 0.527497 4.62421 0.626953 4.62421H12.7637L8.2588 0.784662C8.18347 0.720059 8.13682 0.628228 8.12907 0.529291C8.12131 0.430354 8.1531 0.332378 8.21745 0.256831C8.2818 0.181284 8.37348 0.134326 8.47239 0.126246C8.5713 0.118166 8.66938 0.149623 8.74514 0.213725L13.3568 4.14421C13.4807 4.24957 13.5802 4.38061 13.6484 4.52824C13.7167 4.67587 13.752 4.83658 13.752 4.99921Z" fill="currentColor">
+									</svg>
+								</a>
+								<div class="register__enter">
+									<span>Вже маєте обліковий запис? </span>
+									<a href="auth.html" class='link'>Увійти</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<a href='#header' class="top">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M16.583 9.00065L8.99968 1.41732M8.99968 1.41732L1.41634 9.00065M8.99968 1.41732L8.99968 16.584" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+
+				</a>
+				<div class="footer__inner">
+					<div class="footer__col footer__col--left">
+						<div class="footer__block">
+							<a href='#' class="footer__logo"><img src="img/logo.svg" alt="logo"></a>
+							<a href="#" class="footer__link">Психотерапія та <br> ментальне здоров’я</a>
+							<a href="mailto:" class="footer__mail-link">Support@mymental.com.ua</a>
+							<a href="#" class="social-btn">
+								<span class="social-btn__icon">
+									<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M18.4998 0.775709L15.6529 15.1293C15.6529 15.1293 15.2549 16.1246 14.1598 15.6468L7.56063 10.5959C8.44762 9.79856 15.3288 3.61212 15.6297 3.33157C16.0948 2.89739 15.8062 2.63899 15.2655 2.96735L5.10145 9.42204L1.18012 8.10192C1.18012 8.10192 0.562777 7.8829 0.503363 7.40512C0.443598 6.92735 1.20016 6.6686 1.20016 6.6686L17.1861 0.397428C17.1861 0.397428 18.4998 -0.179838 18.4998 0.775709Z" fill="currentColor" />
+									</svg>
+								</span>
+								Telegram
+							</a>
+						</div>
+						<div class="footer__copy">
+							<span>© 2024 MyMental. Всі права захищені.</span>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title-sm">Навігація</div>
+						<ul class="footer__list">
+							<li><a href="#">Про нас</a></li>
+							<li><a href="#">Всі фахівці</a></li>
+							<li><a href="#">Психотерапевтам</a></li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title-sm">Юридична інформація</div>
+						<ul class="footer__list">
+							<li><a href="#">Дисклеймер</a></li>
+							<li><a href="#">Політика використання</a></li>
+							<li><a href="#">Ліцензійна угода Умови</a></li>
+							<li><a href="#">Умови та положення</a></li>
+							<li><a href="#">Політика конфіденційності</a></li>
+							<li><a href="#">Договір публічної оферти</a></li>
+							<li><a href="#">Угода користувача</a></li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title-sm">Корисна інформація</div>
+						<ul class="footer__list">
+							<li><a href="tel:">0 800 505 201</a> - Гаряча лінія МОЗ</li>
+							<li><a href="tel:">0 800 60 20 19</a> - Контакт-центр МОЗ</li>
+							<li><a class='footer__link-mail' href="mailto:">moz.gov.ua</a></li>
+							<li><a href="tel:">7333</a> - Цілодобова гаряча лінія з попередження суїцидів та психологічної підтримки
+								Lifeline Ukraine
+								для ветеранів</li>
+							<li><a href="tel:">0–800–501–701</a> - Всеукраїнський телефон довіри</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__copy">
+						<span>© 2024 MyMental. Всі права захищені.</span>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js?_v=20240425122408"></script>
+	<script src="js/app.min.js?_v=20240425122408"></script>
+</body>
+
+</html>
