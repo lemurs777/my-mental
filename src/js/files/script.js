@@ -15792,3 +15792,29 @@ if (menuItems) {
 	})
 
 }
+const calendarItems = document.querySelectorAll('.calendar__item')
+if (calendarItems) {
+	calendarItems.forEach(item => {
+		const menuItems = item.querySelectorAll('li')
+		item.addEventListener('click', e => {
+			calendarItems.forEach(item => {
+				item.classList.remove('show')
+			})
+			e.target.classList.add('show')
+
+		})
+		menuItems.forEach(itemLi => {
+			itemLi.addEventListener('click', e => {
+				item.classList.remove('show')
+
+			})
+		})
+		document.addEventListener('click', (e) => {
+			const withinBoundaries = e.composedPath().includes(item)
+
+			if (!withinBoundaries) {
+				item.classList.remove('show')
+			}
+		})
+	})
+}
