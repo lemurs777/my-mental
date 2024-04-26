@@ -162,6 +162,7 @@
 	}
 
 	&__user {
+
 		padding: 17px 18px;
 		display: flex;
 		align-items: center;
@@ -298,6 +299,19 @@
 	}
 }
 
+.login-user {
+	position: relative;
+
+	&:hover {
+		.submenu {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: all;
+
+		}
+	}
+}
+
 .menu-open {
 	.header {
 		.menu {
@@ -315,5 +329,29 @@
 			visibility: visible !important;
 			pointer-events: all !important;
 		}
+	}
+}
+
+.submenu {
+	right: 0;
+	transition: .3s ease-in-out;
+	top: 100%;
+	padding-top: 10px;
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		@extend .frame;
+		padding: 1rem;
+		gap: 1rem;
+
+		a {
+			padding: 5px 15px;
+		}
+
 	}
 }

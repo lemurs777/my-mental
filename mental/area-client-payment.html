@@ -8,9 +8,9 @@
 	<!-- <style>body{opacity: 0;}</style> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap&_v=20240425122408" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css?_v=20240425122408">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240425122408">
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap&_v=20240426113737" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css?_v=20240426113737">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240426113737">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,12 +44,20 @@
 							<img src="img/icons/comment.svg" alt="comment">
 							<span class="login-comment__badge">4</span>
 						</button>
-						<a href="#" class="login-user">
+						<div class="login-user">
 							<div class="login-user__avatar">
 								<img src="img/icons/user-avatar.svg" alt="login">
 							</div>
-							<div class="login-user__btn _icon-chevron">Віталій Соколов</div>
-						</a>
+							<button class="login-user__btn _icon-chevron">
+								Віталій Соколов
+							</button>
+							<div class="submenu">
+								<ul>
+									<li><a href="#">Спеціаліст</a></li>
+									<li><a href="#">Спеціаліст</a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -144,7 +152,7 @@
 																		</div>
 																	</th>
 																	<th>Тип</th>
-																	<th>Клієнт</th>
+																	<th>Фахівець</th>
 																	<th>Ціна</th>
 																	<th>Деталі</th>
 																</tr>
@@ -163,7 +171,7 @@
 																			</button>
 																		</div>
 																	</td>
-																	<td>Аліна</td>
+																	<td>Віталій Соколов</td>
 																	<td>1 300 ₴</td>
 																	<td>
 																		<div class="area-table__line">
@@ -219,7 +227,7 @@
 																	</td>
 																</tr>
 																<tr>
-																	<td>07/03/2024</td>
+																	<td>06/03/2024</td>
 																	<td>09:00</td>
 																	<td>
 																		<div class="area-table__line">
@@ -231,211 +239,7 @@
 																			</button>
 																		</div>
 																	</td>
-																	<td>Вероніка</td>
-																	<td>1 300 ₴</td>
-																	<td>
-																		<div class="area-table__line">
-																			<div class="more-info">
-																				<button class="more-info__btn" type='button'>
-																					<svg>
-																						<use xlink:href="img/icons/icons.svg#info"></use>
-																					</svg>
-																				</button>
-																				<div class="more-info__dropdown">
-																					<div class="more-info__wrapper">
-																						<div class="more-info__inner">
-																							<div class="more-info__title">Інформація про сесію</div>
-																							<div class="more-info__expert">Консультація з Аліна</div>
-																							<ul class="more-info__list">
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Дата і час</div>
-																									<div class="more-info__item-text">06 березня 2024 - 09:00 (50хв)
-																										<span>(Kyiv Time)</span>
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Тип клієнта</div>
-																									<div class="more-info__item-text">Дорослий
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Формат</div>
-																									<div class="more-info__item-text">Онлайн:
-																										<span><a href="#">посилання на сесію</a></span>
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Вартість</div>
-																									<div class="more-info__item-text">1 300 ₴
-																									</div>
-																								</li>
-																							</ul>
-																						</div>
-																					</div>
-																					<button class="more-info__close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-																							<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47 4.47 0 10 0C15.53 0 20 4.47 20 10C20 15.53 15.53 20 10 20C4.47 20 0 15.53 0 10ZM12.89 14.3C13.28 14.69 13.91 14.69 14.3 14.3C14.68 13.91 14.68 13.27 14.3 12.89L11.41 10L14.3 7.11C14.69 6.72 14.69 6.09 14.3 5.7C13.91 5.31 13.28 5.31 12.89 5.7L10 8.59L7.11 5.7C6.72 5.31 6.09 5.31 5.7 5.7C5.51275 5.88683 5.40751 6.14048 5.40751 6.405C5.40751 6.66952 5.51275 6.92317 5.7 7.11L8.59 10L5.7 12.89C5.51275 13.0768 5.40751 13.3305 5.40751 13.595C5.40751 13.8595 5.51275 14.1132 5.7 14.3C6.09 14.69 6.72 14.69 7.11 14.3L10 11.41L12.89 14.3Z" fill="white" />
-																						</svg>
-																					</button>
-																				</div>
-																			</div>
-																			<button class="icon-btn" type='button'>
-																				<svg>
-																					<use xlink:href="img/icons/icons.svg#dots"></use>
-																				</svg>
-																			</button>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>10/03/2024</td>
-																	<td>11:00</td>
-																	<td>
-																		<div class="area-table__line">
-																			Online
-																			<button class="icon-btn" type='button'>
-																				<svg>
-																					<use xlink:href="img/icons/icons.svg#share"></use>
-																				</svg>
-																			</button>
-																		</div>
-																	</td>
-																	<td>Юлія</td>
-																	<td>1 300 ₴</td>
-																	<td>
-																		<div class="area-table__line">
-																			<div class="more-info">
-																				<button class="more-info__btn" type='button'>
-																					<svg>
-																						<use xlink:href="img/icons/icons.svg#info"></use>
-																					</svg>
-																				</button>
-																				<div class="more-info__dropdown">
-																					<div class="more-info__wrapper">
-																						<div class="more-info__inner">
-																							<div class="more-info__title">Інформація про сесію</div>
-																							<div class="more-info__expert">Консультація з Аліна</div>
-																							<ul class="more-info__list">
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Дата і час</div>
-																									<div class="more-info__item-text">06 березня 2024 - 09:00 (50хв)
-																										<span>(Kyiv Time)</span>
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Тип клієнта</div>
-																									<div class="more-info__item-text">Дорослий
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Формат</div>
-																									<div class="more-info__item-text">Онлайн:
-																										<span><a href="#">посилання на сесію</a></span>
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Вартість</div>
-																									<div class="more-info__item-text">1 300 ₴
-																									</div>
-																								</li>
-																							</ul>
-																						</div>
-																					</div>
-																					<button class="more-info__close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-																							<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47 4.47 0 10 0C15.53 0 20 4.47 20 10C20 15.53 15.53 20 10 20C4.47 20 0 15.53 0 10ZM12.89 14.3C13.28 14.69 13.91 14.69 14.3 14.3C14.68 13.91 14.68 13.27 14.3 12.89L11.41 10L14.3 7.11C14.69 6.72 14.69 6.09 14.3 5.7C13.91 5.31 13.28 5.31 12.89 5.7L10 8.59L7.11 5.7C6.72 5.31 6.09 5.31 5.7 5.7C5.51275 5.88683 5.40751 6.14048 5.40751 6.405C5.40751 6.66952 5.51275 6.92317 5.7 7.11L8.59 10L5.7 12.89C5.51275 13.0768 5.40751 13.3305 5.40751 13.595C5.40751 13.8595 5.51275 14.1132 5.7 14.3C6.09 14.69 6.72 14.69 7.11 14.3L10 11.41L12.89 14.3Z" fill="white" />
-																						</svg>
-																					</button>
-																				</div>
-																			</div>
-																			<button class="icon-btn" type='button'>
-																				<svg>
-																					<use xlink:href="img/icons/icons.svg#dots"></use>
-																				</svg>
-																			</button>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>07/03/2024</td>
-																	<td>14:00</td>
-																	<td>
-																		<div class="area-table__line">
-																			Online
-																			<button class="icon-btn" type='button'>
-																				<svg>
-																					<use xlink:href="img/icons/icons.svg#share"></use>
-																				</svg>
-																			</button>
-																		</div>
-																	</td>
-																	<td>Valeriia</td>
-																	<td>1 300 ₴</td>
-																	<td>
-																		<div class="area-table__line">
-																			<div class="more-info">
-																				<button class="more-info__btn" type='button'>
-																					<svg>
-																						<use xlink:href="img/icons/icons.svg#info"></use>
-																					</svg>
-																				</button>
-																				<div class="more-info__dropdown">
-																					<div class="more-info__wrapper">
-																						<div class="more-info__inner">
-																							<div class="more-info__title">Інформація про сесію</div>
-																							<div class="more-info__expert">Консультація з Аліна</div>
-																							<ul class="more-info__list">
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Дата і час</div>
-																									<div class="more-info__item-text">06 березня 2024 - 09:00 (50хв)
-																										<span>(Kyiv Time)</span>
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Тип клієнта</div>
-																									<div class="more-info__item-text">Дорослий
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Формат</div>
-																									<div class="more-info__item-text">Онлайн:
-																										<span><a href="#">посилання на сесію</a></span>
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Вартість</div>
-																									<div class="more-info__item-text">1 300 ₴
-																									</div>
-																								</li>
-																							</ul>
-																						</div>
-																					</div>
-																					<button class="more-info__close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-																							<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47 4.47 0 10 0C15.53 0 20 4.47 20 10C20 15.53 15.53 20 10 20C4.47 20 0 15.53 0 10ZM12.89 14.3C13.28 14.69 13.91 14.69 14.3 14.3C14.68 13.91 14.68 13.27 14.3 12.89L11.41 10L14.3 7.11C14.69 6.72 14.69 6.09 14.3 5.7C13.91 5.31 13.28 5.31 12.89 5.7L10 8.59L7.11 5.7C6.72 5.31 6.09 5.31 5.7 5.7C5.51275 5.88683 5.40751 6.14048 5.40751 6.405C5.40751 6.66952 5.51275 6.92317 5.7 7.11L8.59 10L5.7 12.89C5.51275 13.0768 5.40751 13.3305 5.40751 13.595C5.40751 13.8595 5.51275 14.1132 5.7 14.3C6.09 14.69 6.72 14.69 7.11 14.3L10 11.41L12.89 14.3Z" fill="white" />
-																						</svg>
-																					</button>
-																				</div>
-																			</div>
-																			<button class="icon-btn" type='button'>
-																				<svg>
-																					<use xlink:href="img/icons/icons.svg#dots"></use>
-																				</svg>
-																			</button>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>11/03/2024</td>
-																	<td>09:00</td>
-																	<td>
-																		<div class="area-table__line">
-																			Online
-																			<button class="icon-btn" type='button'>
-																				<svg>
-																					<use xlink:href="img/icons/icons.svg#share"></use>
-																				</svg>
-																			</button>
-																		</div>
-																	</td>
-																	<td>Віталіна</td>
+																	<td>Віталій Соколов</td>
 																	<td>1 300 ₴</td>
 																	<td>
 																		<div class="area-table__line">
@@ -559,7 +363,7 @@
 															</div>
 														</div>
 														<div class="table-item__body">
-															<span>Аліна</span>
+															<span>Віталій Соколов</span>
 															<span>1 300 ₴</span>
 														</div>
 														<div class="table-item__bottom">
@@ -633,229 +437,7 @@
 															</div>
 														</div>
 														<div class="table-item__body">
-															<span>Аліна</span>
-															<span>1 300 ₴</span>
-														</div>
-														<div class="table-item__bottom">
-															<button class="btn-sm btn-sm--grey-border table-item__btn" type='button'>
-																Online
-																<svg>
-																	<use xlink:href="img/icons/icons.svg#share"></use>
-																</svg>
-															</button>
-														</div>
-													</div>
-													<div class="table-item">
-														<div class="table-item__head">
-															<div class="area-table__line">
-																06/03/2024, 09:00
-																<span class="info-tooltip" data-tippy-content='info'>
-																	<svg>
-																		<use xlink:href="img/icons/icons.svg#info"></use>
-																	</svg>
-																</span>
-															</div>
-															<div class="area-table__line">
-																<div class="more-info">
-																	<button class="more-info__btn" type='button'>
-																		<svg>
-																			<use xlink:href="img/icons/icons.svg#info"></use>
-																		</svg>
-																	</button>
-																	<div class="more-info__dropdown">
-																		<div class="more-info__wrapper">
-																			<div class="more-info__inner">
-																				<div class="more-info__title">Інформація про сесію</div>
-																				<div class="more-info__expert">Консультація з Аліна</div>
-																				<ul class="more-info__list">
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Дата і час</div>
-																						<div class="more-info__item-text">06 березня 2024 - 09:00 (50хв)
-																							<span>(Kyiv Time)</span>
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Тип клієнта</div>
-																						<div class="more-info__item-text">Дорослий
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Формат</div>
-																						<div class="more-info__item-text">Онлайн:
-																							<span><a href="#">посилання на сесію</a></span>
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Вартість</div>
-																						<div class="more-info__item-text">1 300 ₴
-																						</div>
-																					</li>
-																				</ul>
-																			</div>
-																		</div>
-																		<button class="more-info__close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-																				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47 4.47 0 10 0C15.53 0 20 4.47 20 10C20 15.53 15.53 20 10 20C4.47 20 0 15.53 0 10ZM12.89 14.3C13.28 14.69 13.91 14.69 14.3 14.3C14.68 13.91 14.68 13.27 14.3 12.89L11.41 10L14.3 7.11C14.69 6.72 14.69 6.09 14.3 5.7C13.91 5.31 13.28 5.31 12.89 5.7L10 8.59L7.11 5.7C6.72 5.31 6.09 5.31 5.7 5.7C5.51275 5.88683 5.40751 6.14048 5.40751 6.405C5.40751 6.66952 5.51275 6.92317 5.7 7.11L8.59 10L5.7 12.89C5.51275 13.0768 5.40751 13.3305 5.40751 13.595C5.40751 13.8595 5.51275 14.1132 5.7 14.3C6.09 14.69 6.72 14.69 7.11 14.3L10 11.41L12.89 14.3Z" fill="white" />
-																			</svg>
-																		</button>
-																	</div>
-																</div>
-																<button class="icon-btn" type='button'>
-																	<svg>
-																		<use xlink:href="img/icons/icons.svg#dots"></use>
-																	</svg>
-																</button>
-															</div>
-														</div>
-														<div class="table-item__body">
-															<span>Аліна</span>
-															<span>1 300 ₴</span>
-														</div>
-														<div class="table-item__bottom">
-															<button class="btn-sm btn-sm--grey-border table-item__btn" type='button'>
-																Online
-																<svg>
-																	<use xlink:href="img/icons/icons.svg#share"></use>
-																</svg>
-															</button>
-														</div>
-													</div>
-													<div class="table-item">
-														<div class="table-item__head">
-															<div class="area-table__line">
-																06/03/2024, 09:00
-																<span class="info-tooltip" data-tippy-content='info'>
-																	<svg>
-																		<use xlink:href="img/icons/icons.svg#info"></use>
-																	</svg>
-																</span>
-															</div>
-															<div class="area-table__line">
-																<div class="more-info">
-																	<button class="more-info__btn" type='button'>
-																		<svg>
-																			<use xlink:href="img/icons/icons.svg#info"></use>
-																		</svg>
-																	</button>
-																	<div class="more-info__dropdown">
-																		<div class="more-info__wrapper">
-																			<div class="more-info__inner">
-																				<div class="more-info__title">Інформація про сесію</div>
-																				<div class="more-info__expert">Консультація з Аліна</div>
-																				<ul class="more-info__list">
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Дата і час</div>
-																						<div class="more-info__item-text">06 березня 2024 - 09:00 (50хв)
-																							<span>(Kyiv Time)</span>
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Тип клієнта</div>
-																						<div class="more-info__item-text">Дорослий
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Формат</div>
-																						<div class="more-info__item-text">Онлайн:
-																							<span><a href="#">посилання на сесію</a></span>
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Вартість</div>
-																						<div class="more-info__item-text">1 300 ₴
-																						</div>
-																					</li>
-																				</ul>
-																			</div>
-																		</div>
-																		<button class="more-info__close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-																				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47 4.47 0 10 0C15.53 0 20 4.47 20 10C20 15.53 15.53 20 10 20C4.47 20 0 15.53 0 10ZM12.89 14.3C13.28 14.69 13.91 14.69 14.3 14.3C14.68 13.91 14.68 13.27 14.3 12.89L11.41 10L14.3 7.11C14.69 6.72 14.69 6.09 14.3 5.7C13.91 5.31 13.28 5.31 12.89 5.7L10 8.59L7.11 5.7C6.72 5.31 6.09 5.31 5.7 5.7C5.51275 5.88683 5.40751 6.14048 5.40751 6.405C5.40751 6.66952 5.51275 6.92317 5.7 7.11L8.59 10L5.7 12.89C5.51275 13.0768 5.40751 13.3305 5.40751 13.595C5.40751 13.8595 5.51275 14.1132 5.7 14.3C6.09 14.69 6.72 14.69 7.11 14.3L10 11.41L12.89 14.3Z" fill="white" />
-																			</svg>
-																		</button>
-																	</div>
-																</div>
-																<button class="icon-btn" type='button'>
-																	<svg>
-																		<use xlink:href="img/icons/icons.svg#dots"></use>
-																	</svg>
-																</button>
-															</div>
-														</div>
-														<div class="table-item__body">
-															<span>Аліна</span>
-															<span>1 300 ₴</span>
-														</div>
-														<div class="table-item__bottom">
-															<button class="btn-sm btn-sm--grey-border table-item__btn" type='button'>
-																Online
-																<svg>
-																	<use xlink:href="img/icons/icons.svg#share"></use>
-																</svg>
-															</button>
-														</div>
-													</div>
-													<div class="table-item">
-														<div class="table-item__head">
-															<div class="area-table__line">
-																06/03/2024, 09:00
-																<span class="info-tooltip" data-tippy-content='info'>
-																	<svg>
-																		<use xlink:href="img/icons/icons.svg#info"></use>
-																	</svg>
-																</span>
-															</div>
-															<div class="area-table__line">
-																<div class="more-info">
-																	<button class="more-info__btn" type='button'>
-																		<svg>
-																			<use xlink:href="img/icons/icons.svg#info"></use>
-																		</svg>
-																	</button>
-																	<div class="more-info__dropdown">
-																		<div class="more-info__wrapper">
-																			<div class="more-info__inner">
-																				<div class="more-info__title">Інформація про сесію</div>
-																				<div class="more-info__expert">Консультація з Аліна</div>
-																				<ul class="more-info__list">
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Дата і час</div>
-																						<div class="more-info__item-text">06 березня 2024 - 09:00 (50хв)
-																							<span>(Kyiv Time)</span>
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Тип клієнта</div>
-																						<div class="more-info__item-text">Дорослий
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Формат</div>
-																						<div class="more-info__item-text">Онлайн:
-																							<span><a href="#">посилання на сесію</a></span>
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Вартість</div>
-																						<div class="more-info__item-text">1 300 ₴
-																						</div>
-																					</li>
-																				</ul>
-																			</div>
-																		</div>
-																		<button class="more-info__close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-																				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47 4.47 0 10 0C15.53 0 20 4.47 20 10C20 15.53 15.53 20 10 20C4.47 20 0 15.53 0 10ZM12.89 14.3C13.28 14.69 13.91 14.69 14.3 14.3C14.68 13.91 14.68 13.27 14.3 12.89L11.41 10L14.3 7.11C14.69 6.72 14.69 6.09 14.3 5.7C13.91 5.31 13.28 5.31 12.89 5.7L10 8.59L7.11 5.7C6.72 5.31 6.09 5.31 5.7 5.7C5.51275 5.88683 5.40751 6.14048 5.40751 6.405C5.40751 6.66952 5.51275 6.92317 5.7 7.11L8.59 10L5.7 12.89C5.51275 13.0768 5.40751 13.3305 5.40751 13.595C5.40751 13.8595 5.51275 14.1132 5.7 14.3C6.09 14.69 6.72 14.69 7.11 14.3L10 11.41L12.89 14.3Z" fill="white" />
-																			</svg>
-																		</button>
-																	</div>
-																</div>
-																<button class="icon-btn" type='button'>
-																	<svg>
-																		<use xlink:href="img/icons/icons.svg#dots"></use>
-																	</svg>
-																</button>
-															</div>
-														</div>
-														<div class="table-item__body">
-															<span>Аліна</span>
+															<span>Віталій Соколов</span>
 															<span>1 300 ₴</span>
 														</div>
 														<div class="table-item__bottom">
@@ -889,7 +471,7 @@
 																		</div>
 																	</th>
 																	<th>Тип</th>
-																	<th>Клієнт</th>
+																	<th>Фахівець</th>
 																	<th>Ціна</th>
 																	<th>Деталі</th>
 																</tr>
@@ -908,7 +490,7 @@
 																			</button>
 																		</div>
 																	</td>
-																	<td>Аліна</td>
+																	<td>Віталій Соколов</td>
 																	<td>1 300 ₴</td>
 																	<td>
 																		<div class="area-table__line">
@@ -964,7 +546,7 @@
 																	</td>
 																</tr>
 																<tr>
-																	<td>07/03/2024</td>
+																	<td>06/03/2024</td>
 																	<td>09:00</td>
 																	<td>
 																		<div class="area-table__line">
@@ -976,211 +558,7 @@
 																			</button>
 																		</div>
 																	</td>
-																	<td>Вероніка</td>
-																	<td>1 300 ₴</td>
-																	<td>
-																		<div class="area-table__line">
-																			<div class="more-info">
-																				<button class="more-info__btn" type='button'>
-																					<svg>
-																						<use xlink:href="img/icons/icons.svg#info"></use>
-																					</svg>
-																				</button>
-																				<div class="more-info__dropdown">
-																					<div class="more-info__wrapper">
-																						<div class="more-info__inner">
-																							<div class="more-info__title">Інформація про сесію</div>
-																							<div class="more-info__expert">Консультація з Аліна</div>
-																							<ul class="more-info__list">
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Дата і час</div>
-																									<div class="more-info__item-text">06 березня 2024 - 09:00 (50хв)
-																										<span>(Kyiv Time)</span>
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Тип клієнта</div>
-																									<div class="more-info__item-text">Дорослий
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Формат</div>
-																									<div class="more-info__item-text">Онлайн:
-																										<span><a href="#">посилання на сесію</a></span>
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Вартість</div>
-																									<div class="more-info__item-text">1 300 ₴
-																									</div>
-																								</li>
-																							</ul>
-																						</div>
-																					</div>
-																					<button class="more-info__close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-																							<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47 4.47 0 10 0C15.53 0 20 4.47 20 10C20 15.53 15.53 20 10 20C4.47 20 0 15.53 0 10ZM12.89 14.3C13.28 14.69 13.91 14.69 14.3 14.3C14.68 13.91 14.68 13.27 14.3 12.89L11.41 10L14.3 7.11C14.69 6.72 14.69 6.09 14.3 5.7C13.91 5.31 13.28 5.31 12.89 5.7L10 8.59L7.11 5.7C6.72 5.31 6.09 5.31 5.7 5.7C5.51275 5.88683 5.40751 6.14048 5.40751 6.405C5.40751 6.66952 5.51275 6.92317 5.7 7.11L8.59 10L5.7 12.89C5.51275 13.0768 5.40751 13.3305 5.40751 13.595C5.40751 13.8595 5.51275 14.1132 5.7 14.3C6.09 14.69 6.72 14.69 7.11 14.3L10 11.41L12.89 14.3Z" fill="white" />
-																						</svg>
-																					</button>
-																				</div>
-																			</div>
-																			<button class="icon-btn" type='button'>
-																				<svg>
-																					<use xlink:href="img/icons/icons.svg#dots"></use>
-																				</svg>
-																			</button>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>10/03/2024</td>
-																	<td>11:00</td>
-																	<td>
-																		<div class="area-table__line">
-																			Online
-																			<button class="icon-btn" type='button'>
-																				<svg>
-																					<use xlink:href="img/icons/icons.svg#share"></use>
-																				</svg>
-																			</button>
-																		</div>
-																	</td>
-																	<td>Юлія</td>
-																	<td>1 300 ₴</td>
-																	<td>
-																		<div class="area-table__line">
-																			<div class="more-info">
-																				<button class="more-info__btn" type='button'>
-																					<svg>
-																						<use xlink:href="img/icons/icons.svg#info"></use>
-																					</svg>
-																				</button>
-																				<div class="more-info__dropdown">
-																					<div class="more-info__wrapper">
-																						<div class="more-info__inner">
-																							<div class="more-info__title">Інформація про сесію</div>
-																							<div class="more-info__expert">Консультація з Аліна</div>
-																							<ul class="more-info__list">
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Дата і час</div>
-																									<div class="more-info__item-text">06 березня 2024 - 09:00 (50хв)
-																										<span>(Kyiv Time)</span>
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Тип клієнта</div>
-																									<div class="more-info__item-text">Дорослий
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Формат</div>
-																									<div class="more-info__item-text">Онлайн:
-																										<span><a href="#">посилання на сесію</a></span>
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Вартість</div>
-																									<div class="more-info__item-text">1 300 ₴
-																									</div>
-																								</li>
-																							</ul>
-																						</div>
-																					</div>
-																					<button class="more-info__close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-																							<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47 4.47 0 10 0C15.53 0 20 4.47 20 10C20 15.53 15.53 20 10 20C4.47 20 0 15.53 0 10ZM12.89 14.3C13.28 14.69 13.91 14.69 14.3 14.3C14.68 13.91 14.68 13.27 14.3 12.89L11.41 10L14.3 7.11C14.69 6.72 14.69 6.09 14.3 5.7C13.91 5.31 13.28 5.31 12.89 5.7L10 8.59L7.11 5.7C6.72 5.31 6.09 5.31 5.7 5.7C5.51275 5.88683 5.40751 6.14048 5.40751 6.405C5.40751 6.66952 5.51275 6.92317 5.7 7.11L8.59 10L5.7 12.89C5.51275 13.0768 5.40751 13.3305 5.40751 13.595C5.40751 13.8595 5.51275 14.1132 5.7 14.3C6.09 14.69 6.72 14.69 7.11 14.3L10 11.41L12.89 14.3Z" fill="white" />
-																						</svg>
-																					</button>
-																				</div>
-																			</div>
-																			<button class="icon-btn" type='button'>
-																				<svg>
-																					<use xlink:href="img/icons/icons.svg#dots"></use>
-																				</svg>
-																			</button>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>07/03/2024</td>
-																	<td>14:00</td>
-																	<td>
-																		<div class="area-table__line">
-																			Online
-																			<button class="icon-btn" type='button'>
-																				<svg>
-																					<use xlink:href="img/icons/icons.svg#share"></use>
-																				</svg>
-																			</button>
-																		</div>
-																	</td>
-																	<td>Valeriia</td>
-																	<td>1 300 ₴</td>
-																	<td>
-																		<div class="area-table__line">
-																			<div class="more-info">
-																				<button class="more-info__btn" type='button'>
-																					<svg>
-																						<use xlink:href="img/icons/icons.svg#info"></use>
-																					</svg>
-																				</button>
-																				<div class="more-info__dropdown">
-																					<div class="more-info__wrapper">
-																						<div class="more-info__inner">
-																							<div class="more-info__title">Інформація про сесію</div>
-																							<div class="more-info__expert">Консультація з Аліна</div>
-																							<ul class="more-info__list">
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Дата і час</div>
-																									<div class="more-info__item-text">06 березня 2024 - 09:00 (50хв)
-																										<span>(Kyiv Time)</span>
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Тип клієнта</div>
-																									<div class="more-info__item-text">Дорослий
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Формат</div>
-																									<div class="more-info__item-text">Онлайн:
-																										<span><a href="#">посилання на сесію</a></span>
-																									</div>
-																								</li>
-																								<li class='more-info__item'>
-																									<div class="more-info__item-name">Вартість</div>
-																									<div class="more-info__item-text">1 300 ₴
-																									</div>
-																								</li>
-																							</ul>
-																						</div>
-																					</div>
-																					<button class="more-info__close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-																							<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47 4.47 0 10 0C15.53 0 20 4.47 20 10C20 15.53 15.53 20 10 20C4.47 20 0 15.53 0 10ZM12.89 14.3C13.28 14.69 13.91 14.69 14.3 14.3C14.68 13.91 14.68 13.27 14.3 12.89L11.41 10L14.3 7.11C14.69 6.72 14.69 6.09 14.3 5.7C13.91 5.31 13.28 5.31 12.89 5.7L10 8.59L7.11 5.7C6.72 5.31 6.09 5.31 5.7 5.7C5.51275 5.88683 5.40751 6.14048 5.40751 6.405C5.40751 6.66952 5.51275 6.92317 5.7 7.11L8.59 10L5.7 12.89C5.51275 13.0768 5.40751 13.3305 5.40751 13.595C5.40751 13.8595 5.51275 14.1132 5.7 14.3C6.09 14.69 6.72 14.69 7.11 14.3L10 11.41L12.89 14.3Z" fill="white" />
-																						</svg>
-																					</button>
-																				</div>
-																			</div>
-																			<button class="icon-btn" type='button'>
-																				<svg>
-																					<use xlink:href="img/icons/icons.svg#dots"></use>
-																				</svg>
-																			</button>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>11/03/2024</td>
-																	<td>09:00</td>
-																	<td>
-																		<div class="area-table__line">
-																			Online
-																			<button class="icon-btn" type='button'>
-																				<svg>
-																					<use xlink:href="img/icons/icons.svg#share"></use>
-																				</svg>
-																			</button>
-																		</div>
-																	</td>
-																	<td>Віталіна</td>
+																	<td>Віталій Соколов</td>
 																	<td>1 300 ₴</td>
 																	<td>
 																		<div class="area-table__line">
@@ -1304,7 +682,7 @@
 															</div>
 														</div>
 														<div class="table-item__body">
-															<span>Аліна</span>
+															<span>Віталій Соколов</span>
 															<span>1 300 ₴</span>
 														</div>
 														<div class="table-item__bottom">
@@ -1378,229 +756,7 @@
 															</div>
 														</div>
 														<div class="table-item__body">
-															<span>Аліна</span>
-															<span>1 300 ₴</span>
-														</div>
-														<div class="table-item__bottom">
-															<button class="btn-sm btn-sm--grey-border table-item__btn" type='button'>
-																Online
-																<svg>
-																	<use xlink:href="img/icons/icons.svg#share"></use>
-																</svg>
-															</button>
-														</div>
-													</div>
-													<div class="table-item">
-														<div class="table-item__head">
-															<div class="area-table__line">
-																06/03/2024, 09:00
-																<span class="info-tooltip" data-tippy-content='info'>
-																	<svg>
-																		<use xlink:href="img/icons/icons.svg#info"></use>
-																	</svg>
-																</span>
-															</div>
-															<div class="area-table__line">
-																<div class="more-info">
-																	<button class="more-info__btn" type='button'>
-																		<svg>
-																			<use xlink:href="img/icons/icons.svg#info"></use>
-																		</svg>
-																	</button>
-																	<div class="more-info__dropdown">
-																		<div class="more-info__wrapper">
-																			<div class="more-info__inner">
-																				<div class="more-info__title">Інформація про сесію</div>
-																				<div class="more-info__expert">Консультація з Аліна</div>
-																				<ul class="more-info__list">
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Дата і час</div>
-																						<div class="more-info__item-text">06 березня 2024 - 09:00 (50хв)
-																							<span>(Kyiv Time)</span>
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Тип клієнта</div>
-																						<div class="more-info__item-text">Дорослий
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Формат</div>
-																						<div class="more-info__item-text">Онлайн:
-																							<span><a href="#">посилання на сесію</a></span>
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Вартість</div>
-																						<div class="more-info__item-text">1 300 ₴
-																						</div>
-																					</li>
-																				</ul>
-																			</div>
-																		</div>
-																		<button class="more-info__close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-																				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47 4.47 0 10 0C15.53 0 20 4.47 20 10C20 15.53 15.53 20 10 20C4.47 20 0 15.53 0 10ZM12.89 14.3C13.28 14.69 13.91 14.69 14.3 14.3C14.68 13.91 14.68 13.27 14.3 12.89L11.41 10L14.3 7.11C14.69 6.72 14.69 6.09 14.3 5.7C13.91 5.31 13.28 5.31 12.89 5.7L10 8.59L7.11 5.7C6.72 5.31 6.09 5.31 5.7 5.7C5.51275 5.88683 5.40751 6.14048 5.40751 6.405C5.40751 6.66952 5.51275 6.92317 5.7 7.11L8.59 10L5.7 12.89C5.51275 13.0768 5.40751 13.3305 5.40751 13.595C5.40751 13.8595 5.51275 14.1132 5.7 14.3C6.09 14.69 6.72 14.69 7.11 14.3L10 11.41L12.89 14.3Z" fill="white" />
-																			</svg>
-																		</button>
-																	</div>
-																</div>
-																<button class="icon-btn" type='button'>
-																	<svg>
-																		<use xlink:href="img/icons/icons.svg#dots"></use>
-																	</svg>
-																</button>
-															</div>
-														</div>
-														<div class="table-item__body">
-															<span>Аліна</span>
-															<span>1 300 ₴</span>
-														</div>
-														<div class="table-item__bottom">
-															<button class="btn-sm btn-sm--grey-border table-item__btn" type='button'>
-																Online
-																<svg>
-																	<use xlink:href="img/icons/icons.svg#share"></use>
-																</svg>
-															</button>
-														</div>
-													</div>
-													<div class="table-item">
-														<div class="table-item__head">
-															<div class="area-table__line">
-																06/03/2024, 09:00
-																<span class="info-tooltip" data-tippy-content='info'>
-																	<svg>
-																		<use xlink:href="img/icons/icons.svg#info"></use>
-																	</svg>
-																</span>
-															</div>
-															<div class="area-table__line">
-																<div class="more-info">
-																	<button class="more-info__btn" type='button'>
-																		<svg>
-																			<use xlink:href="img/icons/icons.svg#info"></use>
-																		</svg>
-																	</button>
-																	<div class="more-info__dropdown">
-																		<div class="more-info__wrapper">
-																			<div class="more-info__inner">
-																				<div class="more-info__title">Інформація про сесію</div>
-																				<div class="more-info__expert">Консультація з Аліна</div>
-																				<ul class="more-info__list">
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Дата і час</div>
-																						<div class="more-info__item-text">06 березня 2024 - 09:00 (50хв)
-																							<span>(Kyiv Time)</span>
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Тип клієнта</div>
-																						<div class="more-info__item-text">Дорослий
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Формат</div>
-																						<div class="more-info__item-text">Онлайн:
-																							<span><a href="#">посилання на сесію</a></span>
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Вартість</div>
-																						<div class="more-info__item-text">1 300 ₴
-																						</div>
-																					</li>
-																				</ul>
-																			</div>
-																		</div>
-																		<button class="more-info__close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-																				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47 4.47 0 10 0C15.53 0 20 4.47 20 10C20 15.53 15.53 20 10 20C4.47 20 0 15.53 0 10ZM12.89 14.3C13.28 14.69 13.91 14.69 14.3 14.3C14.68 13.91 14.68 13.27 14.3 12.89L11.41 10L14.3 7.11C14.69 6.72 14.69 6.09 14.3 5.7C13.91 5.31 13.28 5.31 12.89 5.7L10 8.59L7.11 5.7C6.72 5.31 6.09 5.31 5.7 5.7C5.51275 5.88683 5.40751 6.14048 5.40751 6.405C5.40751 6.66952 5.51275 6.92317 5.7 7.11L8.59 10L5.7 12.89C5.51275 13.0768 5.40751 13.3305 5.40751 13.595C5.40751 13.8595 5.51275 14.1132 5.7 14.3C6.09 14.69 6.72 14.69 7.11 14.3L10 11.41L12.89 14.3Z" fill="white" />
-																			</svg>
-																		</button>
-																	</div>
-																</div>
-																<button class="icon-btn" type='button'>
-																	<svg>
-																		<use xlink:href="img/icons/icons.svg#dots"></use>
-																	</svg>
-																</button>
-															</div>
-														</div>
-														<div class="table-item__body">
-															<span>Аліна</span>
-															<span>1 300 ₴</span>
-														</div>
-														<div class="table-item__bottom">
-															<button class="btn-sm btn-sm--grey-border table-item__btn" type='button'>
-																Online
-																<svg>
-																	<use xlink:href="img/icons/icons.svg#share"></use>
-																</svg>
-															</button>
-														</div>
-													</div>
-													<div class="table-item">
-														<div class="table-item__head">
-															<div class="area-table__line">
-																06/03/2024, 09:00
-																<span class="info-tooltip" data-tippy-content='info'>
-																	<svg>
-																		<use xlink:href="img/icons/icons.svg#info"></use>
-																	</svg>
-																</span>
-															</div>
-															<div class="area-table__line">
-																<div class="more-info">
-																	<button class="more-info__btn" type='button'>
-																		<svg>
-																			<use xlink:href="img/icons/icons.svg#info"></use>
-																		</svg>
-																	</button>
-																	<div class="more-info__dropdown">
-																		<div class="more-info__wrapper">
-																			<div class="more-info__inner">
-																				<div class="more-info__title">Інформація про сесію</div>
-																				<div class="more-info__expert">Консультація з Аліна</div>
-																				<ul class="more-info__list">
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Дата і час</div>
-																						<div class="more-info__item-text">06 березня 2024 - 09:00 (50хв)
-																							<span>(Kyiv Time)</span>
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Тип клієнта</div>
-																						<div class="more-info__item-text">Дорослий
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Формат</div>
-																						<div class="more-info__item-text">Онлайн:
-																							<span><a href="#">посилання на сесію</a></span>
-																						</div>
-																					</li>
-																					<li class='more-info__item'>
-																						<div class="more-info__item-name">Вартість</div>
-																						<div class="more-info__item-text">1 300 ₴
-																						</div>
-																					</li>
-																				</ul>
-																			</div>
-																		</div>
-																		<button class="more-info__close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-																				<path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47 4.47 0 10 0C15.53 0 20 4.47 20 10C20 15.53 15.53 20 10 20C4.47 20 0 15.53 0 10ZM12.89 14.3C13.28 14.69 13.91 14.69 14.3 14.3C14.68 13.91 14.68 13.27 14.3 12.89L11.41 10L14.3 7.11C14.69 6.72 14.69 6.09 14.3 5.7C13.91 5.31 13.28 5.31 12.89 5.7L10 8.59L7.11 5.7C6.72 5.31 6.09 5.31 5.7 5.7C5.51275 5.88683 5.40751 6.14048 5.40751 6.405C5.40751 6.66952 5.51275 6.92317 5.7 7.11L8.59 10L5.7 12.89C5.51275 13.0768 5.40751 13.3305 5.40751 13.595C5.40751 13.8595 5.51275 14.1132 5.7 14.3C6.09 14.69 6.72 14.69 7.11 14.3L10 11.41L12.89 14.3Z" fill="white" />
-																			</svg>
-																		</button>
-																	</div>
-																</div>
-																<button class="icon-btn" type='button'>
-																	<svg>
-																		<use xlink:href="img/icons/icons.svg#dots"></use>
-																	</svg>
-																</button>
-															</div>
-														</div>
-														<div class="table-item__body">
-															<span>Аліна</span>
+															<span>Віталій Соколов</span>
 															<span>1 300 ₴</span>
 														</div>
 														<div class="table-item__bottom">
@@ -1692,8 +848,8 @@
 
 		</footer>
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js?_v=20240425122408"></script>
-	<script src="js/app.min.js?_v=20240425122408"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js?_v=20240426113737"></script>
+	<script src="js/app.min.js?_v=20240426113737"></script>
 </body>
 
 </html>

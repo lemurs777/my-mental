@@ -5414,6 +5414,18 @@ input[type=number] {
 }
 
 @media (max-width: 47.99875em) {
+  .mobile-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 47.99875em) {
   .desktop {
     display: none !important;
   }
@@ -5588,14 +5600,14 @@ input[type=number] {
   }
 }
 
-.frame, .session-info, .record-form, .calendar, .time-meet, .area-block, .area-info, .area-sidebar__nav, .area-page__chat-line, .expert-session, .expert-reviews, .expert-about, .expert-experience__inner, .more-info__wrapper, .add-media, .my-expert__body, .master-card, .education-info__block, .header .menu__list li ul, .table-item, .support-block {
+.frame, .session-info, .record-form, .calendar, .time-meet, .area-block, .area-info, .area-sidebar__nav, .area-page__chat-line, .expert-session, .expert-reviews, .expert-about, .expert-experience__inner, .more-info__wrapper, .add-media, .my-expert__body, .master-card, .education-info__block, .submenu ul, .header .menu__list li ul, .table-item, .support-block {
   padding: 1.5rem;
   background: #fff;
   border: 1px solid #E4EBE4;
   border-radius: 15px;
 }
 @media (max-width: 47.99875em) {
-  .frame, .session-info, .record-form, .calendar, .time-meet, .area-block, .area-info, .area-sidebar__nav, .area-page__chat-line, .expert-session, .expert-reviews, .expert-about, .expert-experience__inner, .more-info__wrapper, .add-media, .my-expert__body, .master-card, .education-info__block, .header .menu__list li ul, .table-item, .support-block {
+  .frame, .session-info, .record-form, .calendar, .time-meet, .area-block, .area-info, .area-sidebar__nav, .area-page__chat-line, .expert-session, .expert-reviews, .expert-about, .expert-experience__inner, .more-info__wrapper, .add-media, .my-expert__body, .master-card, .education-info__block, .submenu ul, .header .menu__list li ul, .table-item, .support-block {
     padding: 1rem;
   }
 }
@@ -6708,6 +6720,8 @@ input[type=number] {
   font-size: 14px;
   line-height: 1.285;
   color: #5E6D55;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 @media (any-hover: hover) {
   .team-dropdown-btn:hover {
@@ -6715,6 +6729,7 @@ input[type=number] {
     border: 2px solid rgba(90, 110, 83, 0.3);
     -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    color: #fff;
   }
 }
 .team-dropdown-btn--accent {
@@ -7508,6 +7523,15 @@ input[type=number] {
   }
 }
 
+.login-user {
+  position: relative;
+}
+.login-user:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
 .menu-open .header .menu__body {
   right: 0;
 }
@@ -7516,6 +7540,32 @@ input[type=number] {
   opacity: 1 !important;
   visibility: visible !important;
   pointer-events: all !important;
+}
+
+.submenu {
+  right: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  top: 100%;
+  padding-top: 10px;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.submenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+.submenu ul a {
+  padding: 5px 15px;
 }
 
 .main-hero {
@@ -11291,6 +11341,7 @@ input[type=number] {
   background-color: #F7FAF7;
   font-weight: 700;
   color: #19453F;
+  fill: #19453F;
 }
 @media (any-hover: hover) {
   .area-sidebar__list a:hover {
@@ -11298,6 +11349,7 @@ input[type=number] {
     color: #19453F;
     background-color: #F7FAF7;
     border-left-color: #19453F;
+    fill: #19453F;
   }
 }
 .area-sidebar__exit {
@@ -13347,6 +13399,16 @@ input[type=number] {
     padding: 1rem 1rem 0.5rem 1rem;
     background-color: #F7FAF7;
     margin-bottom: 0;
+    position: relative;
+  }
+  .calendar__head::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #F7FAF7;
+    height: 62px;
+    content: "";
   }
 }
 .calendar__date {
@@ -13390,15 +13452,6 @@ input[type=number] {
   .calendar__body {
     margin-right: -1rem;
     position: relative;
-  }
-  .calendar__body::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #F7FAF7;
-    height: 62px;
-    content: "";
   }
 }
 .calendar__row {

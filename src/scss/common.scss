@@ -84,6 +84,14 @@
 	}
 }
 
+.mobile-flex {
+	@media (max-width: em(767.98)) {
+		display: flex !important;
+		flex-direction: column;
+
+	}
+}
+
 .desktop {
 	@media (max-width: em(767.98)) {
 		display: none !important;
